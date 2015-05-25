@@ -169,38 +169,30 @@
 		 
 		    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		    <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
-		 
+		 	
+
+		
 		    <script>
-		      document.onload = function()
-			{
-			    var all_inputs = document.getElementsByTagName("input");
-			    document.onload = function()
-			    {
-			        for(var i = 0; i < all_inputs.length; i++)
-			        {
-			             if( all_inputs[i].getAttribute("type") == "checkbox")
-			             {
-			                 checkbox = all_inputs[i];
+		    	$(document).ready(function () {
+		      		$(function () {
+					  var cookieD = $.cookie("cookieDates");
+					  !( cookieD == "changed" ) || $('.always').attr('checked',true); 
+					  $('.always').change(function () {               
+					     $('#dates').toggle(!this.checked);
+					     if( this.checked ) {
+					         $.cookie("cookieDates", "changed");
+					     } else {
+					         $.cookie("cookieDates", null);
+					     }         
+					  }).change();
+					});
 
-			                 // Change the state (checked/unchecked) if the state is saved in localStorage 
-			                 if( (var value = localStorage.getItem(checkbox.getAttribute("name")) != null)
-			                 {
-			                     if(value == "true")
-			                         checkbox.checked = true;
-			                     else if(value == "false")
-			                         checkbox.checked = false;
-			                 }
-
-			                 // Then put onchange listeners to notify when checkbox state changes in order to save the state in the localStorage
-			                 checkbox.addEventListener("change", function()
-			                 {
-			                     localStorage.setItem(checkbox.getAttribute("name"), ""+checkbox.checked ); // I used : "" + checkbox.checked to convert boolean to string
-			                 }
-			             }
-			        }
-			    }
-			}
 		    </script>
+
+ 			Always? <input type="checkbox" class="always" />
+			<div id="dates">
+			    A div with dates
+			</div>
 	    </div>
 	 
 	    <div role="tabpanel" class="tab-pane fade" id="settings">What settings should I have?</div>
