@@ -14,6 +14,41 @@
     <h1>100 Verses</h1>
 
 
+    <script type="text/javascript">
+		$(document).ready(function () {
+			var cookie1 = $.cookie("cookie1");
+			var cookie2 = $.cookie("cookie2");
+			var cookie3 = $.cookie("cookie3");
+			!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
+			!( cookie2 == "changed" ) || $('.Checkbox2').attr('checked',true);
+			!( cookie3 == "changed" ) || $('.Checkbox3').attr('checked',true);
+			$('.Checkbox1').change(function () {               
+				$('#displaySection1').toggle(!this.checked);
+				if( this.checked ) {
+					$.cookie("cookie1", "changed");
+				} else {
+					$.cookie("cookie1", null);
+				}         
+			}).change();
+			$('.Checkbox2').change(function () {
+				$('#displaySection2').toggle(!this.checked);
+				if( this.checked ) {
+					$.cookie("cookie2", "changed");
+				} else {
+					$.cookie("cookie2", null);
+				}         
+			}).change(); //ensure visible state matches initially
+			$('.Checkbox3').change(function () {
+				$('#displaySection3').toggle(!this.checked);
+				if( this.checked ) {
+					$.cookie("cookie3", "changed");
+				} else {
+					$.cookie("cookie3", null);
+				}         
+			}).change(); //ensure visible state matches initially
+		});  //end function
+	</script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -194,40 +229,7 @@
 			    A div with dates
 			</div>
 
-			<script type="text/javascript">
-        		$(document).ready(function () {
-					var cookie1 = $.cookie("cookie1");
-					var cookie2 = $.cookie("cookie2");
-					var cookie3 = $.cookie("cookie3");
-					!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
-					!( cookie2 == "changed" ) || $('.Checkbox2').attr('checked',true);
-					!( cookie3 == "changed" ) || $('.Checkbox3').attr('checked',true);
-					$('.Checkbox1').change(function () {               
-						$('#displaySection1').toggle(!this.checked);
-						if( this.checked ) {
-							$.cookie("cookie1", "changed");
-						} else {
-							$.cookie("cookie1", null);
-						}         
-					}).change();
-					$('.Checkbox2').change(function () {
-						$('#displaySection2').toggle(!this.checked);
-						if( this.checked ) {
-							$.cookie("cookie2", "changed");
-						} else {
-							$.cookie("cookie2", null);
-						}         
-					}).change(); //ensure visible state matches initially
-					$('.Checkbox3').change(function () {
-						$('#displaySection3').toggle(!this.checked);
-						if( this.checked ) {
-							$.cookie("cookie3", "changed");
-						} else {
-							$.cookie("cookie3", null);
-						}         
-					}).change(); //ensure visible state matches initially
-				});  //end function
-			</script>
+			
 
 
 		    <form id="form1" runat="server">
