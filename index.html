@@ -171,54 +171,35 @@
 		    <script src="http://cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 		 
 		    <script>
-		      function handleButtonClick(button){
-		        if ($(button).text().match("Check all")){
-		          $(":checkbox").prop("checked", true)
-		        } else {
-		          $(":checkbox").prop("checked", false)
-		        };
-		        updateButtonStatus();
-		      }
+		      document.onload = function()
+			{
+			    var all_inputs = document.getElementsByTagName("input");
+			    document.onload = function()
+			    {
+			        for(var i = 0; i < all_inputs.length; i++)
+			        {
+			             if( all_inputs[i].getAttribute("type") == "checkbox")
+			             {
+			                 checkbox = all_inputs[i];
 
-		      function updateButtonStatus(){
-		        var allChecked = $(":checkbox").length === $(":checkbox:checked").length;
-		        $("button").text(allChecked? "Uncheck all" : "Check all");
-		      }
+			                 // Change the state (checked/unchecked) if the state is saved in localStorage 
+			                 if( (var value = localStorage.getItem(checkbox.getAttribute("name")) != null)
+			                 {
+			                     if(value == "true")
+			                         checkbox.checked = true;
+			                     else if(value == "false")
+			                         checkbox.checked = false;
+			                 }
 
-		      function updateCookie(){
-		        var elementValues = {};
-		        $(":checkbox").each(function(){
-		          elementValues[this.id] = this.checked;
-		        });
-
-		        elementValues["buttonText"] = $("button").text();
-		        $.cookie('elementValues', elementValues, { expires: 7, path: '/' })
-		      }
-
-		      function repopulateFormELements(){
-		        var elementValues = $.cookie('elementValues');
-		        if(elementValues){
-		          Object.keys(elementValues).forEach(function(element) {
-		            var checked = elementValues[element];
-		            $("#" + element).prop('checked', checked);
-		          });
-
-		          $("button").text(elementValues["buttonText"])
-		        }
-		      }
-
-		      $(":checkbox").on("change", function(){
-		        updateButtonStatus();
-		        updateCookie();
-		      });
-
-		      $("button").on("click", function() {
-		        handleButtonClick(this);
-		        updateCookie();
-		      });
-
-		      $.cookie.json = true;
-		      repopulateFormELements();
+			                 // Then put onchange listeners to notify when checkbox state changes in order to save the state in the localStorage
+			                 checkbox.addEventListener("change", function()
+			                 {
+			                     localStorage.setItem(checkbox.getAttribute("name"), ""+checkbox.checked ); // I used : "" + checkbox.checked to convert boolean to string
+			                 }
+			             }
+			        }
+			    }
+			}
 		    </script>
 	    </div>
 	 
