@@ -1,4 +1,1 @@
-$('#myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+count = document.querySelectorAll('input[type="checkbox"]:checked').length);
