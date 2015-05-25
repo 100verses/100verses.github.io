@@ -34,7 +34,7 @@
 			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 			var ratioChecked = count/numCheckBoxes * 100
 			var progressSoFar = count + '/' + numCheckBoxes
-			document.getElementById('progressSoFar').innerHTML = progressSoFar;
+		 	document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
 			if (numChecked == numCheckBoxes){
 				document.getElementById('progressSoFar').innerHTML = "DONE!";
 			}
@@ -103,7 +103,7 @@
 	    	These are the 100 verses that every Christian should know by heart.
 
 	    	<h1> How to Use This Site </h1>
-	    	Click on the verses tab at the top of this page to see the 100 verses. There will be a list of verses that you can see by clicking each reference. Once you have memorized a verse, click the "Memorized" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
+	    	Click on the verses tab at the top of this page to see the 100 verses. You can see each verse by clicking its reference. Once you have memorized a verse, click the "Memorized" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
 
 
 	    	<!--JS that updates progress bar -->
@@ -113,7 +113,7 @@
 		 			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 		 			var ratioChecked = numChecked/numCheckBoxes * 100
 		 			var progressSoFar = numChecked + '/' + numCheckBoxes
-		 			document.getElementById('progressSoFar').innerHTML = progressSoFar;
+		 			document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
 		 			if (numChecked == numCheckBoxes){
 		 				document.getElementById('progressSoFar').innerHTML = "DONE!";
 		 			}
