@@ -26,7 +26,7 @@
 
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
-	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick = "javascript:update()">Home</a></li>
 	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab">Verses</a></li>
 	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a></li>
 		
@@ -36,14 +36,38 @@
 	  <!-- Tab panes -->
 	  <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane fade in active" id="home">
+
+			
+
 	    	<h1> About </h1>
 	    	These are the 100 verses that every Christian should know by heart.
+
+	    	<h1> How to Use This Site </h1>
+	    	Click on the verses tab at the top of this page to see the 100 verses. There will be a list of verses that you can see by clicking each reference. Once you have memorized a verse, click the "Memorized" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
+
 	    	<h1>Progress So Far</h1>
-  	    	<h4>40/100</h4>
+  	    	<h4 id = 'progressSoFar'>Let's get started!</h4>
 
 	    	<div class="progress">
-	        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 23%"><span class="sr-only">40% Complete (success)</span></div>
+	        	<div class="progress-bar progress-bar-success" id = "progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">40% Complete (success)</span></div>
 	      	</div>	
+
+	      	<!--JS that updates progress bar -->
+	 		<script type="text/javascript">
+	 			var update = function (){
+		 			var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
+		 			var ratioChecked = numChecked/numCheckBoxes * 100
+		 			var progressSoFar = numChecked + '/' + numCheckBoxes
+		 			document.getElementById('progressSoFar').innerHTML = progressSoFar;
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('progressSoFar').innerHTML = "DONE!";
+		 			}
+
+		 			document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+		 		}
+			</script>
+
 	    </div>
 
 	    <!-- VERSES -->
@@ -66,13 +90,7 @@
 			</div>
 
 	    	<p> </p>
-	    	<script>
-			    var GetFeedback = function (a) {
-			        alert("hi")
-			    }
-			</script>
 
-			<a href="#" onclick="javascript:GetFeedback();">Hello</a>
 
 			<div class="btn-group" data-toggle="buttons">
 			  <label class="btn btn-primary">

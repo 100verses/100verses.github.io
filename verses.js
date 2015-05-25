@@ -1,1 +1,1 @@
-count = document.querySelectorAll('input[type="checkbox"]:checked').length);
+totalVerses = document.querySelectorAll('input[type="checkbox"]:checked').length);
