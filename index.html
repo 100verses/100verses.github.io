@@ -13,18 +13,40 @@
 
     <h1>100 Verses</h1>
 
+
+    <!--JS that updates progress bar -->
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
     <script type="text/javascript">
 		$(document).ready(function () {
+			
 			var cookie1 = $.cookie("cookie1");
 			var cookie2 = $.cookie("cookie2");
 			var cookie3 = $.cookie("cookie3");
+			var cookie4 = $.cookie("cookie4");
+
+			// initialize the progress bar
+			var count = 0
+			if (cookie1 == "changed"){count = count+1}
+			if (cookie2 == "changed"){count = count+1}
+			if (cookie3 == "changed"){count = count+1}
+			if (cookie4 == "changed"){count = count+1}
+			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
+			var ratioChecked = count/numCheckBoxes * 100
+			var progressSoFar = count + '/' + numCheckBoxes
+			document.getElementById('progressSoFar').innerHTML = progressSoFar;
+			if (numChecked == numCheckBoxes){
+				document.getElementById('progressSoFar').innerHTML = "DONE!";
+			}
+			document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+
+			// update cookies
 			!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
 			!( cookie2 == "changed" ) || $('.Checkbox2').attr('checked',true);
 			!( cookie3 == "changed" ) || $('.Checkbox3').attr('checked',true);
+			!( cookie4 == "changed" ) || $('.Checkbox4').attr('checked',true);
 			$('.Checkbox1').change(function () {               
-				$('#displaySection1').toggle(!this.checked);
 				if( this.checked ) {
 					$.cookie("cookie1", "changed");
 				} else {
@@ -32,7 +54,6 @@
 				}         
 			}).change();
 			$('.Checkbox2').change(function () {
-				$('#displaySection2').toggle(!this.checked);
 				if( this.checked ) {
 					$.cookie("cookie2", "changed");
 				} else {
@@ -40,13 +61,19 @@
 				}         
 			}).change(); //ensure visible state matches initially
 			$('.Checkbox3').change(function () {
-				$('#displaySection3').toggle(!this.checked);
 				if( this.checked ) {
 					$.cookie("cookie3", "changed");
 				} else {
 					$.cookie("cookie3", null);
 				}         
-			}).change(); //ensure visible state matches initially
+			}).change(); 
+			$('.Checkbox4').change(function () {
+				if( this.checked ) {
+					$.cookie("cookie4", "changed");
+				} else {
+					$.cookie("cookie4", null);
+				}         
+			}).change(); 
 		});  //end function
 	</script>
 
@@ -58,38 +85,6 @@
     <![endif]-->
   </head>
   <body>
-  	
-
-    <form id="form1" runat="server">
-        <input class="Checkbox1" type="checkbox" />Hide Section 1<br />
-        <input class="Checkbox2" type="checkbox" />Hide Section 2<br />
-        <input class="Checkbox3" type="checkbox" />Hide Section 3<br />
-        <br />
-       
-        <div id="content">
-            <div id="displaySection1">
-                <strong>Section 1</strong>
-                <br />
-                Content for section 1 goes here.
-                <br /><br />
-            </div>
-            <div id="displaySection2">
-                <strong>Section 2</strong>
-                <br />
-                Content for section 2 goes here.
-                <br /><br />
-            </div>
-            <div id="displaySection3">
-                <strong>Section 3</strong>
-                <br />
-                Content for section 3 goes here.
-                <br /><br />
-            </div>
-        </div>
-       
-    </form>
-
-  	
  	<div role="tabpanel">
 
 	  <!-- Nav tabs -->
@@ -105,22 +100,14 @@
 	  <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane fade in active" id="home">
 
-			
-
 	    	<h1> About </h1>
 	    	These are the 100 verses that every Christian should know by heart.
 
 	    	<h1> How to Use This Site </h1>
 	    	Click on the verses tab at the top of this page to see the 100 verses. There will be a list of verses that you can see by clicking each reference. Once you have memorized a verse, click the "Memorized" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
 
-	    	<h1>Progress So Far</h1>
-  	    	<h4 id = 'progressSoFar'>Let's get started!</h4>
 
-	    	<div class="progress">
-	        	<div class="progress-bar progress-bar-success" id = "progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">40% Complete (success)</span></div>
-	      	</div>	
-
-	      	<!--JS that updates progress bar -->
+	    	<!--JS that updates progress bar -->
 	 		<script type="text/javascript">
 	 			var update = function (){
 		 			var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
@@ -136,17 +123,28 @@
 		 		}
 			</script>
 
+	    	<h1>Progress So Far</h1>
+  	    	<h4 id = 'progressSoFar'></h4>
+
+	    	<div class="progress">
+	        	<div class="progress-bar progress-bar-success" id = "progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only"></span></div>
+	      	</div>	
+	      	
 	    </div>
 
 	    <!-- VERSES -->
 	    <div role="tabpanel" class="tab-pane fade" id="verses">
 	    	<p> </p>
 	    	<!--BUTTONS FOR VERSES -->
-	  		<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary">
-			    <input type="checkbox" autocomplete="off"> Memorized!
+	  		<!-- <div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			    <input type="checkbox" autocomplete="off" id="Checkbox1" checked = "false"> Memorized!
 			  </label>
-			</div>
+			</div> -->
+
+			<input class = "Checkbox1" type="checkbox" name="group" id="group_1" />
+			<label for="group_1">Memorized!</label>
+
 
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 			  John 3:16
@@ -159,12 +157,14 @@
 
 	    	<p> </p>
 
-
-			<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary">
-			    <input type="checkbox" autocomplete="off"> Memorized!
+		<!-- 	<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			    <input type="checkbox" autocomplete="off" id="Checkbox2" checked = "false"> Memorized!
 			  </label>
-			</div>
+			</div> -->
+
+		    <input class = "Checkbox2" type="checkbox" name="group" id="group_2" />
+			<label for="group_2">Memorized!</label>
 
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
 			  John 15:5
@@ -175,15 +175,16 @@
 			  </div>
 			</div>
 
-		
-
 	    	<p> </p>
 
-			<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary">
-			    <input type="checkbox" autocomplete="off"> Memorized!
+		<!-- 	<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			    <input type="checkbox" autocomplete="off" id="Checkbox3"> Memorized!
 			  </label>
-			</div>
+			</div> -->
+
+			<input class = "Checkbox3" type="checkbox" name="group" id="group_3" />
+			<label for="group_3"> Memorized! </label>
 
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
 			  Romans 1:16
@@ -194,15 +195,16 @@
 			  </div>
 			</div>
 
-
-
 	    	<p> </p>
 
-	    	<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary">
+	  <!--   	<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
 			    <input type="checkbox" autocomplete="off"> Memorized!
 			  </label>
-			</div>
+			</div> -->
+
+			<input class = "Checkbox4" type="checkbox" name="group" id="group_4" />
+			<label for="group_4">Memorized!</label>
 
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
 			  Romans 3:23
@@ -213,7 +215,6 @@
 			  </div>
 			</div>
 
-			
 	   	</div>
 
 	    <div role="tabpanel" class="tab-pane fade" id="other">
@@ -229,5 +230,20 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript">
+		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
+		var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
+		var ratioChecked = numChecked/numCheckBoxes * 100
+		var progressSoFar = numChecked + '/' + numCheckBoxes
+		document.getElementById('progressSoFar').innerHTML = progressSoFar;
+		if (numChecked == numCheckBoxes){
+			document.getElementById('progressSoFar').innerHTML = "DONE!";
+		}
+		document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+
+	</script>
+
   </body>
 </html>
