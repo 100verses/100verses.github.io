@@ -19,64 +19,27 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function () {
-			
-			var cookie1 = $.cookie("cookie1");
-			var cookie2 = $.cookie("cookie2");
-			var cookie3 = $.cookie("cookie3");
-			var cookie4 = $.cookie("cookie4");
-
-			// initialize the progress bar
-			var count = 0
-			if (cookie1 == "changed"){count = count+1}
-			if (cookie2 == "changed"){count = count+1}
-			if (cookie3 == "changed"){count = count+1}
-			if (cookie4 == "changed"){count = count+1}
-			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
-			var ratioChecked = count/numCheckBoxes * 100
-			var progressSoFar = count + '/' + numCheckBoxes
-		 	document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
-			if (numChecked == numCheckBoxes){
-				document.getElementById('progressSoFar').innerHTML = "DONE!";
-			}
-			document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
-
-			// update cookies
-			!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
-			!( cookie2 == "changed" ) || $('.Checkbox2').attr('checked',true);
-			!( cookie3 == "changed" ) || $('.Checkbox3').attr('checked',true);
-			!( cookie4 == "changed" ) || $('.Checkbox4').attr('checked',true);
-			$('.Checkbox1').change(function () {               
-				if( this.checked ) {
-					$.cookie("cookie1", "changed");
-				} else {
-					$.cookie("cookie1", null);
-				}         
-			}).change();
-			$('.Checkbox2').change(function () {
-				if( this.checked ) {
-					$.cookie("cookie2", "changed");
-				} else {
-					$.cookie("cookie2", null);
-				}         
-			}).change(); //ensure visible state matches initially
-			$('.Checkbox3').change(function () {
-				if( this.checked ) {
-					$.cookie("cookie3", "changed");
-				} else {
-					$.cookie("cookie3", null);
-				}         
-			}).change(); 
-			$('.Checkbox4').change(function () {
-				if( this.checked ) {
-					$.cookie("cookie4", "changed");
-				} else {
-					$.cookie("cookie4", null);
-				}         
-			}).change(); 
-		});  //end function
+    <script type="text/javascript" src = verses.js>
 	</script>
+	<!--
+	<style>
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
+
+	  background-color: #cd4c59;
+	  border-color: #c93d4b;
+	}
+
+	.btn, .btn-primary
+	{
+	  background-color: #d66b76;
+	  border-color: #c93d4b;
+	}
+	.well
+	{
+
+	}
+	</style>
+-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,8 +55,8 @@
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick = "javascript:update()">Home</a></li>
-	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab">Verses</a></li>
-	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a></li>
+	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab">Verses by Book</a></li>
+	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Verses by Theme</a></li>
 		
 	    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
 	  </ul>
@@ -135,7 +98,7 @@
 
 	    <!-- VERSES -->
 	    <div role="tabpanel" class="tab-pane fade" id="verses">
-	    	<p> </p>
+	    	<p></p>
 	    	<!--BUTTONS FOR VERSES -->
 	  		<!-- <div class="btn-group" data-toggle="buttons">
 			  <label class="btn btn-primary active">
@@ -143,17 +106,34 @@
 			  </label>
 			</div> -->
 
-			<input class = "Checkbox1" type="checkbox" name="group" id="group_1" />
-			<label for="group_1">Memorized!</label>
-
-
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-			  John 3:16
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">
+			  Matthew
 			</button>
+			0/1 Memorized
 			<div class="collapse" id="collapseExample">
-			  <div class="well">
-			    For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.
-			  </div>
+			  	<p></p>
+			    <input class = "Checkbox1" type="checkbox" name="group" id="check_matthew1" />
+				<label for="check_matthew1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt1" aria-expanded="false" aria-controls="collapseExample2">
+				  Matthew 1
+				</button>
+				<div class="collapse" id="collapseInnerMatt1">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+				</div>
+				<p></p>
+				<input class = "Checkbox2" type="checkbox" name="group" id="check_matthew2" />
+				<label for="check_matthew2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt2" aria-expanded="false" aria-controls="collapseExample2">
+				  Matthew 2
+				</button>
+				<div class="collapse" id="collapseInnerMatt2">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+				</div>
+
 			</div>
 
 	    	<p> </p>
@@ -170,9 +150,8 @@
 			</button>
 			2/3 Memorized
 			<div class="collapse" id="collapseExample2">
-			  <div class="">
-			  	<br/>
-			    <input class = "" type="checkbox" name="group" id="group_2" />
+				<p></p>
+			    <input class = "Checkbox3" type="checkbox" name="group" id="group_2" />
 				<label for="group_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner2" aria-expanded="false" aria-controls="collapseExample2">
 				  John 15:5
@@ -181,70 +160,121 @@
 				  <div class="well">
 				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
 				  </div>
+
 				</div>
-				<br/>
-				<br/>
-				<input class = "Checkbox2" type="checkbox" name="group" id="group_22" />
-				<label for="group_2">Memorized!</label>
+				<p></p>
+				<input class = "Checkbox4" type="checkbox" name="group" id="group_22" />
+				<label for="group_22">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner3" aria-expanded="false" aria-controls="collapseExample2">
 				  John 15:5
 				</button>
 				<div class="collapse" id="collapseInner3">
 				  <div class="well">
 				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
-				    <br/>
 				  </div>
 				</div>
 
-				<br/>
 
-			  </div>
+			</div>
+
+	    	<p> </p>
+
+	   	</div>
+
+
+
+
+	   	<!--
+
+		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+											THEME
+
+																By Theme
+
+
+									By THEME
+
+		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	   -->
+
+	    <div role="tabpanel" class="tab-pane fade" id="other">
+	    	<p></p>
+	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExampleTheme" aria-expanded="false" aria-controls="collapseExample22">
+			  Beginnings: Bible's Fantastic Four
+			</button>
+			0/1 Memorized
+			<div class="collapse" id="collapseExampleTheme">
+			  	<p></p>
+			    <input class = "Checkbox1" type="checkbox" name="group" id="check_matthew1" />
+				<label for="check_matthew1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt12" aria-expanded="false" aria-controls="collapseExample22">
+				  Matthew 1
+				</button>
+				<div class="collapse" id="collapseInnerMatt12">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+				</div>
+				<p></p>
+				<input class = "Checkbox2" type="checkbox" name="group" id="check_matthew2" />
+				<label for="check_matthew2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt2" aria-expanded="false" aria-controls="collapseExample2">
+				  Matthew 2
+				</button>
+				<div class="collapse" id="collapseInnerMatt2">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+				</div>
+
 			</div>
 
 	    	<p> </p>
 
 		<!-- 	<div class="btn-group" data-toggle="buttons">
 			  <label class="btn btn-primary active">
-			    <input type="checkbox" autocomplete="off" id="Checkbox3"> Memorized!
+			    <input type="checkbox" autocomplete="off" id="Checkbox2" checked = "false"> Memorized!
 			  </label>
 			</div> -->
 
-			<input class = "Checkbox3" type="checkbox" name="group" id="group_3" />
-			<label for="group_3"> Memorized! </label>
 
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-			  Romans 1:16
+	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+			  John
 			</button>
-			<div class="collapse" id="collapseExample3">
-			  <div class="well">
-			    For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.
-			  </div>
+			2/3 Memorized
+			<div class="collapse" id="collapseExample2">
+				<p></p>
+			    <input class = "Checkbox3" type="checkbox" name="group" id="group_2" />
+				<label for="group_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner2" aria-expanded="false" aria-controls="collapseExample2">
+				  John 15:5
+				</button>
+				<div class="collapse" id="collapseInner2">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+
+				</div>
+				<p></p>
+
+				<input class = "Checkbox4" type="checkbox" name="group" id="group_22" />
+				<label for="group_22">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner3" aria-expanded="false" aria-controls="collapseExample2">
+				  John 15:5
+				</button>
+				<div class="collapse" id="collapseInner3">
+				  <div class="well">
+				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
+				  </div>
+				</div>
+
+
 			</div>
 
-	    	<p> </p>
-
-	  <!--   	<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary active">
-			    <input type="checkbox" autocomplete="off"> Memorized!
-			  </label>
-			</div> -->
-
-			<input class = "Checkbox4" type="checkbox" name="group" id="group_4" />
-			<label for="group_4">Memorized!</label>
-
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-			  Romans 3:23
-			</button>
-			<div class="collapse" id="collapseExample4">
-			  <div class="well">
-			    For all have sinned and fall short of the glory of God.
-			  </div>
-			</div>
-
-	   	</div>
-
-	    <div role="tabpanel" class="tab-pane fade" id="other">
-	    	Made by Favian Ho
 
 	    </div>
 	 
