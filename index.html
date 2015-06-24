@@ -19,8 +19,7 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
-    <script type="text/javascript" src = verses.js>
-	</script>
+    
 	<!--
 	<style>
 	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
@@ -78,7 +77,7 @@
 		 			var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
 		 			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 		 			var ratioChecked = numChecked/numCheckBoxes * 100
-		 			var progressSoFar = numChecked + '/' + numCheckBoxes
+		 			var progressSoFar = numChecked/2 + '/' + numCheckBoxes/2
 		 			document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
 		 			if (numChecked == numCheckBoxes){
 		 				document.getElementById('progressSoFar').innerHTML = "DONE!";
@@ -96,9 +95,12 @@
 	      	
 	    </div>
 
+
+
 	    <!-- VERSES -->
 	    <div role="tabpanel" class="tab-pane fade" id="verses">
 	    	<p></p>
+
 	    	<!--BUTTONS FOR VERSES -->
 	  		<!-- <div class="btn-group" data-toggle="buttons">
 			  <label class="btn btn-primary active">
@@ -110,6 +112,24 @@
 			  Genesis
 			</button>
 			<p> </p>
+
+			<div class="collapse" id="collapseGenesis">
+			  	<p></p>
+			    <input class = "Checkbox1" type="checkbox" name="group" id="checkGen1_1" />
+				<label for="checkGen1_1">Memorized!</label>
+
+
+				 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGen1_1" aria-expanded="false" aria-controls="collapseGen1_1">
+				  Genesis 1:1
+				</button>
+				<div class="collapse" id="collapseGen1_1">
+				  <div class="well">
+				    In the beginning, God created the heavens and the earth.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
 
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeuteronomy" aria-expanded="false" aria-controls="collapseDeuteronomy">
 			  Deuteronomy
@@ -237,78 +257,6 @@
 			</button>
 			<p> </p>
 
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatthew" aria-expanded="false" aria-controls="collapseMatthew">
-			  Matthew
-			</button>
-			0/1 Memorized
-			<div class="collapse" id="collapseMatthew">
-			  	<p></p>
-			    <input class = "Checkbox1" type="checkbox" name="group" id="nope" />
-				<label for="nope">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt1" aria-expanded="false" aria-controls="collapseExample2">
-				  Matthew 1
-				</button>
-				<div class="collapse" id="collapseInnerMatt1">
-				  <div class="well">
-				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
-				  </div>
-				</div>
-				<p></p>
-				<input class = "Checkbox2" type="checkbox" name="group" id="check_matthew2" />
-				<label for="check_matthew2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInnerMatt2" aria-expanded="false" aria-controls="collapseExample2">
-				  Matthew 2
-				</button>
-				<div class="collapse" id="collapseInnerMatt2">
-				  <div class="well">
-				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
-				  </div>
-				</div>
-
-			</div>
-
-	    	<p> </p>
-
-		<!-- 	<div class="btn-group" data-toggle="buttons">
-			  <label class="btn btn-primary active">
-			    <input type="checkbox" autocomplete="off" id="Checkbox2" checked = "false"> Memorized!
-			  </label>
-			</div> -->
-
-
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-			  John
-			</button>
-			2/3 Memorized
-			<div class="collapse" id="collapseExample2">
-				<p></p>
-			    <input class = "Checkbox3" type="checkbox" name="group" id="group_2" />
-				<label for="group_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner2" aria-expanded="false" aria-controls="collapseExample2">
-				  John 15:5
-				</button>
-				<div class="collapse" id="collapseInner2">
-				  <div class="well">
-				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
-				  </div>
-
-				</div>
-				<p></p>
-				<input class = "Checkbox4" type="checkbox" name="group" id="group_22" />
-				<label for="group_22">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseInner3" aria-expanded="false" aria-controls="collapseExample2">
-				  John 15:5
-				</button>
-				<div class="collapse" id="collapseInner3">
-				  <div class="well">
-				    I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.
-				  </div>
-				</div>
-
-
-			</div>
-
-	    	<p> </p>
 
 	   	</div>
 
@@ -342,8 +290,8 @@
 			<div class="collapse" id="collapseBeginnings">
 			  	<p></p>
 
-			    <input class = "Checkbox1" type="checkbox" name="group" id="checkGen1_1" />
-				<label for="checkGen1_1">Memorized!</label>
+			    <input class = "Checkbox1" type="checkbox" name="group" id="checkThemeGen1_1" />
+				<label for="checkThemeGen1_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGen1_1" aria-expanded="false" aria-controls="collapseThemeGen1_1">
 				  Genesis 1:1
 				</button>
@@ -1744,14 +1692,14 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src = "checkbox.js"></script>
 
 	<script type="text/javascript">
 		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
 		var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 		var ratioChecked = numChecked/numCheckBoxes * 100
-		var progressSoFar = numChecked + '/' + numCheckBoxes
-		document.getElementById('progressSoFar').innerHTML = progressSoFar;
+		var progressSoFar = numChecked/2 + '/' + numCheckBoxes/2
+		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
 		if (numChecked == numCheckBoxes){
 			document.getElementById('progressSoFar').innerHTML = "DONE!";
 		}
