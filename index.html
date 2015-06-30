@@ -19,7 +19,7 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="js/jquery/jquery.cookie.js"></script>
-    
+    <script type="text/javascript" src ="verses.js"></script>
 	<!--
 	<style>
 	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover {
@@ -108,13 +108,13 @@
 			  </label>
 			</div> -->
 
+			<h2 style="text-decoration: underline;">Old Testament: </h2>
+
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGenesis" aria-expanded="false" aria-controls="collapseGenesis">
 			  Genesis
 			</button>
-			<p> </p>
-
 			<div class="collapse" id="collapseGenesis">
-			  	<p></p>
+
 			    <input class = "Checkbox1" type="checkbox" name="group" id="checkGen1_1" />
 				<label for="checkGen1_1">Memorized!</label>
 
@@ -131,335 +131,13 @@
 				<p></p>
 			</div>
 
+			<p> </p>
+
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeuteronomy" aria-expanded="false" aria-controls="collapseDeuteronomy">
 			  Deuteronomy
 			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoshua" aria-expanded="false" aria-controls="collapseJoshua">
-			  Joshua
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Chronicles" aria-expanded="false" aria-controls="collapse2Chronicles">
-			  2 Chronicles
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalms" aria-expanded="false" aria-controls="collapsePsalms">
-			  Psalms
-			</button>
-			<p> </p>
-			
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs" aria-expanded="false" aria-controls="collapseProverbs">
-			  Proverbs
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah" aria-expanded="false" aria-controls="collapseIsaiah">
-			  Isaiah
-			</button>
-			<p> </p>
-
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJeremiah" aria-expanded="false" aria-controls="collapseJeremiah">
-			  Jeremiah
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatthew" aria-expanded="false" aria-controls="collapseMatthew">
-			  Matthew
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMark" aria-expanded="false" aria-controls="collapseMark">
-			  Mark
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke" aria-expanded="false" aria-controls="collapseLuke">
-			  Luke
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn" aria-expanded="false" aria-controls="collapseJohn">
-			  John
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs" aria-expanded="false" aria-controls="collapseActs">
-			  Acts
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans" aria-expanded="false" aria-controls="collapseRomans">
-			  Romans
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Corinthians" aria-expanded="false" aria-controls="collapse1Corinthians">
-			  1 Corinthians
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGalatians" aria-expanded="false" aria-controls="collapseGalatians">
-			  Galatians
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEphesians" aria-expanded="false" aria-controls="collapseEphesians">
-			  Ephesians
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhilippians" aria-expanded="false" aria-controls="collapsePhilippians">
-			  Philippians
-			</button>
-			<p> </p>
-			
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseColossians" aria-expanded="false" aria-controls="collapseColossians">
-			  Colossians
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thessalonians" aria-expanded="false" aria-controls="collapse1Thessalonians">
-			  1 Thessalonians
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Timothy" aria-expanded="false" aria-controls="collapse2Timothy">
-			  2 Timothy
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHebrews" aria-expanded="false" aria-controls="collapseHebrews">
-			  Hebrews
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames" aria-expanded="false" aria-controls="collapseJames">
-			  James
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter" aria-expanded="false" aria-controls="collapse1Peter">
-			  1 Peter
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John" aria-expanded="false" aria-controls="collapse1John">
-			  1 John
-			</button>
-			<p> </p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRevelation" aria-expanded="false" aria-controls="collapseRevelation">
-			  Revelation
-			</button>
-			<p> </p>
-
-
-	   	</div>
-
-
-
-
-	   	<!--
-
-		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-
-
-
-											THEME
-
-																By Theme
-
-
-									By THEME
-
-		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-	   -->
-
-	    <div role="tabpanel" class="tab-pane fade" id="other">
-	    	<p></p>
-
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBeginnings" aria-expanded="false" aria-controls="collapseBeginnings">
-			  Beginnings: Bible's Fantastic Four
-			</button>
-			0/4 
-			<div class="collapse" id="collapseBeginnings">
-			  	<p></p>
-
-			    <input class = "Checkbox1" type="checkbox" name="group" id="checkThemeGen1_1" />
-				<label for="checkThemeGen1_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGen1_1" aria-expanded="false" aria-controls="collapseThemeGen1_1">
-				  Genesis 1:1
-				</button>
-				<div class="collapse" id="collapseThemeGen1_1">
-				  <div class="well">
-				    In the beginning, God created the heavens and the earth.
-				  </div>
-				</div>
-
+			<div class="collapse" id="collapseDeuteronomy">
 				<p></p>
-
-				<input class = "Checkbox2" type="checkbox" name="group" id="checkJohn1_1" />
-				<label for="checkJohn1_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
-				  John 1:1
-				</button>
-				<div class="collapse" id="collapseThemeJohn1_1">
-				  <div class="well">
-				    In the beginning was the Word, and the Word was with God, and the Word was God.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox3" type="checkbox" name="group" id="checkJohn1_14" />
-				<label for="checkJohn1_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_14" aria-expanded="false" aria-controls="collapseThemeJohn1_14">
-				  John 1:14
-				</button>
-				<div class="collapse" id="collapseThemeJohn1_14">
-				  <div class="well">
-				    And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox4" type="checkbox" name="group" id="checkJohn3_16" />
-				<label for="checkJohn3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn3_16" aria-expanded="false" aria-controls="collapseThemeJohn3_16">
-				  John 3:16
-				</button>
-				<div class="collapse" id="collapseThemeJohn3_16">
-				  <div class="well">
-				    For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.
-				  </div>
-				</div>
-			</div>
-
-	    	<p> </p>
-
-	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRoman" aria-expanded="true" aria-controls="collapseRoman">
-			  The Roman Road: The Plan of Salvation
-			</button>
-			<div class="collapse" id="collapseRoman">
-			  	<p></p>
-
-			    <input class = "Checkbox5" type="checkbox" name="group" id="checkRomans3_23" />
-				<label for="checkRomans3_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans3_23" aria-expanded="false" aria-controls="collapseThemeRomans3_23">
-				  Romans 3:23
-				</button>
-				<div class="collapse" id="collapseThemeRomans3_23">
-				  <div class="well">
-				    In the beginning, God created the heavens and the earth.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox6" type="checkbox" name="group" id="checkRomans6_23" />
-				<label for="checkRomans6_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans6_23" aria-expanded="false" aria-controls="collapseThemeRomans6_23">
-				  Romans 6:23
-				</button>
-				<div class="collapse" id="collapseThemeRomans6_23">
-				  <div class="well">
-				     for all have sinned and fall short of the glory of God
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox7" type="checkbox" name="group" id="checkRomans5_8" />
-				<label for="checkRomans5_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans5_8" aria-expanded="false" aria-controls="collapseThemeRomans5_8">
-				  Romans 5:8
-				</button>
-				<div class="collapse" id="collapseThemeRomans5_8">
-				  <div class="well">
-					but God shows his love in that while we were still sinners, Christ died for us
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox8" type="checkbox" name="group" id="checkRomans10_9" />
-				<label for="checkRomans10_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_9" aria-expanded="false" aria-controls="collapseThemeRomans10_9">
-				  Romans 10:9
-				</button>
-				<div class="collapse" id="collapseThemeRomans10_9">
-				  <div class="well">
-				    because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox9" type="checkbox" name="group" id="checkRomans10_10" />
-				<label for="checkRomans10_10">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_10" aria-expanded="false" aria-controls="collapseThemeRomans10_10">
-				  Romans 10:10
-				</button>
-				<div class="collapse" id="collapseThemeRomans10_10">
-				  <div class="well">
-				    For with the heart one believes and is justified, and with the mouth one confesses and is saved.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseListening" aria-expanded="false" aria-controls="collapseListening">
-			  Listening: Word of God &amp; Prayer
-			</button>
-			<div class="collapse" id="collapseListening">
-			  	<p></p>
-
-			    <input class = "Checkbox10" type="checkbox" name="group" id="check2Tim3_16" />
-				<label for="check2Tim3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Tim3_16" aria-expanded="false" aria-controls="collapseTheme2Tim3_16">
-				  2 Timothy 3:16
-				</button>
-				<div class="collapse" id="collapseTheme2Tim3_16">
-				  <div class="well">
-				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox11" type="checkbox" name="group" id="checkJosh1_8" />
-				<label for="checkJosh1_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJosh1_8" aria-expanded="false" aria-controls="collapseThemeJosh1_8">
-				  Joshua 1:8
-				</button>
-				<div class="collapse" id="collapseThemeJosh1_8">
-				  <div class="well">
-				     The Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox12" type="checkbox" name="group" id="checkPsalm119_11" />
-				<label for="checkPsalm119_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm119_11" aria-expanded="false" aria-controls="collapseThemePsalm119_11">
-				  Psalm 119:11
-				</button>
-				<div class="collapse" id="collapseThemePsalm119_11">
-				  <div class="well">
-					I have stored up your word in my heart, that I might not sin against you.
-				  </div>
-				</div>
-
-				<p></p>
-
 				<input class = "Checkbox13" type="checkbox" name="group" id="checkDeut6_6" />
 				<label for="checkDeut6_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_6" aria-expanded="false" aria-controls="collapseThemeDeut6_6">
@@ -485,211 +163,66 @@
 				</div>
 
 				<p></p>
+			</div>
 
-				<input class = "Checkbox15" type="checkbox" name="group" id="checkHeb4_12" />
-				<label for="checkHeb4_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_12" aria-expanded="false" aria-controls="collapseThemeHeb4_12">
-				  Hebrews 4:12
-				</button>
-				<div class="collapse" id="collapseThemeHeb4_12">
-				  <div class="well">
-				    For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.
-				  </div>
-				</div>
+			<p> </p>
 
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoshua" aria-expanded="false" aria-controls="collapseJoshua">
+			  Joshua
+			</button>
+			<div class="collapse" id="collapseJoshua">
 				<p></p>
-
-				<input class = "Checkbox16" type="checkbox" name="group" id="checkHeb4_16" />
-				<label for="checkHeb4_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_16" aria-expanded="false" aria-controls="collapseThemeHeb4_16">
-				  Hebrews 4:16
+				<input class = "Checkbox11" type="checkbox" name="group" id="checkJosh1_8" />
+				<label for="checkJosh1_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJosh1_8" aria-expanded="false" aria-controls="collapseThemeJosh1_8">
+				  Joshua 1:8
 				</button>
-				<div class="collapse" id="collapseThemeHeb4_16">
+				<div class="collapse" id="collapseThemeJosh1_8">
 				  <div class="well">
-				    Let us then with confidence draw near you the throne of grace, that we may receive mercy and find grace to help in time of need.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox17" type="checkbox" name="group" id="check1John5_14" />
-				<label for="check1John5_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_14" aria-expanded="false" aria-controls="collapseTheme1John5_14">
-				  1 John 5:14
-				</button>
-				<div class="collapse" id="collapseTheme1John5_14">
-				  <div class="well">
-				    And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox18" type="checkbox" name="group" id="check1John5_15" />
-				<label for="check1John5_15">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_15" aria-expanded="false" aria-controls="collapseTheme1John5_15">
-				  1 John 5:15
-				</button>
-				<div class="collapse" id="collapseTheme1John5_15">
-				  <div class="well">
-				    And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
+				     The Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.
 				  </div>
 				</div>
 			</div>
+			
+			<p> </p>
 
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAssurance" aria-expanded="false" aria-controls="collapseAssurance">
-			  Assurance: Inner Peace &amp; Security
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Chronicles" aria-expanded="false" aria-controls="collapse2Chronicles">
+			  2 Chronicles
 			</button>
-			<div class="collapse" id="collapseAssurance">
-			  	<p></p>
+			<div class="collapse" id="collapse2Chronicles">
+				<p></p>
 
-			    <input class = "Checkbox19" type="checkbox" name="group" id="check1John5_11" />
-				<label for="check1John5_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_11" aria-expanded="false" aria-controls="collapseTheme1John5_11">
-				  1 John 5:11
+			    <input class = "Checkbox43" type="checkbox" name="group" id="check2Chron7_14" />
+				<label for="check2Chron7_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Chron7_14" aria-expanded="false" aria-controls="collapseTheme2Chron7_14">
+				  2 Chronicles 7:14
 				</button>
-				<div class="collapse" id="collapseTheme1John5_11">
+				<div class="collapse" id="collapseTheme2Chron7_14">
 				  <div class="well">
-				    And this is the testimony, that God gave us eternal life, and this life is in his Son.
+				    if my people who are called by name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.
 				  </div>
 				</div>
 
 				<p></p>
 
-				<input class = "Checkbox20" type="checkbox" name="group" id="check1John5_12" />
-				<label for="check1John5_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_12" aria-expanded="false" aria-controls="collapseTheme1John5_12">
-				  1 John 5:12
-				</button>
-				<div class="collapse" id="collapseTheme1John5_12">
-				  <div class="well">
-				     Whoever has the Son has life; whoever does not have the Son of God does not have life.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox21" type="checkbox" name="group" id="checkJohn14_1" />
-				<label for="checkJohn14_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_1" aria-expanded="false" aria-controls="collapseThemeJohn14_1">
-				  John 14:1
-				</button>
-				<div class="collapse" id="collapseThemeJohn14_1">
-				  <div class="well">
-					Let not your hearts be troubled, Believe in God; believe also in me.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox22" type="checkbox" name="group" id="checkJohn14_2" />
-				<label for="checkJohn14_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_2" aria-expanded="false" aria-controls="collapseThemeJohn14_2">
-				  John 14:2
-				</button>
-				<div class="collapse" id="collapseThemeJohn14_2">
-				  <div class="well">
-				    In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox23" type="checkbox" name="group" id="checkJohn14_3" />
-				<label for="checkJohn14_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_3" aria-expanded="false" aria-controls="collapseThemeJohn14_3">
-				  John 14:3
-				</button>
-				<div class="collapse" id="collapseThemeJohn14_3">
-				  <div class="well">
-				    And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox24" type="checkbox" name="group" id="checkJohn14_6" />
-				<label for="checkJohn14_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_6" aria-expanded="false" aria-controls="collapseThemeJohn14_6">
-				  John 14:6
-				</button>
-				<div class="collapse" id="collapseThemeJohn14_6">
-				  <div class="well">
-				    Jesus said to him, "I am the way, and the truth, and the life. No one comes to the Father except through me."
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox25" type="checkbox" name="group" id="checkJohn14_27" />
-				<label for="checkJohn14_27">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_27" aria-expanded="false" aria-controls="collapseThemeJohn14_27">
-				  John 14:27
-				</button>
-				<div class="collapse" id="collapseThemeJohn14_27">
-				  <div class="well">
-				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox26" type="checkbox" name="group" id="checkIsaiah26_3" />
-				<label for="checkIsaiah26_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah26_3" aria-expanded="false" aria-controls="collapseThemeIsaiah26_3">
-				  Isaiah 26:3
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah26_3">
-				  <div class="well">
-				    You keep him in perfet peace whose mind is stayed on you, because he trusts in you.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox27" type="checkbox" name="group" id="checkIsaiah53_5" />
-				<label for="checkIsaiah53_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_5" aria-expanded="false" aria-controls="collapseThemeIsaiah53_5">
-				  Isaiah 53:5
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah53_5">
-				  <div class="well">
-				    But he was pierced for our transgressions; he was crushed for ouy iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox28" type="checkbox" name="group" id="checkIsaiah53_6" />
-				<label for="checkIsaiah53_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_6" aria-expanded="false" aria-controls="collapseThemeIsaiah53_6">
-				  Isaiah 53:6
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah53_6">
-				  <div class="well">
-				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
-				  </div>
-				</div>
 			</div>
+			
+			<p> </p>
 
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePraise" aria-expanded="false" aria-controls="collapsePraise">
-			  Praise: Worship &amp; Thanksgiving
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalms" aria-expanded="false" aria-controls="collapsePsalms">
+			  Psalms
 			</button>
-			<div class="collapse" id="collapsePraise">
-			  	<p></p>
+			<div class="collapse" id="collapsePsalms">
+				<p></p>
 
-			    <input class = "Checkbox29" type="checkbox" name="group" id="check1Peter1_3" />
-				<label for="check1Peter1_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter1_3" aria-expanded="false" aria-controls="collapseTheme1Peter1_3">
-				  1 Peter 1:3
+				<input class = "Checkbox12" type="checkbox" name="group" id="checkPsalm119_11" />
+				<label for="checkPsalm119_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm119_11" aria-expanded="false" aria-controls="collapseThemePsalm119_11">
+				  Psalm 119:11
 				</button>
-				<div class="collapse" id="collapseTheme1Peter1_3">
+				<div class="collapse" id="collapseThemePsalm119_11">
 				  <div class="well">
-				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
+					I have stored up your word in my heart, that I might not sin against you.
 				  </div>
 				</div>
 
@@ -721,130 +254,6 @@
 
 				<p></p>
 
-				<input class = "Checkbox32" type="checkbox" name="group" id="checkRev4_11" />
-				<label for="checkRev4_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev4_11" aria-expanded="false" aria-controls="collapseThemeRev4_11">
-				  Revelation 4:11
-				</button>
-				<div class="collapse" id="collapseThemeRev4_11">
-				  <div class="well">
-					Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePromises" aria-expanded="false" aria-controls="collapsePromises">
-			  Promises: Verses to Stand On
-			</button>
-			<div class="collapse" id="collapsePromises">
-			  	<p></p>
-
-			    <input class = "Checkbox33" type="checkbox" name="group" id="checkMatt6_33" />
-				<label for="checkMatt6_33">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt6_33" aria-expanded="false" aria-controls="collapseThemeMatt6_33">
-				  Matthew 6:33
-				</button>
-				<div class="collapse" id="collapseThemeMatt6_33">
-				  <div class="well">
-				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox34" type="checkbox" name="group" id="checkRomans8_28" />
-				<label for="checkRomans8_28">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans8_28" aria-expanded="false" aria-controls="collapseThemeRomans8_28">
-				  Romans 8:28
-				</button>
-				<div class="collapse" id="collapseThemeRomans8_28">
-				  <div class="well">
-				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox35" type="checkbox" name="group" id="checkJeremiah29_11" />
-				<label for="checkJeremiah29_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJeremiah29_11" aria-expanded="false" aria-controls="collapseThemeJeremiah29_11">
-				  Jeremiah 29:11
-				</button>
-				<div class="collapse" id="collapseThemeJeremiah29_11">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox36" type="checkbox" name="group" id="check1John1_7" />
-				<label for="check1John1_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_7" aria-expanded="false" aria-controls="collapseTheme1John1_7">
-				  1 John 1:7
-				</button>
-				<div class="collapse" id="collapseTheme1John1_7">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox37" type="checkbox" name="group" id="check1John1_9" />
-				<label for="check1John1_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_9" aria-expanded="false" aria-controls="collapseTheme1John1_9">
-				  1 John 1:9
-				</button>
-				<div class="collapse" id="collapseTheme1John1_9">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox38" type="checkbox" name="group" id="checkProverbs3_5" />
-				<label for="checkProverbs3_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_5" aria-expanded="false" aria-controls="collapseThemeProverbs3_5">
-				  Proverbs 3:5
-				</button>
-				<div class="collapse" id="collapseThemeProverbs3_5">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox39" type="checkbox" name="group" id="checkProverbs3_6" />
-				<label for="checkProverbs3_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_6" aria-expanded="false" aria-controls="collapseThemeProverbs3_6">
-				  Proverbs 3:6
-				</button>
-				<div class="collapse" id="collapseThemeProverbs3_6">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox40" type="checkbox" name="group" id="check1Cor10_13" />
-				<label for="check1Cor10_13">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Cor10_13" aria-expanded="false" aria-controls="collapseTheme1Cor10_13">
-				  1 Corinthians 10:13
-				</button>
-				<div class="collapse" id="collapseTheme1Cor10_13">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
 				<input class = "Checkbox41" type="checkbox" name="group" id="checkPsalm55_22" />
 				<label for="checkPsalm55_22">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm55_22" aria-expanded="false" aria-controls="collapseThemePsalm55_22">
@@ -858,249 +267,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox42" type="checkbox" name="group" id="check1Peter5_7" />
-				<label for="check1Peter5_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter5_7" aria-expanded="false" aria-controls="collapseTheme1Peter5_7">
-				  1 Peter 5:7
-				</button>
-				<div class="collapse" id="collapseTheme1Peter5_7">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHoliness" aria-expanded="false" aria-controls="collapseHoliness">
-			  Holiness: Obeying God's Commands
-			</button>
-			<div class="collapse" id="collapseHoliness">
-			  	<p></p>
-
-			    <input class = "Checkbox43" type="checkbox" name="group" id="check2Chron7_14" />
-				<label for="check2Chron7_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Chron7_14" aria-expanded="false" aria-controls="collapseTheme2Chron7_14">
-				  2 Chronicles 7:14
-				</button>
-				<div class="collapse" id="collapseTheme2Chron7_14">
-				  <div class="well">
-				    if my people who are called by name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox44" type="checkbox" name="group" id="checkRomans12_1" />
-				<label for="checkRomans12_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_1" aria-expanded="false" aria-controls="collapseThemeRomans12_1">
-				  Romans 12:1
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_1">
-				  <div class="well">
-				     I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox45" type="checkbox" name="group" id="checkRomans12_2" />
-				<label for="checkRomans12_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_2" aria-expanded="false" aria-controls="collapseThemeRomans12_2">
-				  Romans 12:2
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_2">
-				  <div class="well">
-					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox46" type="checkbox" name="group" id="checkRomans12_11" />
-				<label for="checkRomans12_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_11" aria-expanded="false" aria-controls="collapseThemeRomans12_11">
-				  Romans 12:11
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_11">
-				  <div class="well">
-					Do not be slothful in zeal, be fervent in spirit, serve the Lord.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox47" type="checkbox" name="group" id="checkRomans12_12" />
-				<label for="checkRomans12_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_12" aria-expanded="false" aria-controls="collapseThemeRomans12_12">
-				  Romans 12:12
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_12">
-				  <div class="well">
-					Rejoice in hope, be patient in tribulation, be constant in prayer.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox48" type="checkbox" name="group" id="checkRomans12_18" />
-				<label for="checkRomans12_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_18" aria-expanded="false" aria-controls="collapseThemeRomans12_18">
-				  Romans 12:18
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_18">
-				  <div class="well">
-					If possible, so far as it depends on you, live peaceably with all.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox49" type="checkbox" name="group" id="check2Cor9_7" />
-				<label for="check2Cor9_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Cor9_7" aria-expanded="false" aria-controls="collapseTheme2Cor9_7">
-				  2 Corinthians 9:7
-				</button>
-				<div class="collapse" id="collapseTheme2Cor9_7">
-				  <div class="well">
-					Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox50" type="checkbox" name="group" id="checkHeb10_25" />
-				<label for="checkHeb10_25">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb10_25" aria-expanded="false" aria-controls="collapseThemeHeb10_25">
-				  Hebrews 10:25
-				</button>
-				<div class="collapse" id="collapseThemeHeb10_25">
-				  <div class="well">
-					not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox51" type="checkbox" name="group" id="checkProv1_7" />
-				<label for="checkProv1_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv1_7" aria-expanded="false" aria-controls="collapseThemeProv1_7">
-				  Proverbs 1:7
-				</button>
-				<div class="collapse" id="collapseThemeProv1_7">
-				  <div class="well">
-					The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox52" type="checkbox" name="group" id="checkProv15_1" />
-				<label for="checkProv15_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv15_1" aria-expanded="false" aria-controls="collapseThemeProv15_1">
-				  Proverbs 15:1
-				</button>
-				<div class="collapse" id="collapseThemeProv15_1">
-				  <div class="well">
-					A soft answer turns away wrath, but a harsh word stirs up anger.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFullness" aria-expanded="false" aria-controls="collapseFullness">
-			  Fullness: Holy Spirit's Role in Our Lives
-			</button>
-			<div class="collapse" id="collapseFullness">
-			  	<p></p>
-
-			    <input class = "Checkbox53" type="checkbox" name="group" id="checkEph5_18" />
-				<label for="checkEph5_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_18" aria-expanded="false" aria-controls="collapseThemeEph5_18">
-				  Ephesians 5:18
-				</button>
-				<div class="collapse" id="collapseThemeEph5_18">
-				  <div class="well">
-				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox54" type="checkbox" name="group" id="checkEph5_19" />
-				<label for="checkEph5_19">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_19" aria-expanded="false" aria-controls="collapseThemeEph5_19">
-				  Ephesians 5:19
-				</button>
-				<div class="collapse" id="collapseThemeEph5_19">
-				  <div class="well">
-				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox55" type="checkbox" name="group" id="checkEph5_20" />
-				<label for="checkEph5_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_20" aria-expanded="false" aria-controls="collapseThemeEph5_20">
-				  Ephesians 5:20
-				</button>
-				<div class="collapse" id="collapseThemeEph5_20">
-				  <div class="well">
-					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox56" type="checkbox" name="group" id="checkEph5_21" />
-				<label for="checkEph5_21">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_21" aria-expanded="false" aria-controls="collapseThemeEph5_21">
-				  Ephesians 5:21
-				</button>
-				<div class="collapse" id="collapseThemeEph5_21">
-				  <div class="well">
-					submitting to one another out of reverence for Christ.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox57" type="checkbox" name="group" id="checkGal5_22" />
-				<label for="checkGal5_22">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_22" aria-expanded="false" aria-controls="collapseThemeGal5_22">
-				  Galatians 5:22
-				</button>
-				<div class="collapse" id="collapseThemeGal5_22">
-				  <div class="well">
-					But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox58" type="checkbox" name="group" id="checkGal5_23" />
-				<label for="checkGal5_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_23" aria-expanded="false" aria-controls="collapseThemeGal5_23">
-				  Galatians 5:23
-				</button>
-				<div class="collapse" id="collapseThemeGal5_23">
-				  <div class="well">
-					gentleness, self-control; against such things there is no law.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoy" aria-expanded="false" aria-controls="collapseJoy">
-			  Joy: God's Kind of Happiness
-			</button>
-			<div class="collapse" id="collapseJoy">
-			  	<p></p>
-
-			    <input class = "Checkbox59" type="checkbox" name="group" id="checkPsalm118_24" />
+				<input class = "Checkbox59" type="checkbox" name="group" id="checkPsalm118_24" />
 				<label for="checkPsalm118_24">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm118_24" aria-expanded="false" aria-controls="collapseThemePsalm118_24">
 				  Psalm 118:24
@@ -1108,273 +275,6 @@
 				<div class="collapse" id="collapseThemePsalm118_24">
 				  <div class="well">
 				    This is the day that the Lod has mad; let us rejoice and be glad in it.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox60" type="checkbox" name="group" id="checkPhil4_4" />
-				<label for="checkPhil4_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_4" aria-expanded="false" aria-controls="collapseThemePhil4_4">
-				  Philippians 4:4
-				</button>
-				<div class="collapse" id="collapseThemePhil4_4">
-				  <div class="well">
-				     Rejoice in the Lord always; again I will say, rejoice.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox61" type="checkbox" name="group" id="checkPhil4_5" />
-				<label for="checkPhil4_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_5" aria-expanded="false" aria-controls="collapseThemePhil4_5">
-				  Philippians 4:5
-				</button>
-				<div class="collapse" id="collapseThemePhil4_5">
-				  <div class="well">
-					Let your reasonableness be known to everyone. The Lord is at hand;
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox62" type="checkbox" name="group" id="checkPhil4_6" />
-				<label for="checkPhil4_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_6" aria-expanded="false" aria-controls="collapseThemePhil4_6">
-				  Philippians 4:6
-				</button>
-				<div class="collapse" id="collapseThemePhil4_6">
-				  <div class="well">
-					do not be anxious about anything, but in everything by prayer and aupplication with thanksgiving let your requests be made known to God.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox63" type="checkbox" name="group" id="checkPhil4_7" />
-				<label for="checkPhil4_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_7" aria-expanded="false" aria-controls="collapseThemePhil4_7">
-				  Philippians 4:7
-				</button>
-				<div class="collapse" id="collapseThemePhil4_7">
-				  <div class="well">
-					And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox64" type="checkbox" name="group" id="checkJames1_2" />
-				<label for="checkJames1_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_2" aria-expanded="false" aria-controls="collapseThemeJames1_2">
-				  James 1:2
-				</button>
-				<div class="collapse" id="collapseThemeJames1_2">
-				  <div class="well">
-					Count it all joy, my brothers, when you meet trials of various kinds,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox65" type="checkbox" name="group" id="checkJames1_3" />
-				<label for="checkJames1_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_3" aria-expanded="false" aria-controls="collapseThemeJames1_3">
-				  James 1:3
-				</button>
-				<div class="collapse" id="collapseThemeJames1_3">
-				  <div class="well">
-					for you know that the testing of your faith produces steadfastness.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox66" type="checkbox" name="group" id="checkJames1_4" />
-				<label for="checkJames1_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_4" aria-expanded="false" aria-controls="collapseThemeJames1_4">
-				  James 1:4
-				</button>
-				<div class="collapse" id="collapseThemeJames1_4">
-				  <div class="well">
-					And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox67" type="checkbox" name="group" id="checkJames1_5" />
-				<label for="checkJames1_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_5" aria-expanded="false" aria-controls="collapseThemeJames1_5">
-				  James 1:5
-				</button>
-				<div class="collapse" id="collapseThemeJames1_5">
-				  <div class="well">
-					If any of you lacks wisdom, let him ask God who gives generously to all without reproach, and it will be given him.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox68" type="checkbox" name="group" id="check1Thess5_16" />
-				<label for="check1Thess5_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_16" aria-expanded="false" aria-controls="collapseTheme1Thess5_16">
-				  1 Thessalonions 5:16
-				</button>
-				<div class="collapse" id="collapseTheme1Thess5_16">
-				  <div class="well">
-					Rejoice always,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox69" type="checkbox" name="group" id="check1Thess5_17" />
-				<label for="check1Thess5_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_17" aria-expanded="false" aria-controls="collapseTheme1Thess5_17">
-				  1 Thessalonions 5:17
-				</button>
-				<div class="collapse" id="collapseTheme1Thess5_17">
-				  <div class="well">
-					pray without ceasing,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox70" type="checkbox" name="group" id="check1Thess5_18" />
-				<label for="check1Thess5_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_18" aria-expanded="false" aria-controls="collapseTheme1Thess5_18">
-				  1 Thessalonions 5:18
-				</button>
-				<div class="collapse" id="collapseTheme1Thess5_18">
-				  <div class="well">
-					give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFaith" aria-expanded="false" aria-controls="collapseFaith">
-			  Faith: Trusting God &amp; Resting in His Word
-			</button>
-			<div class="collapse" id="collapseFaith">
-			  	<p></p>
-
-			    <input class = "Checkbox71" type="checkbox" name="group" id="checkEph2_8" />
-				<label for="checkEph2_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_8" aria-expanded="false" aria-controls="collapseThemeEph2_8">
-				  Ephesians 2:8
-				</button>
-				<div class="collapse" id="collapseThemeEph2_8">
-				  <div class="well">
-				    For by grace you have been saved through faith. And this is not your own doingl it is the gift of God,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox72" type="checkbox" name="group" id="checkEph2_9" />
-				<label for="checkEph2_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_9" aria-expanded="false" aria-controls="collapseThemeEph2_9">
-				  Ephesians 2:9
-				</button>
-				<div class="collapse" id="collapseThemeEph2_9">
-				  <div class="well">
-				     not a result of works, so that no one may boast.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox73" type="checkbox" name="group" id="checkEph2_10" />
-				<label for="checkEph2_10">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_10" aria-expanded="false" aria-controls="collapseThemeEph2_10">
-				  Ephesians 2:10
-				</button>
-				<div class="collapse" id="collapseThemeEph2_10">
-				  <div class="well">
-					For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox74" type="checkbox" name="group" id="checkGal2_20" />
-				<label for="checkGal2_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal2_20" aria-expanded="false" aria-controls="collapseThemeGal2_20">
-				  Galatians 2:20
-				</button>
-				<div class="collapse" id="collapseThemeGal2_20">
-				  <div class="well">
-					I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox75" type="checkbox" name="group" id="checkCol3_15" />
-				<label for="checkCol3_15">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_15" aria-expanded="false" aria-controls="collapseThemeCol3_15">
-				  Colossians 3:15
-				</button>
-				<div class="collapse" id="collapseThemeCol3_15">
-				  <div class="well">
-					And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox76" type="checkbox" name="group" id="checkCol3_16" />
-				<label for="checkCol3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_16" aria-expanded="false" aria-controls="collapseThemeCol3_16">
-				  Colossians 3:16
-				</button>
-				<div class="collapse" id="collapseThemeCol3_16">
-				  <div class="well">
-					Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox77" type="checkbox" name="group" id="checkCol3_17" />
-				<label for="checkCol3_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_17" aria-expanded="false" aria-controls="collapseThemeCol3_17">
-				  Colossians 3:17
-				</button>
-				<div class="collapse" id="collapseThemeCol3_17">
-				  <div class="well">
-					And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox78" type="checkbox" name="group" id="checkRom1_16" />
-				<label for="checkRom1_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_16" aria-expanded="false" aria-controls="collapseThemeRom1_16">
-				  Romans 1:16
-				</button>
-				<div class="collapse" id="collapseThemeRom1_16">
-				  <div class="well">
-					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox79" type="checkbox" name="group" id="checkRom1_17" />
-				<label for="checkRom1_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_17" aria-expanded="false" aria-controls="collapseThemeJRom1_17">
-				  Romans 1:17
-				</button>
-				<div class="collapse" id="collapseThemeRom1_17">
-				  <div class="well">
-					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
 				  </div>
 				</div>
 
@@ -1405,85 +305,6 @@
 				</div>
 
 				<p></p>
-
-				<input class = "Checkbox82" type="checkbox" name="group" id="checkHebrews11_6" />
-				<label for="checkHebrews11_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHebrews11_6" aria-expanded="false" aria-controls="collapseThemeHebrews11_6">
-				  Hebrews 11:6
-				</button>
-				<div class="collapse" id="collapseThemeHebrews11_6">
-				  <div class="well">
-					And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSent" aria-expanded="false" aria-controls="collapseSent">
-			  Sent: The Great Commission &amp; Our Global Task
-			</button>
-			<div class="collapse" id="collapseSent">
-			  	<p></p>
-
-			    <input class = "Checkbox83" type="checkbox" name="group" id="checkMatt28_18" />
-				<label for="checkMatt28_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_18" aria-expanded="false" aria-controls="collapseThemeMatt28_18">
-				  Matthew 28:18
-				</button>
-				<div class="collapse" id="collapseThemeMatt28_18">
-				  <div class="well">
-				    And Jesus came and said the them, "All authority in heaven and on earth has been given to me."
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox84" type="checkbox" name="group" id="checkMatt28_19" />
-				<label for="checkMatt28_19">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_19" aria-expanded="false" aria-controls="collapseThemeMatt28_19">
-				  Matthew 28:19
-				</button>
-				<div class="collapse" id="collapseThemeMatt28_19">
-				  <div class="well">
-				     Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox85" type="checkbox" name="group" id="checkMatt28_20" />
-				<label for="checkMatt28_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_20" aria-expanded="false" aria-controls="collapseThemeMatt28_20">
-				  Matthew 28:20
-				</button>
-				<div class="collapse" id="collapseThemeMatt28_20">
-				  <div class="well">
-					teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox86" type="checkbox" name="group" id="checkActs1_8" />
-				<label for="checkActs1_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_8" aria-expanded="false" aria-controls="collapseThemeActs1_8">
-				  Acts 1:8
-				</button>
-				<div class="collapse" id="collapseThemeActs1_8">
-				  <div class="well">
-					But you will receieve power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.
-				  </div>
-				</div>
-			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm" aria-expanded="false" aria-controls="collapsePsalm">
-			  The 23rd Psalm: The Lord is My Shepherd
-			</button>
-			<div class="collapse" id="collapsePsalm">
-			  	<p></p>
 
 			    <input class = "Checkbox87" type="checkbox" name="group" id="checkPsalm23_1" />
 				<label for="checkPsalm23_1">Memorized!</label>
@@ -1561,16 +382,116 @@
 				  </div>
 				</div>
 			</div>
-
-			<p></p>
-
-			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlpha" aria-expanded="false" aria-controls="collapseAlpha">
-			  Alpha &amp; Omega: The 1st and 2nd Comings of Christ
+			
+			<p> </p>
+			
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs" aria-expanded="false" aria-controls="collapseProverbs">
+			  Proverbs
 			</button>
-			<div class="collapse" id="collapseAlpha">
-			  	<p></p>
+			<div class="collapse" id="collapseProverbs">
+				<p></p>
 
-			    <input class = "Checkbox93" type="checkbox" name="group" id="checkIsaiah9_6" />
+				<input class = "Checkbox38" type="checkbox" name="group" id="checkProverbs3_5" />
+				<label for="checkProverbs3_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_5" aria-expanded="false" aria-controls="collapseThemeProverbs3_5">
+				  Proverbs 3:5
+				</button>
+				<div class="collapse" id="collapseThemeProverbs3_5">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox39" type="checkbox" name="group" id="checkProverbs3_6" />
+				<label for="checkProverbs3_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_6" aria-expanded="false" aria-controls="collapseThemeProverbs3_6">
+				  Proverbs 3:6
+				</button>
+				<div class="collapse" id="collapseThemeProverbs3_6">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox51" type="checkbox" name="group" id="checkProv1_7" />
+				<label for="checkProv1_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv1_7" aria-expanded="false" aria-controls="collapseThemeProv1_7">
+				  Proverbs 1:7
+				</button>
+				<div class="collapse" id="collapseThemeProv1_7">
+				  <div class="well">
+					The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox52" type="checkbox" name="group" id="checkProv15_1" />
+				<label for="checkProv15_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv15_1" aria-expanded="false" aria-controls="collapseThemeProv15_1">
+				  Proverbs 15:1
+				</button>
+				<div class="collapse" id="collapseThemeProv15_1">
+				  <div class="well">
+					A soft answer turns away wrath, but a harsh word stirs up anger.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah" aria-expanded="false" aria-controls="collapseIsaiah">
+			  Isaiah
+			</button>
+			<div class="collapse" id="collapseIsaiah">
+				<p></p>
+
+				<input class = "Checkbox26" type="checkbox" name="group" id="checkIsaiah26_3" />
+				<label for="checkIsaiah26_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah26_3" aria-expanded="false" aria-controls="collapseThemeIsaiah26_3">
+				  Isaiah 26:3
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah26_3">
+				  <div class="well">
+				    You keep him in perfet peace whose mind is stayed on you, because he trusts in you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox27" type="checkbox" name="group" id="checkIsaiah53_5" />
+				<label for="checkIsaiah53_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_5" aria-expanded="false" aria-controls="collapseThemeIsaiah53_5">
+				  Isaiah 53:5
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah53_5">
+				  <div class="well">
+				    But he was pierced for our transgressions; he was crushed for ouy iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox28" type="checkbox" name="group" id="checkIsaiah53_6" />
+				<label for="checkIsaiah53_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_6" aria-expanded="false" aria-controls="collapseThemeIsaiah53_6">
+				  Isaiah 53:6
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah53_6">
+				  <div class="well">
+				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox93" type="checkbox" name="group" id="checkIsaiah9_6" />
 				<label for="checkIsaiah9_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah9_6" aria-expanded="false" aria-controls="collapseThemeIsaiah9_6">
 				  Isaiah 9:6
@@ -1581,6 +502,103 @@
 				  </div>
 				</div>
 
+				<p></p>
+
+			</div>
+			
+			<p> </p>
+
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJeremiah" aria-expanded="false" aria-controls="collapseJeremiah">
+			  Jeremiah
+			</button>
+			<div class="collapse" id="collapseJeremiah">
+				<p></p>
+
+				<input class = "Checkbox35" type="checkbox" name="group" id="checkJeremiah29_11" />
+				<label for="checkJeremiah29_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJeremiah29_11" aria-expanded="false" aria-controls="collapseThemeJeremiah29_11">
+				  Jeremiah 29:11
+				</button>
+				<div class="collapse" id="collapseThemeJeremiah29_11">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<h2 style="text-decoration: underline;">New Testament: </h2>
+
+			<p></p>
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatthew" aria-expanded="false" aria-controls="collapseMatthew">
+			  Matthew
+			</button>
+			<div class="collapse" id="collapseMatthew">
+				<p></p>
+
+			    <input class = "Checkbox33" type="checkbox" name="group" id="checkMatt6_33" />
+				<label for="checkMatt6_33">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt6_33" aria-expanded="false" aria-controls="collapseThemeMatt6_33">
+				  Matthew 6:33
+				</button>
+				<div class="collapse" id="collapseThemeMatt6_33">
+				  <div class="well">
+				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
+				  </div>
+				</div>
+
+				<p></p>
+
+			    <input class = "Checkbox83" type="checkbox" name="group" id="checkMatt28_18" />
+				<label for="checkMatt28_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_18" aria-expanded="false" aria-controls="collapseThemeMatt28_18">
+				  Matthew 28:18
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_18">
+				  <div class="well">
+				    And Jesus came and said the them, "All authority in heaven and on earth has been given to me."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox84" type="checkbox" name="group" id="checkMatt28_19" />
+				<label for="checkMatt28_19">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_19" aria-expanded="false" aria-controls="collapseThemeMatt28_19">
+				  Matthew 28:19
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_19">
+				  <div class="well">
+				     Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox85" type="checkbox" name="group" id="checkMatt28_20" />
+				<label for="checkMatt28_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_20" aria-expanded="false" aria-controls="collapseThemeMatt28_20">
+				  Matthew 28:20
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_20">
+				  <div class="well">
+					teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke" aria-expanded="false" aria-controls="collapseLuke">
+			  Luke
+			</button>
+			<div class="collapse" id="collapseLuke">
 				<p></p>
 
 				<input class = "Checkbox94" type="checkbox" name="group" id="checkLuke2_10" />
@@ -1621,6 +639,138 @@
 				</div>
 
 				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn" aria-expanded="false" aria-controls="collapseJohn">
+			  John
+			</button>
+			<div class="collapse" id="collapseJohn">
+				<input class = "Checkbox2" type="checkbox" name="group" id="checkJohn1_1" />
+				<label for="checkJohn1_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
+				  John 1:1
+				</button>
+				<div class="collapse" id="collapseThemeJohn1_1">
+				  <div class="well">
+				    In the beginning was the Word, and the Word was with God, and the Word was God.
+				  </div>
+				</div>
+				<p></p>
+
+				<input class = "Checkbox3" type="checkbox" name="group" id="checkJohn1_14" />
+				<label for="checkJohn1_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_14" aria-expanded="false" aria-controls="collapseThemeJohn1_14">
+				  John 1:14
+				</button>
+				<div class="collapse" id="collapseThemeJohn1_14">
+				  <div class="well">
+				    And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox4" type="checkbox" name="group" id="checkJohn3_16" />
+				<label for="checkJohn3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn3_16" aria-expanded="false" aria-controls="collapseThemeJohn3_16">
+				  John 3:16
+				</button>
+				<div class="collapse" id="collapseThemeJohn3_16">
+				  <div class="well">
+				    For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox21" type="checkbox" name="group" id="checkJohn14_1" />
+				<label for="checkJohn14_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_1" aria-expanded="false" aria-controls="collapseThemeJohn14_1">
+				  John 14:1
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_1">
+				  <div class="well">
+					Let not your hearts be troubled, Believe in God; believe also in me.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox22" type="checkbox" name="group" id="checkJohn14_2" />
+				<label for="checkJohn14_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_2" aria-expanded="false" aria-controls="collapseThemeJohn14_2">
+				  John 14:2
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_2">
+				  <div class="well">
+				    In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox23" type="checkbox" name="group" id="checkJohn14_3" />
+				<label for="checkJohn14_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_3" aria-expanded="false" aria-controls="collapseThemeJohn14_3">
+				  John 14:3
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_3">
+				  <div class="well">
+				    And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox24" type="checkbox" name="group" id="checkJohn14_6" />
+				<label for="checkJohn14_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_6" aria-expanded="false" aria-controls="collapseThemeJohn14_6">
+				  John 14:6
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_6">
+				  <div class="well">
+				    Jesus said to him, "I am the way, and the truth, and the life. No one comes to the Father except through me."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox25" type="checkbox" name="group" id="checkJohn14_27" />
+				<label for="checkJohn14_27">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_27" aria-expanded="false" aria-controls="collapseThemeJohn14_27">
+				  John 14:27
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_27">
+				  <div class="well">
+				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs" aria-expanded="false" aria-controls="collapseActs">
+			  Acts
+			</button>
+			<div class="collapse" id="collapseActs">
+				<p></p>
+
+				<input class = "Checkbox86" type="checkbox" name="group" id="checkActs1_8" />
+				<label for="checkActs1_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_8" aria-expanded="false" aria-controls="collapseThemeActs1_8">
+				  Acts 1:8
+				</button>
+				<div class="collapse" id="collapseThemeActs1_8">
+				  <div class="well">
+					But you will receieve power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.
+				  </div>
+				</div>
+
+				<p></p>
 
 				<input class = "Checkbox97" type="checkbox" name="group" id="checkActs1_11" />
 				<label for="checkActs1_11">Memorized!</label>
@@ -1630,6 +780,815 @@
 				<div class="collapse" id="collapseThemeActs1_11">
 				  <div class="well">
 					and said, "Men of Galilee, why do you stand looking into heaven? This Jesus, who was taken up from you into heaven, will come in the same way as you saw him go into heaven."
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans" aria-expanded="false" aria-controls="collapseRomans">
+			  Romans
+			</button>
+			<div class="collapse" id="collapseRomans">
+				<input class = "Checkbox5" type="checkbox" name="group" id="checkRomans3_23" />
+				<label for="checkRomans3_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans3_23" aria-expanded="false" aria-controls="collapseThemeRomans3_23">
+				  Romans 3:23
+				</button>
+				<div class="collapse" id="collapseThemeRomans3_23">
+				  <div class="well">
+				    In the beginning, God created the heavens and the earth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox6" type="checkbox" name="group" id="checkRomans6_23" />
+				<label for="checkRomans6_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans6_23" aria-expanded="false" aria-controls="collapseThemeRomans6_23">
+				  Romans 6:23
+				</button>
+				<div class="collapse" id="collapseThemeRomans6_23">
+				  <div class="well">
+				     for all have sinned and fall short of the glory of God
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox7" type="checkbox" name="group" id="checkRomans5_8" />
+				<label for="checkRomans5_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans5_8" aria-expanded="false" aria-controls="collapseThemeRomans5_8">
+				  Romans 5:8
+				</button>
+				<div class="collapse" id="collapseThemeRomans5_8">
+				  <div class="well">
+					but God shows his love in that while we were still sinners, Christ died for us
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox8" type="checkbox" name="group" id="checkRomans10_9" />
+				<label for="checkRomans10_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_9" aria-expanded="false" aria-controls="collapseThemeRomans10_9">
+				  Romans 10:9
+				</button>
+				<div class="collapse" id="collapseThemeRomans10_9">
+				  <div class="well">
+				    because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox9" type="checkbox" name="group" id="checkRomans10_10" />
+				<label for="checkRomans10_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_10" aria-expanded="false" aria-controls="collapseThemeRomans10_10">
+				  Romans 10:10
+				</button>
+				<div class="collapse" id="collapseThemeRomans10_10">
+				  <div class="well">
+				    For with the heart one believes and is justified, and with the mouth one confesses and is saved.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox34" type="checkbox" name="group" id="checkRomans8_28" />
+				<label for="checkRomans8_28">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans8_28" aria-expanded="false" aria-controls="collapseThemeRomans8_28">
+				  Romans 8:28
+				</button>
+				<div class="collapse" id="collapseThemeRomans8_28">
+				  <div class="well">
+				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox44" type="checkbox" name="group" id="checkRomans12_1" />
+				<label for="checkRomans12_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_1" aria-expanded="false" aria-controls="collapseThemeRomans12_1">
+				  Romans 12:1
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_1">
+				  <div class="well">
+				     I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox45" type="checkbox" name="group" id="checkRomans12_2" />
+				<label for="checkRomans12_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_2" aria-expanded="false" aria-controls="collapseThemeRomans12_2">
+				  Romans 12:2
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_2">
+				  <div class="well">
+					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox46" type="checkbox" name="group" id="checkRomans12_11" />
+				<label for="checkRomans12_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_11" aria-expanded="false" aria-controls="collapseThemeRomans12_11">
+				  Romans 12:11
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_11">
+				  <div class="well">
+					Do not be slothful in zeal, be fervent in spirit, serve the Lord.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox47" type="checkbox" name="group" id="checkRomans12_12" />
+				<label for="checkRomans12_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_12" aria-expanded="false" aria-controls="collapseThemeRomans12_12">
+				  Romans 12:12
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_12">
+				  <div class="well">
+					Rejoice in hope, be patient in tribulation, be constant in prayer.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox48" type="checkbox" name="group" id="checkRomans12_18" />
+				<label for="checkRomans12_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_18" aria-expanded="false" aria-controls="collapseThemeRomans12_18">
+				  Romans 12:18
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_18">
+				  <div class="well">
+					If possible, so far as it depends on you, live peaceably with all.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox78" type="checkbox" name="group" id="checkRom1_16" />
+				<label for="checkRom1_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_16" aria-expanded="false" aria-controls="collapseThemeRom1_16">
+				  Romans 1:16
+				</button>
+				<div class="collapse" id="collapseThemeRom1_16">
+				  <div class="well">
+					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox79" type="checkbox" name="group" id="checkRom1_17" />
+				<label for="checkRom1_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_17" aria-expanded="false" aria-controls="collapseThemeJRom1_17">
+				  Romans 1:17
+				</button>
+				<div class="collapse" id="collapseThemeRom1_17">
+				  <div class="well">
+					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Corinthians" aria-expanded="false" aria-controls="collapse1Corinthians">
+			  1 Corinthians
+			</button>
+			<div class="collapse" id="collapse1Corinthians">
+				<p></p>
+
+				<input class = "Checkbox40" type="checkbox" name="group" id="check1Cor10_13" />
+				<label for="check1Cor10_13">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Cor10_13" aria-expanded="false" aria-controls="collapseTheme1Cor10_13">
+				  1 Corinthians 10:13
+				</button>
+				<div class="collapse" id="collapseTheme1Cor10_13">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Corinthians" aria-expanded="false" aria-controls="collapse2Corinthians">
+			  2 Corinthians
+			</button>
+			<div class="collapse" id="collapse2Corinthians">
+				<p></p>
+
+				<input class = "Checkbox49" type="checkbox" name="group" id="check2Cor9_7" />
+				<label for="check2Cor9_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Cor9_7" aria-expanded="false" aria-controls="collapseTheme2Cor9_7">
+				  2 Corinthians 9:7
+				</button>
+				<div class="collapse" id="collapseTheme2Cor9_7">
+				  <div class="well">
+					Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.
+				  </div>
+				</div>
+
+				<p></p>
+
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGalatians" aria-expanded="false" aria-controls="collapseGalatians">
+			  Galatians
+			</button>
+			<div class="collapse" id="collapseGalatians">
+				<p></p>
+
+				<input class = "Checkbox57" type="checkbox" name="group" id="checkGal5_22" />
+				<label for="checkGal5_22">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_22" aria-expanded="false" aria-controls="collapseThemeGal5_22">
+				  Galatians 5:22
+				</button>
+				<div class="collapse" id="collapseThemeGal5_22">
+				  <div class="well">
+					But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox58" type="checkbox" name="group" id="checkGal5_23" />
+				<label for="checkGal5_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_23" aria-expanded="false" aria-controls="collapseThemeGal5_23">
+				  Galatians 5:23
+				</button>
+				<div class="collapse" id="collapseThemeGal5_23">
+				  <div class="well">
+					gentleness, self-control; against such things there is no law.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox74" type="checkbox" name="group" id="checkGal2_20" />
+				<label for="checkGal2_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal2_20" aria-expanded="false" aria-controls="collapseThemeGal2_20">
+				  Galatians 2:20
+				</button>
+				<div class="collapse" id="collapseThemeGal2_20">
+				  <div class="well">
+					I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEphesians" aria-expanded="false" aria-controls="collapseEphesians">
+			  Ephesians
+			</button>
+			<div class="collapse" id="collapseEphesians">
+				<p></p>
+
+			    <input class = "Checkbox53" type="checkbox" name="group" id="checkEph5_18" />
+				<label for="checkEph5_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_18" aria-expanded="false" aria-controls="collapseThemeEph5_18">
+				  Ephesians 5:18
+				</button>
+				<div class="collapse" id="collapseThemeEph5_18">
+				  <div class="well">
+				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox54" type="checkbox" name="group" id="checkEph5_19" />
+				<label for="checkEph5_19">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_19" aria-expanded="false" aria-controls="collapseThemeEph5_19">
+				  Ephesians 5:19
+				</button>
+				<div class="collapse" id="collapseThemeEph5_19">
+				  <div class="well">
+				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox55" type="checkbox" name="group" id="checkEph5_20" />
+				<label for="checkEph5_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_20" aria-expanded="false" aria-controls="collapseThemeEph5_20">
+				  Ephesians 5:20
+				</button>
+				<div class="collapse" id="collapseThemeEph5_20">
+				  <div class="well">
+					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox56" type="checkbox" name="group" id="checkEph5_21" />
+				<label for="checkEph5_21">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_21" aria-expanded="false" aria-controls="collapseThemeEph5_21">
+				  Ephesians 5:21
+				</button>
+				<div class="collapse" id="collapseThemeEph5_21">
+				  <div class="well">
+					submitting to one another out of reverence for Christ.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox71" type="checkbox" name="group" id="checkEph2_8" />
+				<label for="checkEph2_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_8" aria-expanded="false" aria-controls="collapseThemeEph2_8">
+				  Ephesians 2:8
+				</button>
+				<div class="collapse" id="collapseThemeEph2_8">
+				  <div class="well">
+				    For by grace you have been saved through faith. And this is not your own doingl it is the gift of God,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox72" type="checkbox" name="group" id="checkEph2_9" />
+				<label for="checkEph2_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_9" aria-expanded="false" aria-controls="collapseThemeEph2_9">
+				  Ephesians 2:9
+				</button>
+				<div class="collapse" id="collapseThemeEph2_9">
+				  <div class="well">
+				     not a result of works, so that no one may boast.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox73" type="checkbox" name="group" id="checkEph2_10" />
+				<label for="checkEph2_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_10" aria-expanded="false" aria-controls="collapseThemeEph2_10">
+				  Ephesians 2:10
+				</button>
+				<div class="collapse" id="collapseThemeEph2_10">
+				  <div class="well">
+					For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhilippians" aria-expanded="false" aria-controls="collapsePhilippians">
+			  Philippians
+			</button>
+			<div class="collapse" id="collapsePhilippians">
+				<p></p>
+				<input class = "Checkbox60" type="checkbox" name="group" id="checkPhil4_4" />
+				<label for="checkPhil4_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_4" aria-expanded="false" aria-controls="collapseThemePhil4_4">
+				  Philippians 4:4
+				</button>
+				<div class="collapse" id="collapseThemePhil4_4">
+				  <div class="well">
+				     Rejoice in the Lord always; again I will say, rejoice.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox61" type="checkbox" name="group" id="checkPhil4_5" />
+				<label for="checkPhil4_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_5" aria-expanded="false" aria-controls="collapseThemePhil4_5">
+				  Philippians 4:5
+				</button>
+				<div class="collapse" id="collapseThemePhil4_5">
+				  <div class="well">
+					Let your reasonableness be known to everyone. The Lord is at hand;
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox62" type="checkbox" name="group" id="checkPhil4_6" />
+				<label for="checkPhil4_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_6" aria-expanded="false" aria-controls="collapseThemePhil4_6">
+				  Philippians 4:6
+				</button>
+				<div class="collapse" id="collapseThemePhil4_6">
+				  <div class="well">
+					do not be anxious about anything, but in everything by prayer and aupplication with thanksgiving let your requests be made known to God.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox63" type="checkbox" name="group" id="checkPhil4_7" />
+				<label for="checkPhil4_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_7" aria-expanded="false" aria-controls="collapseThemePhil4_7">
+				  Philippians 4:7
+				</button>
+				<div class="collapse" id="collapseThemePhil4_7">
+				  <div class="well">
+					And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+			
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseColossians" aria-expanded="false" aria-controls="collapseColossians">
+			  Colossians
+			</button>
+			<div class="collapse" id="collapseColossians">
+				<p></p>
+				<input class = "Checkbox75" type="checkbox" name="group" id="checkCol3_15" />
+				<label for="checkCol3_15">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_15" aria-expanded="false" aria-controls="collapseThemeCol3_15">
+				  Colossians 3:15
+				</button>
+				<div class="collapse" id="collapseThemeCol3_15">
+				  <div class="well">
+					And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox76" type="checkbox" name="group" id="checkCol3_16" />
+				<label for="checkCol3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_16" aria-expanded="false" aria-controls="collapseThemeCol3_16">
+				  Colossians 3:16
+				</button>
+				<div class="collapse" id="collapseThemeCol3_16">
+				  <div class="well">
+					Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox77" type="checkbox" name="group" id="checkCol3_17" />
+				<label for="checkCol3_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_17" aria-expanded="false" aria-controls="collapseThemeCol3_17">
+				  Colossians 3:17
+				</button>
+				<div class="collapse" id="collapseThemeCol3_17">
+				  <div class="well">
+					And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thessalonians" aria-expanded="false" aria-controls="collapse1Thessalonians">
+			  1 Thessalonians
+			</button>
+			<div class="collapse" id="collapse1Thessalonians">
+				<p></p>
+
+				<input class = "Checkbox68" type="checkbox" name="group" id="check1Thess5_16" />
+				<label for="check1Thess5_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_16" aria-expanded="false" aria-controls="collapseTheme1Thess5_16">
+				  1 Thessalonians 5:16
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_16">
+				  <div class="well">
+					Rejoice always,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox69" type="checkbox" name="group" id="check1Thess5_17" />
+				<label for="check1Thess5_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_17" aria-expanded="false" aria-controls="collapseTheme1Thess5_17">
+				  1 Thessalonians 5:17
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_17">
+				  <div class="well">
+					pray without ceasing,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox70" type="checkbox" name="group" id="check1Thess5_18" />
+				<label for="check1Thess5_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_18" aria-expanded="false" aria-controls="collapseTheme1Thess5_18">
+				  1 Thessalonians 5:18
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_18">
+				  <div class="well">
+					give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
+				  </div>
+				</div>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Timothy" aria-expanded="false" aria-controls="collapse2Timothy">
+			  2 Timothy
+			</button>
+			<div class="collapse" id="collapse2Timothy">
+				<p></p>
+
+				<input class = "Checkbox10" type="checkbox" name="group" id="checkTheme2Tim3_16" />
+				<label for="checkTheme2Tim3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Tim3_16" aria-expanded="false" aria-controls="collapseTheme2Tim3_16">
+				  2 Timothy 3:16
+				</button>
+				<div class="collapse" id="collapseTheme2Tim3_16">
+				  <div class="well">
+				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
+				  </div>
+				</div>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHebrews" aria-expanded="false" aria-controls="collapseHebrews">
+			  Hebrews
+			</button>
+			<div class="collapse" id="collapseHebrews">
+				<p></p>
+
+				<input class = "Checkbox15" type="checkbox" name="group" id="checkHeb4_12" />
+				<label for="checkHeb4_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_12" aria-expanded="false" aria-controls="collapseThemeHeb4_12">
+				  Hebrews 4:12
+				</button>
+				<div class="collapse" id="collapseThemeHeb4_12">
+				  <div class="well">
+				    For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox16" type="checkbox" name="group" id="checkHeb4_16" />
+				<label for="checkHeb4_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_16" aria-expanded="false" aria-controls="collapseThemeHeb4_16">
+				  Hebrews 4:16
+				</button>
+				<div class="collapse" id="collapseThemeHeb4_16">
+				  <div class="well">
+				    Let us then with confidence draw near you the throne of grace, that we may receive mercy and find grace to help in time of need.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox50" type="checkbox" name="group" id="checkHeb10_25" />
+				<label for="checkThemeHeb10_25">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb10_25" aria-expanded="false" aria-controls="collapseThemeHeb10_25">
+				  Hebrews 10:25
+				</button>
+				<div class="collapse" id="collapseThemeHeb10_25">
+				  <div class="well">
+					not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox82" type="checkbox" name="group" id="checkHebrews11_6" />
+				<label for="checkHebrews11_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHebrews11_6" aria-expanded="false" aria-controls="collapseThemeHebrews11_6">
+				  Hebrews 11:6
+				</button>
+				<div class="collapse" id="collapseThemeHebrews11_6">
+				  <div class="well">
+					And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
+				  </div>
+				</div>
+
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames" aria-expanded="false" aria-controls="collapseJames">
+			  James
+			</button>
+			<div class="collapse" id="collapseJames">
+				<p></p>
+
+				<input class = "Checkbox64" type="checkbox" name="group" id="checkJames1_2" />
+				<label for="checkJames1_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_2" aria-expanded="false" aria-controls="collapseThemeJames1_2">
+				  James 1:2
+				</button>
+				<div class="collapse" id="collapseThemeJames1_2">
+				  <div class="well">
+					Count it all joy, my brothers, when you meet trials of various kinds,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox65" type="checkbox" name="group" id="checkJames1_3" />
+				<label for="checkJames1_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_3" aria-expanded="false" aria-controls="collapseThemeJames1_3">
+				  James 1:3
+				</button>
+				<div class="collapse" id="collapseThemeJames1_3">
+				  <div class="well">
+					for you know that the testing of your faith produces steadfastness.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox66" type="checkbox" name="group" id="checkJames1_4" />
+				<label for="checkJames1_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_4" aria-expanded="false" aria-controls="collapseThemeJames1_4">
+				  James 1:4
+				</button>
+				<div class="collapse" id="collapseThemeJames1_4">
+				  <div class="well">
+					And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox67" type="checkbox" name="group" id="checkJames1_5" />
+				<label for="checkJames1_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_5" aria-expanded="false" aria-controls="collapseThemeJames1_5">
+				  James 1:5
+				</button>
+				<div class="collapse" id="collapseThemeJames1_5">
+				  <div class="well">
+					If any of you lacks wisdom, let him ask God who gives generously to all without reproach, and it will be given him.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter" aria-expanded="false" aria-controls="collapse1Peter">
+			  1 Peter
+			</button>
+			<div class="collapse" id="collapse1Peter">
+				<p></p>
+
+			    <input class = "Checkbox29" type="checkbox" name="group" id="check1Peter1_3" />
+				<label for="check1Peter1_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter1_3" aria-expanded="false" aria-controls="collapseTheme1Peter1_3">
+				  1 Peter 1:3
+				</button>
+				<div class="collapse" id="collapseTheme1Peter1_3">
+				  <div class="well">
+				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
+				  </div>
+				</div>
+
+				<p></p>
+
+
+				<input class = "Checkbox42" type="checkbox" name="group" id="check1Peter5_7" />
+				<label for="check1Peter5_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter5_7" aria-expanded="false" aria-controls="collapseTheme1Peter5_7">
+				  1 Peter 5:7
+				</button>
+				<div class="collapse" id="collapseTheme1Peter5_7">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John" aria-expanded="false" aria-controls="collapse1John">
+			  1 John
+			</button>
+			<div class="collapse" id="collapse1John">
+				<p></p>
+
+				<input class = "Checkbox17" type="checkbox" name="group" id="check1John5_14" />
+				<label for="check1John5_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_14" aria-expanded="false" aria-controls="collapseTheme1John5_14">
+				  1 John 5:14
+				</button>
+				<div class="collapse" id="collapseTheme1John5_14">
+				  <div class="well">
+				    And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox18" type="checkbox" name="group" id="check1John5_15" />
+				<label for="check1John5_15">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_15" aria-expanded="false" aria-controls="collapseTheme1John5_15">
+				  1 John 5:15
+				</button>
+				<div class="collapse" id="collapseTheme1John5_15">
+				  <div class="well">
+				    And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
+				  </div>
+				</div>
+
+				<p></p>
+
+			    <input class = "Checkbox19" type="checkbox" name="group" id="check1John5_11" />
+				<label for="check1John5_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_11" aria-expanded="false" aria-controls="collapseTheme1John5_11">
+				  1 John 5:11
+				</button>
+				<div class="collapse" id="collapseTheme1John5_11">
+				  <div class="well">
+				    And this is the testimony, that God gave us eternal life, and this life is in his Son.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox20" type="checkbox" name="group" id="check1John5_12" />
+				<label for="check1John5_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_12" aria-expanded="false" aria-controls="collapseTheme1John5_12">
+				  1 John 5:12
+				</button>
+				<div class="collapse" id="collapseTheme1John5_12">
+				  <div class="well">
+				     Whoever has the Son has life; whoever does not have the Son of God does not have life.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox36" type="checkbox" name="group" id="check1John1_7" />
+				<label for="check1John1_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_7" aria-expanded="false" aria-controls="collapseTheme1John1_7">
+				  1 John 1:7
+				</button>
+				<div class="collapse" id="collapseTheme1John1_7">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox37" type="checkbox" name="group" id="check1John1_9" />
+				<label for="check1John1_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_9" aria-expanded="false" aria-controls="collapseTheme1John1_9">
+				  1 John 1:9
+				</button>
+				<div class="collapse" id="collapseTheme1John1_9">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+			</div>
+			
+			<p> </p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRevelation" aria-expanded="false" aria-controls="collapseRevelation">
+			  Revelation
+			</button>
+			<div class="collapse" id="collapseRevelation">
+				<p></p>
+
+				<input class = "Checkbox32" type="checkbox" name="group" id="checkRev4_11" />
+				<label for="checkRev4_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev4_11" aria-expanded="false" aria-controls="collapseThemeRev4_11">
+				  Revelation 4:11
+				</button>
+				<div class="collapse" id="collapseThemeRev4_11">
+				  <div class="well">
+					Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.
 				  </div>
 				</div>
 
@@ -1663,6 +1622,1424 @@
 
 				<input class = "Checkbox100" type="checkbox" name="group" id="checkRev22_20" />
 				<label for="checkRev22_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev22_20" aria-expanded="false" aria-controls="collapseThemeRev22_20">
+				  Revelation 22:20
+				</button>
+				<div class="collapse" id="collapseThemeRev22_20">
+				  <div class="well">
+					He who testifies to these things says, "Surely I am coming soon." Amen. Come, Lord Jesus!
+				  </div>
+				</div>
+			</div>
+			
+			<p> </p>
+
+
+	   	</div>
+
+
+
+
+	   	<!--
+
+		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+											THEME
+
+																By Theme
+
+
+									By THEME
+
+		@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+	   -->
+
+	    <div role="tabpanel" class="tab-pane fade" id="other">
+	    	<p></p>
+
+	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBeginnings" aria-expanded="false" aria-controls="collapseBeginnings">
+			  Beginnings: Bible's Fantastic Four
+			</button>
+			0/4 
+			<div class="collapse" id="collapseBeginnings">
+			  	<p></p>
+
+			    <input class = "Checkbox1" type="checkbox" name="group" id="checkThemeGen1_1" />
+				<label for="checkThemeGen1_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGen1_1" aria-expanded="false" aria-controls="collapseThemeGen1_1">
+				  Genesis 1:1
+				</button>
+				<div class="collapse" id="collapseThemeGen1_1">
+				  <div class="well">
+				    In the beginning, God created the heavens and the earth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox2" type="checkbox" name="group" id="checkThemeJohn1_1" />
+				<label for="checkThemeJohn1_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
+				  John 1:1
+				</button>
+				<div class="collapse" id="collapseThemeJohn1_1">
+				  <div class="well">
+				    In the beginning was the Word, and the Word was with God, and the Word was God.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox3" type="checkbox" name="group" id="checkThemeJohn1_14" />
+				<label for="checkThemeJohn1_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_14" aria-expanded="false" aria-controls="collapseThemeJohn1_14">
+				  John 1:14
+				</button>
+				<div class="collapse" id="collapseThemeJohn1_14">
+				  <div class="well">
+				    And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox4" type="checkbox" name="group" id="checkThemeJohn3_16" />
+				<label for="checkThemeJohn3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn3_16" aria-expanded="false" aria-controls="collapseThemeJohn3_16">
+				  John 3:16
+				</button>
+				<div class="collapse" id="collapseThemeJohn3_16">
+				  <div class="well">
+				    For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.
+				  </div>
+				</div>
+			</div>
+
+	    	<p> </p>
+
+	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRoman" aria-expanded="true" aria-controls="collapseRoman">
+			  The Roman Road: The Plan of Salvation
+			</button>
+			<div class="collapse" id="collapseRoman">
+			  	<p></p>
+
+			    <input class = "Checkbox5" type="checkbox" name="group" id="checkThemeRomans3_23" />
+				<label for="checkThemeRomans3_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans3_23" aria-expanded="false" aria-controls="collapseThemeRomans3_23">
+				  Romans 3:23
+				</button>
+				<div class="collapse" id="collapseThemeRomans3_23">
+				  <div class="well">
+				    In the beginning, God created the heavens and the earth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox6" type="checkbox" name="group" id="checkThemeRomans6_23" />
+				<label for="checkThemeRomans6_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans6_23" aria-expanded="false" aria-controls="collapseThemeRomans6_23">
+				  Romans 6:23
+				</button>
+				<div class="collapse" id="collapseThemeRomans6_23">
+				  <div class="well">
+				     for all have sinned and fall short of the glory of God
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox7" type="checkbox" name="group" id="checkThemeRomans5_8" />
+				<label for="checkThemeRomans5_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans5_8" aria-expanded="false" aria-controls="collapseThemeRomans5_8">
+				  Romans 5:8
+				</button>
+				<div class="collapse" id="collapseThemeRomans5_8">
+				  <div class="well">
+					but God shows his love in that while we were still sinners, Christ died for us
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox8" type="checkbox" name="group" id="checkThemeRomans10_9" />
+				<label for="checkThemeRomans10_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_9" aria-expanded="false" aria-controls="collapseThemeRomans10_9">
+				  Romans 10:9
+				</button>
+				<div class="collapse" id="collapseThemeRomans10_9">
+				  <div class="well">
+				    because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox9" type="checkbox" name="group" id="checkThemeRomans10_10" />
+				<label for="checkThemeRomans10_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_10" aria-expanded="false" aria-controls="collapseThemeRomans10_10">
+				  Romans 10:10
+				</button>
+				<div class="collapse" id="collapseThemeRomans10_10">
+				  <div class="well">
+				    For with the heart one believes and is justified, and with the mouth one confesses and is saved.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseListening" aria-expanded="false" aria-controls="collapseListening">
+			  Listening: Word of God &amp; Prayer
+			</button>
+			<div class="collapse" id="collapseListening">
+			  	<p></p>
+
+			    <input class = "Checkbox10" type="checkbox" name="group" id="checkTheme2Tim3_16" />
+				<label for="checkTheme2Tim3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Tim3_16" aria-expanded="false" aria-controls="collapseTheme2Tim3_16">
+				  2 Timothy 3:16
+				</button>
+				<div class="collapse" id="collapseTheme2Tim3_16">
+				  <div class="well">
+				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox11" type="checkbox" name="group" id="checkThemeJosh1_8" />
+				<label for="checkThemeJosh1_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJosh1_8" aria-expanded="false" aria-controls="collapseThemeJosh1_8">
+				  Joshua 1:8
+				</button>
+				<div class="collapse" id="collapseThemeJosh1_8">
+				  <div class="well">
+				     The Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox12" type="checkbox" name="group" id="checkThemePsalm119_11" />
+				<label for="checkThemePsalm119_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm119_11" aria-expanded="false" aria-controls="collapseThemePsalm119_11">
+				  Psalm 119:11
+				</button>
+				<div class="collapse" id="collapseThemePsalm119_11">
+				  <div class="well">
+					I have stored up your word in my heart, that I might not sin against you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox13" type="checkbox" name="group" id="checkThemeDeut6_6" />
+				<label for="checkThemeDeut6_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_6" aria-expanded="false" aria-controls="collapseThemeDeut6_6">
+				  Deuteronomy 6:6
+				</button>
+				<div class="collapse" id="collapseThemeDeut6_6">
+				  <div class="well">
+				    And these words that I command you today shall be on your heart.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox14" type="checkbox" name="group" id="checkThemeDeut6_7" />
+				<label for="checkThemeDeut6_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_7" aria-expanded="false" aria-controls="collapseThemeDeut6_7">
+				  Deuteronomy 6:7
+				</button>
+				<div class="collapse" id="collapseThemeDeut6_7">
+				  <div class="well">
+				    You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox15" type="checkbox" name="group" id="checkThemeHeb4_12" />
+				<label for="checkThemeHeb4_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_12" aria-expanded="false" aria-controls="collapseThemeHeb4_12">
+				  Hebrews 4:12
+				</button>
+				<div class="collapse" id="collapseThemeHeb4_12">
+				  <div class="well">
+				    For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox16" type="checkbox" name="group" id="checkThemeHeb4_16" />
+				<label for="checkThemeHeb4_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_16" aria-expanded="false" aria-controls="collapseThemeHeb4_16">
+				  Hebrews 4:16
+				</button>
+				<div class="collapse" id="collapseThemeHeb4_16">
+				  <div class="well">
+				    Let us then with confidence draw near you the throne of grace, that we may receive mercy and find grace to help in time of need.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox17" type="checkbox" name="group" id="checkTheme1John5_14" />
+				<label for="checkTheme1John5_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_14" aria-expanded="false" aria-controls="collapseTheme1John5_14">
+				  1 John 5:14
+				</button>
+				<div class="collapse" id="collapseTheme1John5_14">
+				  <div class="well">
+				    And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox18" type="checkbox" name="group" id="checkTheme1John5_15" />
+				<label for="checkTheme1John5_15">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_15" aria-expanded="false" aria-controls="collapseTheme1John5_15">
+				  1 John 5:15
+				</button>
+				<div class="collapse" id="collapseTheme1John5_15">
+				  <div class="well">
+				    And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAssurance" aria-expanded="false" aria-controls="collapseAssurance">
+			  Assurance: Inner Peace &amp; Security
+			</button>
+			<div class="collapse" id="collapseAssurance">
+			  	<p></p>
+
+			    <input class = "Checkbox19" type="checkbox" name="group" id="checkTheme1John5_11" />
+				<label for="checkTheme1John5_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_11" aria-expanded="false" aria-controls="collapseTheme1John5_11">
+				  1 John 5:11
+				</button>
+				<div class="collapse" id="collapseTheme1John5_11">
+				  <div class="well">
+				    And this is the testimony, that God gave us eternal life, and this life is in his Son.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox20" type="checkbox" name="group" id="checkTheme1John5_12" />
+				<label for="checkTheme1John5_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_12" aria-expanded="false" aria-controls="collapseTheme1John5_12">
+				  1 John 5:12
+				</button>
+				<div class="collapse" id="collapseTheme1John5_12">
+				  <div class="well">
+				     Whoever has the Son has life; whoever does not have the Son of God does not have life.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox21" type="checkbox" name="group" id="checkThemeJohn14_1" />
+				<label for="checkThemeJohn14_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_1" aria-expanded="false" aria-controls="collapseThemeJohn14_1">
+				  John 14:1
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_1">
+				  <div class="well">
+					Let not your hearts be troubled, Believe in God; believe also in me.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox22" type="checkbox" name="group" id="checkThemeJohn14_2" />
+				<label for="checkThemeJohn14_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_2" aria-expanded="false" aria-controls="collapseThemeJohn14_2">
+				  John 14:2
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_2">
+				  <div class="well">
+				    In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox23" type="checkbox" name="group" id="checkThemeJohn14_3" />
+				<label for="checkThemeJohn14_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_3" aria-expanded="false" aria-controls="collapseThemeJohn14_3">
+				  John 14:3
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_3">
+				  <div class="well">
+				    And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox24" type="checkbox" name="group" id="checkThemeJohn14_6" />
+				<label for="checkThemeJohn14_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_6" aria-expanded="false" aria-controls="collapseThemeJohn14_6">
+				  John 14:6
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_6">
+				  <div class="well">
+				    Jesus said to him, "I am the way, and the truth, and the life. No one comes to the Father except through me."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox25" type="checkbox" name="group" id="checkThemeJohn14_27" />
+				<label for="checkThemeJohn14_27">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_27" aria-expanded="false" aria-controls="collapseThemeJohn14_27">
+				  John 14:27
+				</button>
+				<div class="collapse" id="collapseThemeJohn14_27">
+				  <div class="well">
+				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox26" type="checkbox" name="group" id="checkThemeIsaiah26_3" />
+				<label for="checkThemeIsaiah26_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah26_3" aria-expanded="false" aria-controls="collapseThemeIsaiah26_3">
+				  Isaiah 26:3
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah26_3">
+				  <div class="well">
+				    You keep him in perfet peace whose mind is stayed on you, because he trusts in you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox27" type="checkbox" name="group" id="checkThemeIsaiah53_5" />
+				<label for="checkThemeIsaiah53_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_5" aria-expanded="false" aria-controls="collapseThemeIsaiah53_5">
+				  Isaiah 53:5
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah53_5">
+				  <div class="well">
+				    But he was pierced for our transgressions; he was crushed for ouy iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox28" type="checkbox" name="group" id="checkThemeIsaiah53_6" />
+				<label for="checkThemeIsaiah53_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_6" aria-expanded="false" aria-controls="collapseThemeIsaiah53_6">
+				  Isaiah 53:6
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah53_6">
+				  <div class="well">
+				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePraise" aria-expanded="false" aria-controls="collapsePraise">
+			  Praise: Worship &amp; Thanksgiving
+			</button>
+			<div class="collapse" id="collapsePraise">
+			  	<p></p>
+
+			    <input class = "Checkbox29" type="checkbox" name="group" id="checkTheme1Peter1_3" />
+				<label for="checkTheme1Peter1_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter1_3" aria-expanded="false" aria-controls="collapseTheme1Peter1_3">
+				  1 Peter 1:3
+				</button>
+				<div class="collapse" id="collapseTheme1Peter1_3">
+				  <div class="well">
+				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox30" type="checkbox" name="group" id="checkThemePsalm100_4" />
+				<label for="checkThemePsalm100_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_4" aria-expanded="false" aria-controls="collapseThemePsalm100_4">
+				  Psalm 100:4
+				</button>
+				<div class="collapse" id="collapseThemePsalm100_4">
+				  <div class="well">
+				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox31" type="checkbox" name="group" id="checkThemePsalm100_5" />
+				<label for="checkThemePsalm100_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_5" aria-expanded="false" aria-controls="collapseThemePsalm100_5">
+				  Psalm 100:5
+				</button>
+				<div class="collapse" id="collapseThemePsalm100_5">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox32" type="checkbox" name="group" id="checkThemeRev4_11" />
+				<label for="checkThemeRev4_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev4_11" aria-expanded="false" aria-controls="collapseThemeRev4_11">
+				  Revelation 4:11
+				</button>
+				<div class="collapse" id="collapseThemeRev4_11">
+				  <div class="well">
+					Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePromises" aria-expanded="false" aria-controls="collapsePromises">
+			  Promises: Verses to Stand On
+			</button>
+			<div class="collapse" id="collapsePromises">
+			  	<p></p>
+
+			    <input class = "Checkbox33" type="checkbox" name="group" id="checkThemeMatt6_33" />
+				<label for="checkThemeMatt6_33">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt6_33" aria-expanded="false" aria-controls="collapseThemeMatt6_33">
+				  Matthew 6:33
+				</button>
+				<div class="collapse" id="collapseThemeMatt6_33">
+				  <div class="well">
+				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox34" type="checkbox" name="group" id="checkThemeRomans8_28" />
+				<label for="checkThemeRomans8_28">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans8_28" aria-expanded="false" aria-controls="collapseThemeRomans8_28">
+				  Romans 8:28
+				</button>
+				<div class="collapse" id="collapseThemeRomans8_28">
+				  <div class="well">
+				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox35" type="checkbox" name="group" id="checkThemeJeremiah29_11" />
+				<label for="checkThemeJeremiah29_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJeremiah29_11" aria-expanded="false" aria-controls="collapseThemeJeremiah29_11">
+				  Jeremiah 29:11
+				</button>
+				<div class="collapse" id="collapseThemeJeremiah29_11">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox36" type="checkbox" name="group" id="checkTheme1John1_7" />
+				<label for="checkTheme1John1_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_7" aria-expanded="false" aria-controls="collapseTheme1John1_7">
+				  1 John 1:7
+				</button>
+				<div class="collapse" id="collapseTheme1John1_7">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox37" type="checkbox" name="group" id="checkTheme1John1_9" />
+				<label for="checkTheme1John1_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_9" aria-expanded="false" aria-controls="collapseTheme1John1_9">
+				  1 John 1:9
+				</button>
+				<div class="collapse" id="collapseTheme1John1_9">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox38" type="checkbox" name="group" id="checkThemeProverbs3_5" />
+				<label for="checkThemeProverbs3_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_5" aria-expanded="false" aria-controls="collapseThemeProverbs3_5">
+				  Proverbs 3:5
+				</button>
+				<div class="collapse" id="collapseThemeProverbs3_5">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox39" type="checkbox" name="group" id="checkThemeProverbs3_6" />
+				<label for="checkThemeProverbs3_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_6" aria-expanded="false" aria-controls="collapseThemeProverbs3_6">
+				  Proverbs 3:6
+				</button>
+				<div class="collapse" id="collapseThemeProverbs3_6">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox40" type="checkbox" name="group" id="checkTheme1Cor10_13" />
+				<label for="checkTheme1Cor10_13">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Cor10_13" aria-expanded="false" aria-controls="collapseTheme1Cor10_13">
+				  1 Corinthians 10:13
+				</button>
+				<div class="collapse" id="collapseTheme1Cor10_13">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox41" type="checkbox" name="group" id="checkThemePsalm55_22" />
+				<label for="checkThemePsalm55_22">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm55_22" aria-expanded="false" aria-controls="collapseThemePsalm55_22">
+				  Psalm 55:22
+				</button>
+				<div class="collapse" id="collapseThemePsalm55_22">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox42" type="checkbox" name="group" id="checkTheme1Peter5_7" />
+				<label for="checkTheme1Peter5_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter5_7" aria-expanded="false" aria-controls="collapseTheme1Peter5_7">
+				  1 Peter 5:7
+				</button>
+				<div class="collapse" id="collapseTheme1Peter5_7">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHoliness" aria-expanded="false" aria-controls="collapseHoliness">
+			  Holiness: Obeying God's Commands
+			</button>
+			<div class="collapse" id="collapseHoliness">
+			  	<p></p>
+
+			    <input class = "Checkbox43" type="checkbox" name="group" id="checkTheme2Chron7_14" />
+				<label for="checkTheme2Chron7_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Chron7_14" aria-expanded="false" aria-controls="collapseTheme2Chron7_14">
+				  2 Chronicles 7:14
+				</button>
+				<div class="collapse" id="collapseTheme2Chron7_14">
+				  <div class="well">
+				    if my people who are called by name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox44" type="checkbox" name="group" id="checkThemeRomans12_1" />
+				<label for="checkThemeRomans12_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_1" aria-expanded="false" aria-controls="collapseThemeRomans12_1">
+				  Romans 12:1
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_1">
+				  <div class="well">
+				     I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox45" type="checkbox" name="group" id="checkThemeRomans12_2" />
+				<label for="checkThemeRomans12_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_2" aria-expanded="false" aria-controls="collapseThemeRomans12_2">
+				  Romans 12:2
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_2">
+				  <div class="well">
+					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox46" type="checkbox" name="group" id="checkThemeRomans12_11" />
+				<label for="checkThemeRomans12_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_11" aria-expanded="false" aria-controls="collapseThemeRomans12_11">
+				  Romans 12:11
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_11">
+				  <div class="well">
+					Do not be slothful in zeal, be fervent in spirit, serve the Lord.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox47" type="checkbox" name="group" id="checkThemeRomans12_12" />
+				<label for="checkThemeRomans12_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_12" aria-expanded="false" aria-controls="collapseThemeRomans12_12">
+				  Romans 12:12
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_12">
+				  <div class="well">
+					Rejoice in hope, be patient in tribulation, be constant in prayer.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox48" type="checkbox" name="group" id="checkThemeRomans12_18" />
+				<label for="checkThemeRomans12_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_18" aria-expanded="false" aria-controls="collapseThemeRomans12_18">
+				  Romans 12:18
+				</button>
+				<div class="collapse" id="collapseThemeRomans12_18">
+				  <div class="well">
+					If possible, so far as it depends on you, live peaceably with all.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox49" type="checkbox" name="group" id="checkTheme2Cor9_7" />
+				<label for="checkTheme2Cor9_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Cor9_7" aria-expanded="false" aria-controls="collapseTheme2Cor9_7">
+				  2 Corinthians 9:7
+				</button>
+				<div class="collapse" id="collapseTheme2Cor9_7">
+				  <div class="well">
+					Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox50" type="checkbox" name="group" id="checkThemeHeb10_25" />
+				<label for="checkThemeHeb10_25">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb10_25" aria-expanded="false" aria-controls="collapseThemeHeb10_25">
+				  Hebrews 10:25
+				</button>
+				<div class="collapse" id="collapseThemeHeb10_25">
+				  <div class="well">
+					not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox51" type="checkbox" name="group" id="checkThemeProv1_7" />
+				<label for="checkThemeProv1_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv1_7" aria-expanded="false" aria-controls="collapseThemeProv1_7">
+				  Proverbs 1:7
+				</button>
+				<div class="collapse" id="collapseThemeProv1_7">
+				  <div class="well">
+					The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox52" type="checkbox" name="group" id="checkThemeProv15_1" />
+				<label for="checkThemeProv15_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv15_1" aria-expanded="false" aria-controls="collapseThemeProv15_1">
+				  Proverbs 15:1
+				</button>
+				<div class="collapse" id="collapseThemeProv15_1">
+				  <div class="well">
+					A soft answer turns away wrath, but a harsh word stirs up anger.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFullness" aria-expanded="false" aria-controls="collapseFullness">
+			  Fullness: Holy Spirit's Role in Our Lives
+			</button>
+			<div class="collapse" id="collapseFullness">
+			  	<p></p>
+
+			    <input class = "Checkbox53" type="checkbox" name="group" id="checkThemeEph5_18" />
+				<label for="checkThemeEph5_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_18" aria-expanded="false" aria-controls="collapseThemeEph5_18">
+				  Ephesians 5:18
+				</button>
+				<div class="collapse" id="collapseThemeEph5_18">
+				  <div class="well">
+				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox54" type="checkbox" name="group" id="checkThemeEph5_19" />
+				<label for="checkThemeEph5_19">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_19" aria-expanded="false" aria-controls="collapseThemeEph5_19">
+				  Ephesians 5:19
+				</button>
+				<div class="collapse" id="collapseThemeEph5_19">
+				  <div class="well">
+				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox55" type="checkbox" name="group" id="checkThemeEph5_20" />
+				<label for="checkThemeEph5_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_20" aria-expanded="false" aria-controls="collapseThemeEph5_20">
+				  Ephesians 5:20
+				</button>
+				<div class="collapse" id="collapseThemeEph5_20">
+				  <div class="well">
+					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox56" type="checkbox" name="group" id="checkThemeEph5_21" />
+				<label for="checkThemeEph5_21">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_21" aria-expanded="false" aria-controls="collapseThemeEph5_21">
+				  Ephesians 5:21
+				</button>
+				<div class="collapse" id="collapseThemeEph5_21">
+				  <div class="well">
+					submitting to one another out of reverence for Christ.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox57" type="checkbox" name="group" id="checkThemeGal5_22" />
+				<label for="checkThemeGal5_22">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_22" aria-expanded="false" aria-controls="collapseThemeGal5_22">
+				  Galatians 5:22
+				</button>
+				<div class="collapse" id="collapseThemeGal5_22">
+				  <div class="well">
+					But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox58" type="checkbox" name="group" id="checkThemeGal5_23" />
+				<label for="checkThemeGal5_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_23" aria-expanded="false" aria-controls="collapseThemeGal5_23">
+				  Galatians 5:23
+				</button>
+				<div class="collapse" id="collapseThemeGal5_23">
+				  <div class="well">
+					gentleness, self-control; against such things there is no law.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoy" aria-expanded="false" aria-controls="collapseJoy">
+			  Joy: God's Kind of Happiness
+			</button>
+			<div class="collapse" id="collapseJoy">
+			  	<p></p>
+
+			    <input class = "Checkbox59" type="checkbox" name="group" id="checkThemePsalm118_24" />
+				<label for="checkThemePsalm118_24">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm118_24" aria-expanded="false" aria-controls="collapseThemePsalm118_24">
+				  Psalm 118:24
+				</button>
+				<div class="collapse" id="collapseThemePsalm118_24">
+				  <div class="well">
+				    This is the day that the Lod has mad; let us rejoice and be glad in it.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox60" type="checkbox" name="group" id="checkThemePhil4_4" />
+				<label for="checkThemePhil4_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_4" aria-expanded="false" aria-controls="collapseThemePhil4_4">
+				  Philippians 4:4
+				</button>
+				<div class="collapse" id="collapseThemePhil4_4">
+				  <div class="well">
+				     Rejoice in the Lord always; again I will say, rejoice.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox61" type="checkbox" name="group" id="checkThemePhil4_5" />
+				<label for="checkThemePhil4_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_5" aria-expanded="false" aria-controls="collapseThemePhil4_5">
+				  Philippians 4:5
+				</button>
+				<div class="collapse" id="collapseThemePhil4_5">
+				  <div class="well">
+					Let your reasonableness be known to everyone. The Lord is at hand;
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox62" type="checkbox" name="group" id="checkThemePhil4_6" />
+				<label for="checkThemePhil4_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_6" aria-expanded="false" aria-controls="collapseThemePhil4_6">
+				  Philippians 4:6
+				</button>
+				<div class="collapse" id="collapseThemePhil4_6">
+				  <div class="well">
+					do not be anxious about anything, but in everything by prayer and aupplication with thanksgiving let your requests be made known to God.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox63" type="checkbox" name="group" id="checkThemePhil4_7" />
+				<label for="checkThemePhil4_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_7" aria-expanded="false" aria-controls="collapseThemePhil4_7">
+				  Philippians 4:7
+				</button>
+				<div class="collapse" id="collapseThemePhil4_7">
+				  <div class="well">
+					And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox64" type="checkbox" name="group" id="checkThemeJames1_2" />
+				<label for="checkThemeJames1_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_2" aria-expanded="false" aria-controls="collapseThemeJames1_2">
+				  James 1:2
+				</button>
+				<div class="collapse" id="collapseThemeJames1_2">
+				  <div class="well">
+					Count it all joy, my brothers, when you meet trials of various kinds,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox65" type="checkbox" name="group" id="checkThemeJames1_3" />
+				<label for="checkThemeJames1_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_3" aria-expanded="false" aria-controls="collapseThemeJames1_3">
+				  James 1:3
+				</button>
+				<div class="collapse" id="collapseThemeJames1_3">
+				  <div class="well">
+					for you know that the testing of your faith produces steadfastness.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox66" type="checkbox" name="group" id="checkThemeJames1_4" />
+				<label for="checkThemeJames1_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_4" aria-expanded="false" aria-controls="collapseThemeJames1_4">
+				  James 1:4
+				</button>
+				<div class="collapse" id="collapseThemeJames1_4">
+				  <div class="well">
+					And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox67" type="checkbox" name="group" id="checkThemeJames1_5" />
+				<label for="checkThemeJames1_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_5" aria-expanded="false" aria-controls="collapseThemeJames1_5">
+				  James 1:5
+				</button>
+				<div class="collapse" id="collapseThemeJames1_5">
+				  <div class="well">
+					If any of you lacks wisdom, let him ask God who gives generously to all without reproach, and it will be given him.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox68" type="checkbox" name="group" id="checkTheme1Thess5_16" />
+				<label for="checkTheme1Thess5_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_16" aria-expanded="false" aria-controls="collapseTheme1Thess5_16">
+				  1 Thessalonians 5:16
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_16">
+				  <div class="well">
+					Rejoice always,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox69" type="checkbox" name="group" id="checkTheme1Thess5_17" />
+				<label for="checkTheme1Thess5_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_17" aria-expanded="false" aria-controls="collapseTheme1Thess5_17">
+				  1 Thessalonians 5:17
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_17">
+				  <div class="well">
+					pray without ceasing,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox70" type="checkbox" name="group" id="checkTheme1Thess5_18" />
+				<label for="checkTheme1Thess5_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_18" aria-expanded="false" aria-controls="collapseTheme1Thess5_18">
+				  1 Thessalonians 5:18
+				</button>
+				<div class="collapse" id="collapseTheme1Thess5_18">
+				  <div class="well">
+					give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFaith" aria-expanded="false" aria-controls="collapseFaith">
+			  Faith: Trusting God &amp; Resting in His Word
+			</button>
+			<div class="collapse" id="collapseFaith">
+			  	<p></p>
+
+			    <input class = "Checkbox71" type="checkbox" name="group" id="checkThemeEph2_8" />
+				<label for="checkThemeEph2_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_8" aria-expanded="false" aria-controls="collapseThemeEph2_8">
+				  Ephesians 2:8
+				</button>
+				<div class="collapse" id="collapseThemeEph2_8">
+				  <div class="well">
+				    For by grace you have been saved through faith. And this is not your own doingl it is the gift of God,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox72" type="checkbox" name="group" id="checkThemeEph2_9" />
+				<label for="checkThemeEph2_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_9" aria-expanded="false" aria-controls="collapseThemeEph2_9">
+				  Ephesians 2:9
+				</button>
+				<div class="collapse" id="collapseThemeEph2_9">
+				  <div class="well">
+				     not a result of works, so that no one may boast.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox73" type="checkbox" name="group" id="checkThemeEph2_10" />
+				<label for="checkThemeEph2_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_10" aria-expanded="false" aria-controls="collapseThemeEph2_10">
+				  Ephesians 2:10
+				</button>
+				<div class="collapse" id="collapseThemeEph2_10">
+				  <div class="well">
+					For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox74" type="checkbox" name="group" id="checkThemeGal2_20" />
+				<label for="checkThemeGal2_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal2_20" aria-expanded="false" aria-controls="collapseThemeGal2_20">
+				  Galatians 2:20
+				</button>
+				<div class="collapse" id="collapseThemeGal2_20">
+				  <div class="well">
+					I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox75" type="checkbox" name="group" id="checkThemeCol3_15" />
+				<label for="checkThemeCol3_15">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_15" aria-expanded="false" aria-controls="collapseThemeCol3_15">
+				  Colossians 3:15
+				</button>
+				<div class="collapse" id="collapseThemeCol3_15">
+				  <div class="well">
+					And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox76" type="checkbox" name="group" id="checkThemeCol3_16" />
+				<label for="checkThemeCol3_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_16" aria-expanded="false" aria-controls="collapseThemeCol3_16">
+				  Colossians 3:16
+				</button>
+				<div class="collapse" id="collapseThemeCol3_16">
+				  <div class="well">
+					Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox77" type="checkbox" name="group" id="checkThemeCol3_17" />
+				<label for="checkThemeCol3_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_17" aria-expanded="false" aria-controls="collapseThemeCol3_17">
+				  Colossians 3:17
+				</button>
+				<div class="collapse" id="collapseThemeCol3_17">
+				  <div class="well">
+					And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox78" type="checkbox" name="group" id="checkThemeRom1_16" />
+				<label for="checkThemeRom1_16">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_16" aria-expanded="false" aria-controls="collapseThemeRom1_16">
+				  Romans 1:16
+				</button>
+				<div class="collapse" id="collapseThemeRom1_16">
+				  <div class="well">
+					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox79" type="checkbox" name="group" id="checkThemeRom1_17" />
+				<label for="checkThemeRom1_17">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_17" aria-expanded="false" aria-controls="collapseThemeJRom1_17">
+				  Romans 1:17
+				</button>
+				<div class="collapse" id="collapseThemeRom1_17">
+				  <div class="well">
+					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox80" type="checkbox" name="group" id="checkThemePsalm56_3" />
+				<label for="checkThemePsalm56_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm56_3" aria-expanded="false" aria-controls="collapseThemePsalm56_3">
+				  Psalm 56:3
+				</button>
+				<div class="collapse" id="collapseThemePsalm56_3">
+				  <div class="well">
+					When I am afraid, I put my trust in you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox81" type="checkbox" name="group" id="checkThemePsalm4_8" />
+				<label for="checkThemePsalm4_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm4_8" aria-expanded="false" aria-controls="collapseThemePsalm4_8">
+				  Psalm 4:8
+				</button>
+				<div class="collapse" id="collapseThemePsalm4_8">
+				  <div class="well">
+					In peace I will both lie down and sleep; for you alone, O Lord, make me dwell in safety.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox82" type="checkbox" name="group" id="checkThemeHebrews11_6" />
+				<label for="checkThemeHebrews11_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHebrews11_6" aria-expanded="false" aria-controls="collapseThemeHebrews11_6">
+				  Hebrews 11:6
+				</button>
+				<div class="collapse" id="collapseThemeHebrews11_6">
+				  <div class="well">
+					And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSent" aria-expanded="false" aria-controls="collapseSent">
+			  Sent: The Great Commission &amp; Our Global Task
+			</button>
+			<div class="collapse" id="collapseSent">
+			  	<p></p>
+
+			    <input class = "Checkbox83" type="checkbox" name="group" id="checkThemeMatt28_18" />
+				<label for="checkThemeMatt28_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_18" aria-expanded="false" aria-controls="collapseThemeMatt28_18">
+				  Matthew 28:18
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_18">
+				  <div class="well">
+				    And Jesus came and said the them, "All authority in heaven and on earth has been given to me."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox84" type="checkbox" name="group" id="checkThemeMatt28_19" />
+				<label for="checkThemeMatt28_19">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_19" aria-expanded="false" aria-controls="collapseThemeMatt28_19">
+				  Matthew 28:19
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_19">
+				  <div class="well">
+				     Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox85" type="checkbox" name="group" id="checkThemeMatt28_20" />
+				<label for="checkThemeMatt28_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_20" aria-expanded="false" aria-controls="collapseThemeMatt28_20">
+				  Matthew 28:20
+				</button>
+				<div class="collapse" id="collapseThemeMatt28_20">
+				  <div class="well">
+					teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox86" type="checkbox" name="group" id="checkThemeActs1_8" />
+				<label for="checkThemeActs1_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_8" aria-expanded="false" aria-controls="collapseThemeActs1_8">
+				  Acts 1:8
+				</button>
+				<div class="collapse" id="collapseThemeActs1_8">
+				  <div class="well">
+					But you will receieve power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm" aria-expanded="false" aria-controls="collapsePsalm">
+			  The 23rd Psalm: The Lord is My Shepherd
+			</button>
+			<div class="collapse" id="collapsePsalm">
+			  	<p></p>
+
+			    <input class = "Checkbox87" type="checkbox" name="group" id="checkThemePsalm23_1" />
+				<label for="checkThemePsalm23_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_1" aria-expanded="false" aria-controls="collapseThemePsalm23_1">
+				  Psalm 23:1
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_1">
+				  <div class="well">
+				    The Lord is my shepherd; I shall not want.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox88" type="checkbox" name="group" id="checkPsalm23_2" />
+				<label for="checkPsalm23_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_2" aria-expanded="false" aria-controls="collapseThemePsalm23_2">
+				  Psalm 23:2
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_2">
+				  <div class="well">
+				     He makes me lie down in green pastures. He leads me beside still waters.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox89" type="checkbox" name="group" id="checkThemePsalm23_3" />
+				<label for="checkThemePsalm23_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_3" aria-expanded="false" aria-controls="collapseThemePsalm23_3">
+				  Psalm 23:3
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_3">
+				  <div class="well">
+					He restores my soul. He leads me in paths of righteousness for his name's sake.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox90" type="checkbox" name="group" id="checkThemePsalm23_4" />
+				<label for="checkThemePsalm23_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_4" aria-expanded="false" aria-controls="collapseThemePsalm23_4">
+				  Psalm 23:4
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_4">
+				  <div class="well">
+					Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox91" type="checkbox" name="group" id="checkThemePsalm23_5" />
+				<label for="checkThemePsalm23_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_5" aria-expanded="false" aria-controls="collapseThemePsalm23_5">
+				  Psalm 23:5
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_5">
+				  <div class="well">
+					You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox92" type="checkbox" name="group" id="checkThemePsalm23_6" />
+				<label for="checkThemePsalm23_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_6" aria-expanded="false" aria-controls="collapseThemePsalm23_6">
+				  Psalm 23:6
+				</button>
+				<div class="collapse" id="collapseThemePsalm23_6">
+				  <div class="well">
+					Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever
+				  </div>
+				</div>
+			</div>
+
+			<p></p>
+
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlpha" aria-expanded="false" aria-controls="collapseAlpha">
+			  Alpha &amp; Omega: The 1st and 2nd Comings of Christ
+			</button>
+			<div class="collapse" id="collapseAlpha">
+			  	<p></p>
+
+			    <input class = "Checkbox93" type="checkbox" name="group" id="checkThemeIsaiah9_6" />
+				<label for="checkThemeIsaiah9_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah9_6" aria-expanded="false" aria-controls="collapseThemeIsaiah9_6">
+				  Isaiah 9:6
+				</button>
+				<div class="collapse" id="collapseThemeIsaiah9_6">
+				  <div class="well">
+				    For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox94" type="checkbox" name="group" id="checkThemeLuke2_10" />
+				<label for="checkThemeLuke2_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_10" aria-expanded="false" aria-controls="collapseThemeLuke2_10">
+				  Luke 2:10
+				</button>
+				<div class="collapse" id="collapseThemeLuke2_10">
+				  <div class="well">
+				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people. "
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox95" type="checkbox" name="group" id="checkThemeLuke2_11" />
+				<label for="checkThemeLuke2_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_11" aria-expanded="false" aria-controls="collapseThemeLuke2_11">
+				  Luke 2:11
+				</button>
+				<div class="collapse" id="collapseThemeLuke2_11">
+				  <div class="well">
+					For unto you is born this day in the city of David a Savior, who is Christ the Lord
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox96" type="checkbox" name="group" id="checkThemeLuke2_12" />
+				<label for="checkThemeLuke2_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_12" aria-expanded="false" aria-controls="collapseThemeLuke2_12">
+				  Luke 2:12
+				</button>
+				<div class="collapse" id="collapseThemeLuke2_12">
+				  <div class="well">
+					And this will be a sign for you: you will find a baby wrapped in swaddling cloths and lying in a manger.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox97" type="checkbox" name="group" id="checkThemeActs1_11" />
+				<label for="checkThemeActs1_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_11" aria-expanded="false" aria-controls="collapseThemeActs1_11">
+				  Acts 1:11
+				</button>
+				<div class="collapse" id="collapseThemeActs1_11">
+				  <div class="well">
+					and said, "Men of Galilee, why do you stand looking into heaven? This Jesus, who was taken up from you into heaven, will come in the same way as you saw him go into heaven."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox98" type="checkbox" name="group" id="checkThemeRev21_1" />
+				<label for="checkThemeRev21_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_1" aria-expanded="false" aria-controls="collapseThemeRev21_1">
+				  Revelation 21:1
+				</button>
+				<div class="collapse" id="collapseThemeRev21_1">
+				  <div class="well">
+					He who has an ear, let him hear what the Spirit says to the churches. The one who conquers will not be hurt by the second death.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox99" type="checkbox" name="group" id="checkThemeRev21_2" />
+				<label for="checkThemeRev21_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_2" aria-expanded="false" aria-controls="collapseThemeRev21_2">
+				  Revelation 21:2
+				</button>
+				<div class="collapse" id="collapseThemeRev21_2">
+				  <div class="well">
+					And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox100" type="checkbox" name="group" id="checkThemeRev22_20" />
+				<label for="checkThemeRev22_20">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev22_20" aria-expanded="false" aria-controls="collapseThemeRev22_20">
 				  Revelation 22:20
 				</button>

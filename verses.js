@@ -206,14 +206,14 @@ $(document).ready(function () {
 	if (cookie100 == "changed"){count = count+1}
 
 
-	// var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
-	// var ratioChecked = count/numCheckBoxes * 100
-	// var progressSoFar = count/2 + '/' + numCheckBoxes
-	// 	document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
-	// if (numChecked == numCheckBoxes){
-	// 	document.getElementById('progressSoFar').innerHTML = "DONE!";
-	// }
-	// document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+	var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
+	var ratioChecked = count/numCheckBoxes * 100
+	var progressSoFar = count/2 + '/' + numCheckBoxes/2
+		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
+	if (numChecked == numCheckBoxes){
+		document.getElementById('progressSoFar').innerHTML = "DONE!";
+	}
+	document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
 
 	// update cookies
 	!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
@@ -344,8 +344,7 @@ $(document).ready(function () {
 		} else {
 			$.cookie("cookie4", null);
 		}         
-	}).change(); 
-	});  
+	}).change();  
 	$('.Checkbox5').change(function () {               
 		if( this.checked ) {
 			$.cookie("cookie5", "changed");
@@ -415,8 +414,7 @@ $(document).ready(function () {
 		} else {
 			$.cookie("cookie14", null);
 		}         
-	}).change(); 
-	});  
+	}).change();  
 	$('.Checkbox15').change(function () {               
 		if( this.checked ) {
 			$.cookie("cookie15", "changed");
@@ -459,575 +457,566 @@ $(document).ready(function () {
 			$.cookie("cookie20", null);
 		}         
 	}).change();
-	$('.Checkbox1').change(function () {               
+	$('.Checkbox21').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie1", "changed");
+			$.cookie("cookie21", "changed");
 		} else {
-			$.cookie("cookie1", null);
+			$.cookie("cookie21", null);
 		}         
 	}).change();
-	$('.Checkbox2').change(function () {
+	$('.Checkbox22').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie2", "changed");
+			$.cookie("cookie22", "changed");
 		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie22", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox23').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie23", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie23", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox24').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie24", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie24", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox25').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie25", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie25", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox26').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie26", "changed");
 		} else {
-			$.cookie("cookie6", null);
+			$.cookie("cookie26", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox27').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie27", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie27", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox28').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie28", "changed");
 		} else {
-				$.cookie("cookie8", null);
+				$.cookie("cookie28", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox29').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie29", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie29", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox30').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie30", "changed");
 		} else {
-			$.cookie("cookie0", null);
+			$.cookie("cookie30", null);
 		}         
 	}).change();
-	$('.Checkbox1').change(function () {               
+	$('.Checkbox31').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie1", "changed");
+			$.cookie("cookie31", "changed");
 		} else {
-			$.cookie("cookie1", null);
+			$.cookie("cookie31", null);
 		}         
 	}).change();
-	$('.Checkbox2').change(function () {
+	$('.Checkbox32').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie2", "changed");
+			$.cookie("cookie32", "changed");
 		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie32", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox33').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie33", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie33", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox34').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie34", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie34", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox35').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie35", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie35", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox36').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie36", "changed");
 		} else {
-			$.cookie("cookie6", null);
+			$.cookie("cookie36", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox37').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie37", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie37", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox38').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie38", "changed");
 		} else {
-				$.cookie("cookie8", null);
+				$.cookie("cookie38", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox39').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie39", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie39", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox40').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie40", "changed");
 		} else {
-			$.cookie("cookie0", null);
+			$.cookie("cookie40", null);
 		}         
 	}).change();
-	$('.Checkbox1').change(function () {               
+	$('.Checkbox41').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie1", "changed");
+			$.cookie("cookie41", "changed");
 		} else {
-			$.cookie("cookie1", null);
+			$.cookie("cookie41", null);
 		}         
 	}).change();
-	$('.Checkbox2').change(function () {
+	$('.Checkbox42').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie2", "changed");
+			$.cookie("cookie42", "changed");
 		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie42", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox43').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie43", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie43", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox44').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie44", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie44", null);
+		}         
+	}).change();  
+	$('.Checkbox45').change(function () {               
+		if( this.checked ) {
+			$.cookie("cookie45", "changed");
+		} else {
+			$.cookie("cookie45", null);
+		}         
+	}).change();
+	$('.Checkbox46').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie46", "changed");
+		} else {
+			$.cookie("cookie46", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox47').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie47", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie47", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox48').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie48", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie48", null);
+		}         
+	}).change();
+	$('.Checkbox49').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie49", "changed");
+		} else {
+			$.cookie("cookie49", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox50').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie50", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie50", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox51').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie51", "changed");
 		} else {
-				$.cookie("cookie8", null);
+			$.cookie("cookie51", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox52').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie52", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie52", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox53').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie53", "changed");
 		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-	$('.Checkbox1').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie1", "changed");
-		} else {
-			$.cookie("cookie1", null);
-		}         
-	}).change();
-	$('.Checkbox2').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie2", "changed");
-		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie53", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox54').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie54", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie54", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox55').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie55", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie55", null);
+		}         
+	}).change();
+	$('.Checkbox56').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie56", "changed");
+		} else {
+			$.cookie("cookie56", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox57').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie57", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie57", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox58').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie58", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie58", null);
+		}         
+	}).change();
+	$('.Checkbox59').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie59", "changed");
+		} else {
+			$.cookie("cookie59", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox60').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie60", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie60", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox61').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie61", "changed");
 		} else {
-				$.cookie("cookie8", null);
+			$.cookie("cookie61", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox62').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie62", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie62", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox63').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie63", "changed");
 		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-	$('.Checkbox1').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie1", "changed");
-		} else {
-			$.cookie("cookie1", null);
-		}         
-	}).change();
-	$('.Checkbox2').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie2", "changed");
-		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie63", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox64').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie64", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie64", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox65').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie65", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie65", null);
+		}         
+	}).change();
+	$('.Checkbox66').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie66", "changed");
+		} else {
+			$.cookie("cookie66", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox67').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie67", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie67", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox68').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie68", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie68", null);
+		}         
+	}).change();
+	$('.Checkbox69').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie69", "changed");
+		} else {
+			$.cookie("cookie69", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox70').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie70", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie70", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox71').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie71", "changed");
 		} else {
-				$.cookie("cookie8", null);
+			$.cookie("cookie71", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox72').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie72", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie72", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox73').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie73", "changed");
 		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-	$('.Checkbox1').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie1", "changed");
-		} else {
-			$.cookie("cookie1", null);
-		}         
-	}).change();
-	$('.Checkbox2').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie2", "changed");
-		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie73", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox74').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie74", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie74", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox75').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie75", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie75", null);
+		}         
+	}).change();
+	$('.Checkbox76').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie76", "changed");
+		} else {
+			$.cookie("cookie76", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox77').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie77", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie77", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox78').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie78", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie78", null);
+		}         
+	}).change();
+	$('.Checkbox79').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie79", "changed");
+		} else {
+			$.cookie("cookie79", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox80').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie80", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie80", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox81').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie81", "changed");
 		} else {
-				$.cookie("cookie8", null);
+			$.cookie("cookie81", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox82').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie82", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie82", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox83').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie83", "changed");
 		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-	$('.Checkbox1').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie1", "changed");
-		} else {
-			$.cookie("cookie1", null);
-		}         
-	}).change();
-	$('.Checkbox2').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie2", "changed");
-		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie83", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox84').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie84", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie84", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox85').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie85", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie85", null);
+		}         
+	}).change();
+	$('.Checkbox86').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie86", "changed");
+		} else {
+			$.cookie("cookie86", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox87').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie87", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie87", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox88').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie88", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie88", null);
+		}         
+	}).change();
+	$('.Checkbox89').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie89", "changed");
+		} else {
+			$.cookie("cookie89", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox90').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie90", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie90", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
+	$('.Checkbox91').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie91", "changed");
 		} else {
-				$.cookie("cookie8", null);
+			$.cookie("cookie91", null);
 		}         
 	}).change();
-	$('.Checkbox9').change(function () {
+	$('.Checkbox92').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie92", "changed");
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie92", null);
 		}         
 	}).change(); 
-	$('.Checkbox0').change(function () {
+	$('.Checkbox93').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie0", "changed");
+			$.cookie("cookie93", "changed");
 		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-	$('.Checkbox1').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie1", "changed");
-		} else {
-			$.cookie("cookie1", null);
-		}         
-	}).change();
-	$('.Checkbox2').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie2", "changed");
-		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie93", null);
 		}         
 	}).change(); 
-	$('.Checkbox3').change(function () {
+	$('.Checkbox94').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie94", "changed");
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie94", null);
 		}         
 	}).change(); 
-	$('.Checkbox4').change(function () {
+	$('.Checkbox95').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie95", "changed");
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie95", null);
+		}         
+	}).change();
+	$('.Checkbox96').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie96", "changed");
+		} else {
+			$.cookie("cookie96", null);
 		}         
 	}).change(); 
-	});  
-	$('.Checkbox5').change(function () {               
+	$('.Checkbox97').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie97", "changed");
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie97", null);
 		}         
 	}).change();
-	$('.Checkbox6').change(function () {
+	$('.Checkbox98').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie98", "changed");
 		} else {
-			$.cookie("cookie6", null);
+				$.cookie("cookie98", null);
+		}         
+	}).change();
+	$('.Checkbox99').change(function () {
+		if( this.checked ) {
+			$.cookie("cookie99", "changed");
+		} else {
+			$.cookie("cookie99", null);
 		}         
 	}).change(); 
-	$('.Checkbox7').change(function () {
+	$('.Checkbox100').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie100", "changed");
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie100", null);
 		}         
 	}).change();
-	$('.Checkbox8').change(function () {               
-		if( this.checked ) {
-			$.cookie("cookie8", "changed");
-		} else {
-				$.cookie("cookie8", null);
-		}         
-	}).change();
-	$('.Checkbox9').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie9", "changed");
-		} else {
-			$.cookie("cookie9", null);
-		}         
-	}).change(); 
-	$('.Checkbox0').change(function () {
-		if( this.checked ) {
-			$.cookie("cookie0", "changed");
-		} else {
-			$.cookie("cookie0", null);
-		}         
-	}).change();
-
 });  //end function
 
 
