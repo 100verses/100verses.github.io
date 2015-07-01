@@ -57,18 +57,17 @@
 	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab" onclick = "javascript:updateBookAll()">Verses by Book</a></li>
 	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab" onclick = "javascript:updateAll()">Verses by Theme</a></li>
 		
-	    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
 	  </ul>
 
 	  <!-- Tab panes -->
 	  <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane fade in active" id="home">
 
-	    	<h1> About </h1>
-	    	These are the 100 verses that every Christian should know by heart.
+	    	<h2> About </h2>
+	    	These are 100 verses that are important for every Christian to know by heart.
 
-	    	<h1> How to Use This Site </h1>
-	    	Click on the verses tab at the top of this page to see the 100 verses. You can see each verse by clicking its reference. Once you have memorized a verse, click the "Memorized" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
+	    	<h2> How to Use This Site </h2>
+	    	Click on the tabs at the top of this page to see the 100 verses, organized either by book or by theme. You can see each verse by clicking its reference. Once you have memorized a verse, click the "Memorized!" checkbox to the left of the verse to update your progress! See if you can memorize all 100!
 
 
 	    	<!--JS that updates progress bar -->
@@ -78,15 +77,15 @@
 		 			var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 		 			var ratioChecked = numChecked/numCheckBoxes * 100
 		 			var progressSoFar = numChecked/2 + '/' + numCheckBoxes/2
-		 			document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
+		 			document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + numChecked/2 + "%)";
 		 			if (numChecked == numCheckBoxes){
 		 				document.getElementById('progressSoFar').innerHTML = "DONE!";
 		 			}
-		 			document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+		 			document.getElementById('progress').setAttribute('style', 'width:' + numChecked + '%')
 		 		}
 			</script>
 
-	    	<h1>Progress So Far</h1>
+	    	<h1>Progress</h1>
   	    	<h4 id = 'progressSoFar'></h4>
 
 	    	<div class="progress">
@@ -584,7 +583,7 @@
 				</button>
 				<div class="collapse" id="collapsePsalm55_22">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.
 				  </div>
 				</div>
 
@@ -637,7 +636,7 @@
 				</button>
 				<div class="collapse" id="collapsePsalm118_24">
 				  <div class="well">
-				    This is the day that the Lod has mad; let us rejoice and be glad in it.
+				    This is the day that the Lod has made; let us rejoice and be glad in it.
 				  </div>
 				</div>
 
@@ -683,7 +682,7 @@
 				</button>
 				<div class="collapse" id="collapseProverbs3_5">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					I lay down and slept; I woke again, for the Lord sustained me.
 				  </div>
 				</div>
 
@@ -696,7 +695,7 @@
 				</button>
 				<div class="collapse" id="collapseProverbs3_6">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					I will not be afraid of many thousands of people who have set themselves against me all around.
 				  </div>
 				</div>
 
@@ -796,7 +795,7 @@
 				</button>
 				<div class="collapse" id="collapseJeremiah29_11">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					For I know the plans I have for you, declares the Lord, plans for welfare[a] and not for evil, to give you a future and a hope.
 				  </div>
 				</div>
 
@@ -884,7 +883,7 @@
 				</button>
 				<div class="collapse" id="collapseLuke2_10">
 				  <div class="well">
-				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people. "
+				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people."
 				  </div>
 				</div>
 
@@ -969,7 +968,7 @@
 				</button>
 				<div class="collapse" id="collapseJohn14_1">
 				  <div class="well">
-					Let not your hearts be troubled, Believe in God; believe also in me.
+					Let not your hearts be troubled. Believe in God; believe also in me.
 				  </div>
 				</div>
 
@@ -1021,7 +1020,7 @@
 				</button>
 				<div class="collapse" id="collapseJohn14_27">
 				  <div class="well">
-				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+				    Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
 				  </div>
 				</div>
 
@@ -1080,7 +1079,7 @@
 				</button>
 				<div class="collapse" id="collapseRom1_16">
 				  <div class="well">
-					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
+					For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.
 				  </div>
 				</div>
 
@@ -1093,7 +1092,7 @@
 				</button>
 				<div class="collapse" id="collapseRom1_17">
 				  <div class="well">
-					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
+					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shall live by faith."
 				  </div>
 				</div>
 
@@ -1106,7 +1105,7 @@
 				</button>
 				<div class="collapse" id="collapseRomans3_23">
 				  <div class="well">
-				    In the beginning, God created the heavens and the earth.
+				    for all have sinned and fall short of the glory of God,
 				  </div>
 				</div>
 
@@ -1119,7 +1118,7 @@
 				</button>
 				<div class="collapse" id="collapseRomans5_8">
 				  <div class="well">
-					but God shows his love in that while we were still sinners, Christ died for us
+					but God shows his love in that while we were still sinners, Christ died for us.
 				  </div>
 				</div>
 
@@ -1132,7 +1131,7 @@
 				</button>
 				<div class="collapse" id="collapseRomans6_23">
 				  <div class="well">
-				     for all have sinned and fall short of the glory of God
+				     For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 				  </div>
 				</div>
 
@@ -1259,7 +1258,7 @@
 				</button>
 				<div class="collapse" id="collapse1Cor10_13">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.
 				  </div>
 				</div>
 
@@ -1395,7 +1394,7 @@
 				</button>
 				<div class="collapse" id="collapseEph5_18">
 				  <div class="well">
-				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
+				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit,
 				  </div>
 				</div>
 
@@ -1408,7 +1407,7 @@
 				</button>
 				<div class="collapse" id="collapseEph5_19">
 				  <div class="well">
-				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
+				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart,
 				  </div>
 				</div>
 
@@ -1421,7 +1420,7 @@
 				</button>
 				<div class="collapse" id="collapseEph5_20">
 				  <div class="well">
-					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
+					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ,
 				  </div>
 				</div>
 
@@ -1614,7 +1613,7 @@
 				</button>
 				<div class="collapse" id="collapse2Tim3_16">
 				  <div class="well">
-				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
+				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,
 				  </div>
 				</div>
 			</div>
@@ -1772,7 +1771,7 @@
 				</button>
 				<div class="collapse" id="collapse1Peter5_7">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					casting all your anxieties on him, because he cares for you.
 				  </div>
 				</div>
 
@@ -1795,7 +1794,7 @@
 				</button>
 				<div class="collapse" id="collapse1John1_7">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
 				  </div>
 				</div>
 
@@ -1808,7 +1807,7 @@
 				</button>
 				<div class="collapse" id="collapse1John1_9">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
 				  </div>
 				</div>
 				<p></p>
@@ -2167,7 +2166,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeRomans3_23">
 				  <div class="well">
-				    In the beginning, God created the heavens and the earth.
+				    for all have sinned and fall short of the glory of God,
 				  </div>
 				</div>
 
@@ -2180,7 +2179,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeRomans6_23">
 				  <div class="well">
-				     for all have sinned and fall short of the glory of God
+				     For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.
 				  </div>
 				</div>
 
@@ -2193,7 +2192,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeRomans5_8">
 				  <div class="well">
-					but God shows his love in that while we were still sinners, Christ died for us
+					but God shows his love in that while we were still sinners, Christ died for us.
 				  </div>
 				</div>
 
@@ -2240,7 +2239,7 @@
 				</button>
 				<div class="collapse" id="collapseTheme2Tim3_16">
 				  <div class="well">
-				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
+				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness,
 				  </div>
 				</div>
 
@@ -2391,7 +2390,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeJohn14_1">
 				  <div class="well">
-					Let not your hearts be troubled, Believe in God; believe also in me.
+					Let not your hearts be troubled. Believe in God; believe also in me.
 				  </div>
 				</div>
 
@@ -2443,7 +2442,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeJohn14_27">
 				  <div class="well">
-				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
+				    Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
 				  </div>
 				</div>
 
@@ -2589,7 +2588,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeJeremiah29_11">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					For I know the plans I have for you, declares the Lord, plans for welfare[a] and not for evil, to give you a future and a hope.
 				  </div>
 				</div>
 
@@ -2602,7 +2601,7 @@
 				</button>
 				<div class="collapse" id="collapseTheme1John1_7">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin.
 				  </div>
 				</div>
 
@@ -2615,7 +2614,7 @@
 				</button>
 				<div class="collapse" id="collapseTheme1John1_9">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.
 				  </div>
 				</div>
 
@@ -2628,7 +2627,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeProverbs3_5">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					I lay down and slept; I woke again, for the Lord sustained me.
 				  </div>
 				</div>
 
@@ -2641,7 +2640,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeProverbs3_6">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					I will not be afraid of many thousands of people who have set themselves against me all around.
 				  </div>
 				</div>
 
@@ -2654,7 +2653,7 @@
 				</button>
 				<div class="collapse" id="collapseTheme1Cor10_13">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.
 				  </div>
 				</div>
 
@@ -2667,7 +2666,7 @@
 				</button>
 				<div class="collapse" id="collapseThemePsalm55_22">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.
 				  </div>
 				</div>
 
@@ -2680,7 +2679,7 @@
 				</button>
 				<div class="collapse" id="collapseTheme1Peter5_7">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+					casting all your anxieties on him, because he cares for you.
 				  </div>
 				</div>
 			</div>
@@ -2839,7 +2838,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeEph5_18">
 				  <div class="well">
-				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
+				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit,
 				  </div>
 				</div>
 
@@ -2852,7 +2851,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeEph5_19">
 				  <div class="well">
-				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
+				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart,
 				  </div>
 				</div>
 
@@ -2865,7 +2864,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeEph5_20">
 				  <div class="well">
-					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
+					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ,
 				  </div>
 				</div>
 
@@ -2925,7 +2924,7 @@
 				</button>
 				<div class="collapse" id="collapseThemePsalm118_24">
 				  <div class="well">
-				    This is the day that the Lod has mad; let us rejoice and be glad in it.
+				    This is the day that the Lod has made; let us rejoice and be glad in it.
 				  </div>
 				</div>
 
@@ -3180,7 +3179,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeRom1_16">
 				  <div class="well">
-					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
+					For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.
 				  </div>
 				</div>
 
@@ -3193,7 +3192,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeRom1_17">
 				  <div class="well">
-					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
+					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shall live by faith."
 				  </div>
 				</div>
 
@@ -3412,7 +3411,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeLuke2_10">
 				  <div class="well">
-				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people. "
+				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people."
 				  </div>
 				</div>
 

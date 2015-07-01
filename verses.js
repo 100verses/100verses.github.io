@@ -210,7 +210,7 @@ $(document).ready(function () {
 	var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 	var progressSoFar = count + '/100'
 		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + count + "%)";
-	if (numChecked == numCheckBoxes){
+	if (count == 100){
 		document.getElementById('progressSoFar').innerHTML = "DONE!";
 	}
 	document.getElementById('progress').setAttribute('style', 'width:' + count + '%')
