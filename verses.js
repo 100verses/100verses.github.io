@@ -208,13 +208,12 @@ $(document).ready(function () {
 
 
 	var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
-	var ratioChecked = count/100
 	var progressSoFar = count + '/100'
-		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
+		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + count + "%)";
 	if (numChecked == numCheckBoxes){
 		document.getElementById('progressSoFar').innerHTML = "DONE!";
 	}
-	document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+	document.getElementById('progress').setAttribute('style', 'width:' + count + '%')
 
 	// update cookies
 	!( cookie1 == "changed" ) || $('.Checkbox1').attr('checked',true);
