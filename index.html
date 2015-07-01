@@ -3516,7 +3516,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src = "checkbox.js"></script>
 
-<!--
 	<script type="text/javascript">
 		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
 		var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
@@ -3528,19 +3527,8 @@
 		}
 		document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
 
-	</script> -->
-
-	<script type="text/javascript">
-		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
-		var numCheckBoxes = 100
-		var progressSoFar = numChecked/2 + '/100'
-		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + numChecked + "%)";
-		if (numChecked == numCheckBoxes){
-			document.getElementById('progressSoFar').innerHTML = "DONE!";
-		}
-		document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
-
 	</script>
+
 
   </body>
 </html>
