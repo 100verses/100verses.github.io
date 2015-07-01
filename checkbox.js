@@ -980,7 +980,7 @@ $('.Checkbox98').trigger('change');
 
 $('.Checkbox99').change(function () {
     if ($(this).prop('checked')) {
-    $('.Checkbox9').prop('checked', true);
+    $('.Checkbox99').prop('checked', true);
     }
     else {
         $('.Checkbox99').prop('checked', false);

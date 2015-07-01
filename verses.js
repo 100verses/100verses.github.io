@@ -206,9 +206,10 @@ $(document).ready(function () {
 	if (cookie100 == "changed"){count = count+1}
 
 
+
 	var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
-	var ratioChecked = count/numCheckBoxes * 100
-	var progressSoFar = count/2 + '/' + numCheckBoxes/2
+	var ratioChecked = count/100
+	var progressSoFar = count + '/100'
 		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
 	if (numChecked == numCheckBoxes){
 		document.getElementById('progressSoFar').innerHTML = "DONE!";

@@ -54,8 +54,8 @@
 	  <!-- Nav tabs -->
 	  <ul class="nav nav-tabs" role="tablist">
 	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick = "javascript:update()">Home</a></li>
-	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab">Verses by Book</a></li>
-	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Verses by Theme</a></li>
+	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab" onclick = "javascript:updateBookAll()">Verses by Book</a></li>
+	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab" onclick = "javascript:updateAll()">Verses by Theme</a></li>
 		
 	    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
 	  </ul>
@@ -99,7 +99,7 @@
 
 	    <!-- VERSES -->
 	    <div role="tabpanel" class="tab-pane fade" id="verses">
-	    	<p></p>
+
 
 	    	<!--BUTTONS FOR VERSES -->
 	  		<!-- <div class="btn-group" data-toggle="buttons">
@@ -107,15 +107,283 @@
 			    <input type="checkbox" autocomplete="off" id="Checkbox1" checked = "false"> Memorized!
 			  </label>
 			</div> -->
+			<script type="text/javascript">
+	    		var updateBookAll = function (){
+	    			updateGen()
+	    			updateDeut()
+	    			updateJosh()
+	    			update2Chron()
+	    			updateBookPsalms()
+	    			updateProv()
+	    			updateIsa()
+	    			updateJere()
+	    			updateMatt()
+	    			updateLuke()
+	    			updateJohn()
+	    			updateActs()
+	    			updateBookRom()
+	    			update1Cor()
+	    			update2Cor()
+	    			updateGal()
+	    			updateEph()
+	    			updatePhil()
+	    			updateCol()
+	    			update1Thess()
+	    			update2Tim()
+	    			updateHeb()
+	    			updateJames()
+	    			update1Pet()
+	    			update1John()
+	    			updateRev()
+	    		}
+	 			var updateGen = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupGen"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupGen"]').length
+		 			var progressSoFar =  '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textGen').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textGen').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateDeut = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupDeut"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupDeut"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textDeut').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textDeut').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateJosh = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupJosh"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupJosh"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textJosh').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textJosh').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update2Chron = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group2Chron"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group2Chron"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text2Chron').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text2Chron').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateBookPsalms = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupBookPsalms"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupBookPsalms"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textBookPsalms').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textBookPsalms').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateProv = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupProv"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupProv"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textProv').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textProv').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateIsa = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupIsa"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupIsa"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textIsa').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textIsa').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateJere = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupJere"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupJere"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textJere').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textJere').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}	
+		 		}
+		 		var updateMatt = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupMatt"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupMatt"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textMatt').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textMatt').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateLuke = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupLuke"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupLuke"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textLuke').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textLuke').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateJohn = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupJohn"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupJohn"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textJohn').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textJohn').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateActs = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupActs"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupActs"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textActs').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textActs').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateBookRom = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupBookRom"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupBookRom"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textBookRom').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textBookRom').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update1Cor = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group1Cor"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group1Cor"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text1Cor').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text1Cor').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update2Cor = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group2Cor"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group2Cor"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text2Cor').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text2Cor').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateGal = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupGal"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupGal"]').length
+		 			var progressSoFar =  '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textGal').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textGal').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateEph = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupEph"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupEph"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textEph').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textEph').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updatePhil = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupPhil"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupPhil"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textPhil').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textPhil').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateCol = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupCol"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupCol"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textCol').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textCol').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update1Thess = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group1Thess"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group1Thess"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text1Thess').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text1Thess').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 			
+		 		}
+		 		var update2Tim = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group2Tim"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group2Tim"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text2Tim').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text2Tim').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateHeb = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupHeb"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupHeb"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textHeb').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textHeb').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateJames = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupJames"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupJames"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textJames').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textJames').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update1Pet = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group1Pet"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group1Pet"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text1Pet').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text1Pet').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var update1John = function (){
+		 			var numChecked = document.querySelectorAll('input[name="group1John"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="group1John"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('text1John').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('text1John').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateRev = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupRev"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupRev"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textRev').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textRev').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+			</script>
+
+			<p></p>
 
 			<h2 style="text-decoration: underline;">Old Testament: </h2>
 
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGenesis" aria-expanded="false" aria-controls="collapseGenesis">
 			  Genesis
 			</button>
+			<span id="textGen"></span>
 			<div class="collapse" id="collapseGenesis">
 
-			    <input class = "Checkbox1" type="checkbox" name="group" id="checkGen1_1" />
+			    <input class = "Checkbox1" type="checkbox" name="groupGen" id="checkGen1_1" onclick="javascript:updateGen()"/>
 				<label for="checkGen1_1">Memorized!</label>
 
 
@@ -136,14 +404,15 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeuteronomy" aria-expanded="false" aria-controls="collapseDeuteronomy">
 			  Deuteronomy
 			</button>
+			<span id="textDeut"></span>
 			<div class="collapse" id="collapseDeuteronomy">
 				<p></p>
-				<input class = "Checkbox13" type="checkbox" name="group" id="checkDeut6_6" />
+				<input class = "Checkbox13" type="checkbox" name="groupDeut" id="checkDeut6_6" onclick="javascript:updateDeut()"/>
 				<label for="checkDeut6_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_6" aria-expanded="false" aria-controls="collapseThemeDeut6_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeut6_6" aria-expanded="false" aria-controls="collapseDeut6_6">
 				  Deuteronomy 6:6
 				</button>
-				<div class="collapse" id="collapseThemeDeut6_6">
+				<div class="collapse" id="collapseDeut6_6">
 				  <div class="well">
 				    And these words that I command you today shall be on your heart.
 				  </div>
@@ -151,12 +420,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox14" type="checkbox" name="group" id="checkDeut6_7" />
+				<input class = "Checkbox14" type="checkbox" name="groupDeut" id="checkDeut6_7" onclick="javascript:updateDeut()"/>
 				<label for="checkDeut6_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_7" aria-expanded="false" aria-controls="collapseThemeDeut6_7">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeut6_7" aria-expanded="false" aria-controls="collapseDeut6_7">
 				  Deuteronomy 6:7
 				</button>
-				<div class="collapse" id="collapseThemeDeut6_7">
+				<div class="collapse" id="collapseDeut6_7">
 				  <div class="well">
 				    You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.
 				  </div>
@@ -170,14 +439,15 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoshua" aria-expanded="false" aria-controls="collapseJoshua">
 			  Joshua
 			</button>
+			<span id="textJosh"></span>
 			<div class="collapse" id="collapseJoshua">
 				<p></p>
-				<input class = "Checkbox11" type="checkbox" name="group" id="checkJosh1_8" />
+				<input class = "Checkbox11" type="checkbox" name="groupJosh" id="checkJosh1_8" onclick="javascript:updateJosh()"/>
 				<label for="checkJosh1_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJosh1_8" aria-expanded="false" aria-controls="collapseThemeJosh1_8">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJosh1_8" aria-expanded="false" aria-controls="collapseJosh1_8">
 				  Joshua 1:8
 				</button>
-				<div class="collapse" id="collapseThemeJosh1_8">
+				<div class="collapse" id="collapseJosh1_8">
 				  <div class="well">
 				     The Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.
 				  </div>
@@ -189,22 +459,22 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Chronicles" aria-expanded="false" aria-controls="collapse2Chronicles">
 			  2 Chronicles
 			</button>
+			<span id="text2Chron"></span>
 			<div class="collapse" id="collapse2Chronicles">
 				<p></p>
 
-			    <input class = "Checkbox43" type="checkbox" name="group" id="check2Chron7_14" />
+			    <input class = "Checkbox43" type="checkbox" name="group2Chron" id="check2Chron7_14" onclick="javascript:update2Chron()"/>
 				<label for="check2Chron7_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Chron7_14" aria-expanded="false" aria-controls="collapseTheme2Chron7_14">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Chron7_14" aria-expanded="false" aria-controls="collapse2Chron7_14">
 				  2 Chronicles 7:14
 				</button>
-				<div class="collapse" id="collapseTheme2Chron7_14">
+				<div class="collapse" id="collapse2Chron7_14">
 				  <div class="well">
 				    if my people who are called by name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land.
 				  </div>
 				</div>
 
 				<p></p>
-
 			</div>
 			
 			<p> </p>
@@ -212,93 +482,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalms" aria-expanded="false" aria-controls="collapsePsalms">
 			  Psalms
 			</button>
+			<span id="textBookPsalms"></span>
 			<div class="collapse" id="collapsePsalms">
 				<p></p>
 
-				<input class = "Checkbox12" type="checkbox" name="group" id="checkPsalm119_11" />
-				<label for="checkPsalm119_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm119_11" aria-expanded="false" aria-controls="collapseThemePsalm119_11">
-				  Psalm 119:11
-				</button>
-				<div class="collapse" id="collapseThemePsalm119_11">
-				  <div class="well">
-					I have stored up your word in my heart, that I might not sin against you.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox30" type="checkbox" name="group" id="checkPsalm100_4" />
-				<label for="checkPsalm100_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_4" aria-expanded="false" aria-controls="collapseThemePsalm100_4">
-				  Psalm 100:4
-				</button>
-				<div class="collapse" id="collapseThemePsalm100_4">
-				  <div class="well">
-				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox31" type="checkbox" name="group" id="checkPsalm100_5" />
-				<label for="checkPsalm100_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_5" aria-expanded="false" aria-controls="collapseThemePsalm100_5">
-				  Psalm 100:5
-				</button>
-				<div class="collapse" id="collapseThemePsalm100_5">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox41" type="checkbox" name="group" id="checkPsalm55_22" />
-				<label for="checkPsalm55_22">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm55_22" aria-expanded="false" aria-controls="collapseThemePsalm55_22">
-				  Psalm 55:22
-				</button>
-				<div class="collapse" id="collapseThemePsalm55_22">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox59" type="checkbox" name="group" id="checkPsalm118_24" />
-				<label for="checkPsalm118_24">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm118_24" aria-expanded="false" aria-controls="collapseThemePsalm118_24">
-				  Psalm 118:24
-				</button>
-				<div class="collapse" id="collapseThemePsalm118_24">
-				  <div class="well">
-				    This is the day that the Lod has mad; let us rejoice and be glad in it.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox80" type="checkbox" name="group" id="checkPsalm56_3" />
-				<label for="checkPsalm56_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm56_3" aria-expanded="false" aria-controls="collapseThemePsalm56_3">
-				  Psalm 56:3
-				</button>
-				<div class="collapse" id="collapseThemePsalm56_3">
-				  <div class="well">
-					When I am afraid, I put my trust in you.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox81" type="checkbox" name="group" id="checkPsalm4_8" />
+				<input class = "Checkbox81" type="checkbox" name="groupBookPsalms" id="checkPsalm4_8" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm4_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm4_8" aria-expanded="false" aria-controls="collapseThemePsalm4_8">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm4_8" aria-expanded="false" aria-controls="collapsePsalm4_8">
 				  Psalm 4:8
 				</button>
-				<div class="collapse" id="collapseThemePsalm4_8">
+				<div class="collapse" id="collapsePsalm4_8">
 				  <div class="well">
 					In peace I will both lie down and sleep; for you alone, O Lord, make me dwell in safety.
 				  </div>
@@ -306,12 +499,12 @@
 
 				<p></p>
 
-			    <input class = "Checkbox87" type="checkbox" name="group" id="checkPsalm23_1" />
+			    <input class = "Checkbox87" type="checkbox" name="groupBookPsalms" id="checkPsalm23_1" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_1" aria-expanded="false" aria-controls="collapseThemePsalm23_1">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_1" aria-expanded="false" aria-controls="collapsePsalm23_1">
 				  Psalm 23:1
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_1">
+				<div class="collapse" id="collapsePsalm23_1">
 				  <div class="well">
 				    The Lord is my shepherd; I shall not want.
 				  </div>
@@ -319,12 +512,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox88" type="checkbox" name="group" id="checkPsalm23_2" />
+				<input class = "Checkbox88" type="checkbox" name="groupBookPsalms" id="checkPsalm23_2" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_2" aria-expanded="false" aria-controls="collapseThemePsalm23_2">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_2" aria-expanded="false" aria-controls="collapsePsalm23_2">
 				  Psalm 23:2
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_2">
+				<div class="collapse" id="collapsePsalm23_2">
 				  <div class="well">
 				     He makes me lie down in green pastures. He leads me beside still waters.
 				  </div>
@@ -332,12 +525,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox89" type="checkbox" name="group" id="checkPsalm23_3" />
+				<input class = "Checkbox89" type="checkbox" name="groupBookPsalms" id="checkPsalm23_3" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_3" aria-expanded="false" aria-controls="collapseThemePsalm23_3">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_3" aria-expanded="false" aria-controls="collapsePsalm23_3">
 				  Psalm 23:3
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_3">
+				<div class="collapse" id="collapsePsalm23_3">
 				  <div class="well">
 					He restores my soul. He leads me in paths of righteousness for his name's sake.
 				  </div>
@@ -345,12 +538,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox90" type="checkbox" name="group" id="checkPsalm23_4" />
+				<input class = "Checkbox90" type="checkbox" name="groupBookPsalms" id="checkPsalm23_4" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_4" aria-expanded="false" aria-controls="collapseThemePsalm23_4">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_4" aria-expanded="false" aria-controls="collapsePsalm23_4">
 				  Psalm 23:4
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_4">
+				<div class="collapse" id="collapsePsalm23_4">
 				  <div class="well">
 					Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.
 				  </div>
@@ -358,12 +551,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox91" type="checkbox" name="group" id="checkPsalm23_5" />
+				<input class = "Checkbox91" type="checkbox" name="groupBookPsalms" id="checkPsalm23_5" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_5" aria-expanded="false" aria-controls="collapseThemePsalm23_5">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_5" aria-expanded="false" aria-controls="collapsePsalm23_5">
 				  Psalm 23:5
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_5">
+				<div class="collapse" id="collapsePsalm23_5">
 				  <div class="well">
 					You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows.
 				  </div>
@@ -371,16 +564,94 @@
 
 				<p></p>
 
-				<input class = "Checkbox92" type="checkbox" name="group" id="checkPsalm23_6" />
+				<input class = "Checkbox92" type="checkbox" name="groupBookPsalms" id="checkPsalm23_6" onclick="javascript:updateBookPsalms()"/>
 				<label for="checkPsalm23_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_6" aria-expanded="false" aria-controls="collapseThemePsalm23_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm23_6" aria-expanded="false" aria-controls="collapsePsalm23_6">
 				  Psalm 23:6
 				</button>
-				<div class="collapse" id="collapseThemePsalm23_6">
+				<div class="collapse" id="collapsePsalm23_6">
 				  <div class="well">
 					Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever
 				  </div>
 				</div>
+
+				<p></p>
+
+				<input class = "Checkbox41" type="checkbox" name="groupBookPsalms" id="checkPsalm55_22" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm55_22">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm55_22" aria-expanded="false" aria-controls="collapsePsalm55_22">
+				  Psalm 55:22
+				</button>
+				<div class="collapse" id="collapsePsalm55_22">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+
+				<input class = "Checkbox80" type="checkbox" name="groupBookPsalms" id="checkPsalm56_3" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm56_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm56_3" aria-expanded="false" aria-controls="collapsePsalm56_3">
+				  Psalm 56:3
+				</button>
+				<div class="collapse" id="collapsePsalm56_3">
+				  <div class="well">
+					When I am afraid, I put my trust in you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox30" type="checkbox" name="groupBookPsalms" id="checkPsalm100_4" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm100_4">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm100_4" aria-expanded="false" aria-controls="collapsePsalm100_4">
+				  Psalm 100:4
+				</button>
+				<div class="collapse" id="collapsePsalm100_4">
+				  <div class="well">
+				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox31" type="checkbox" name="groupBookPsalms" id="checkPsalm100_5" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm100_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm100_5" aria-expanded="false" aria-controls="collapsePsalm100_5">
+				  Psalm 100:5
+				</button>
+				<div class="collapse" id="collapsePsalm100_5">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox59" type="checkbox" name="groupBookPsalms" id="checkPsalm118_24" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm118_24">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm118_24" aria-expanded="false" aria-controls="collapsePsalm118_24">
+				  Psalm 118:24
+				</button>
+				<div class="collapse" id="collapsePsalm118_24">
+				  <div class="well">
+				    This is the day that the Lod has mad; let us rejoice and be glad in it.
+				  </div>
+				</div>
+
+				<p></p>
+				<input class = "Checkbox12" type="checkbox" name="groupBookPsalms" id="checkPsalm119_11" onclick="javascript:updateBookPsalms()"/>
+				<label for="checkPsalm119_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm119_11" aria-expanded="false" aria-controls="collapsePsalm119_11">
+				  Psalm 119:11
+				</button>
+				<div class="collapse" id="collapsePsalm119_11">
+				  <div class="well">
+					I have stored up your word in my heart, that I might not sin against you.
+				  </div>
+				</div>				
 			</div>
 			
 			<p> </p>
@@ -388,41 +659,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs" aria-expanded="false" aria-controls="collapseProverbs">
 			  Proverbs
 			</button>
+			<span id="textProv"></span>
 			<div class="collapse" id="collapseProverbs">
 				<p></p>
 
-				<input class = "Checkbox38" type="checkbox" name="group" id="checkProverbs3_5" />
-				<label for="checkProverbs3_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_5" aria-expanded="false" aria-controls="collapseThemeProverbs3_5">
-				  Proverbs 3:5
-				</button>
-				<div class="collapse" id="collapseThemeProverbs3_5">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox39" type="checkbox" name="group" id="checkProverbs3_6" />
-				<label for="checkProverbs3_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_6" aria-expanded="false" aria-controls="collapseThemeProverbs3_6">
-				  Proverbs 3:6
-				</button>
-				<div class="collapse" id="collapseThemeProverbs3_6">
-				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox51" type="checkbox" name="group" id="checkProv1_7" />
+				<input class = "Checkbox51" type="checkbox" name="groupProv" id="checkProv1_7" onclick="javascript:updateProv()"/>
 				<label for="checkProv1_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv1_7" aria-expanded="false" aria-controls="collapseThemeProv1_7">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProv1_7" aria-expanded="false" aria-controls="collapseProv1_7">
 				  Proverbs 1:7
 				</button>
-				<div class="collapse" id="collapseThemeProv1_7">
+				<div class="collapse" id="collapseProv1_7">
 				  <div class="well">
 					The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction.
 				  </div>
@@ -430,12 +676,40 @@
 
 				<p></p>
 
-				<input class = "Checkbox52" type="checkbox" name="group" id="checkProv15_1" />
+				<input class = "Checkbox38" type="checkbox" name="groupProv" id="checkProverbs3_5" onclick="javascript:updateProv()"/>
+				<label for="checkProverbs3_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs3_5" aria-expanded="false" aria-controls="collapseProverbs3_5">
+				  Proverbs 3:5
+				</button>
+				<div class="collapse" id="collapseProverbs3_5">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox39" type="checkbox" name="groupProv" id="checkProverbs3_6" onclick="javascript:updateProv()"/>
+				<label for="checkProverbs3_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs3_6" aria-expanded="false" aria-controls="collapseProverbs3_6">
+				  Proverbs 3:6
+				</button>
+				<div class="collapse" id="collapseProverbs3_6">
+				  <div class="well">
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				  </div>
+				</div>
+
+				
+
+				<p></p>
+
+				<input class = "Checkbox52" type="checkbox" name="groupProv" id="checkProv15_1" onclick="javascript:updateProv()"/>
 				<label for="checkProv15_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv15_1" aria-expanded="false" aria-controls="collapseThemeProv15_1">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProv15_1" aria-expanded="false" aria-controls="collapseProv15_1">
 				  Proverbs 15:1
 				</button>
-				<div class="collapse" id="collapseThemeProv15_1">
+				<div class="collapse" id="collapseProv15_1">
 				  <div class="well">
 					A soft answer turns away wrath, but a harsh word stirs up anger.
 				  </div>
@@ -449,54 +723,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah" aria-expanded="false" aria-controls="collapseIsaiah">
 			  Isaiah
 			</button>
+			<span id="textIsa"></span>
 			<div class="collapse" id="collapseIsaiah">
 				<p></p>
 
-				<input class = "Checkbox26" type="checkbox" name="group" id="checkIsaiah26_3" />
-				<label for="checkIsaiah26_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah26_3" aria-expanded="false" aria-controls="collapseThemeIsaiah26_3">
-				  Isaiah 26:3
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah26_3">
-				  <div class="well">
-				    You keep him in perfet peace whose mind is stayed on you, because he trusts in you.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox27" type="checkbox" name="group" id="checkIsaiah53_5" />
-				<label for="checkIsaiah53_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_5" aria-expanded="false" aria-controls="collapseThemeIsaiah53_5">
-				  Isaiah 53:5
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah53_5">
-				  <div class="well">
-				    But he was pierced for our transgressions; he was crushed for ouy iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox28" type="checkbox" name="group" id="checkIsaiah53_6" />
-				<label for="checkIsaiah53_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_6" aria-expanded="false" aria-controls="collapseThemeIsaiah53_6">
-				  Isaiah 53:6
-				</button>
-				<div class="collapse" id="collapseThemeIsaiah53_6">
-				  <div class="well">
-				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox93" type="checkbox" name="group" id="checkIsaiah9_6" />
+				<input class = "Checkbox93" type="checkbox" name="groupIsa" id="checkIsaiah9_6" onclick="javascript:updateIsa()"/>
 				<label for="checkIsaiah9_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah9_6" aria-expanded="false" aria-controls="collapseThemeIsaiah9_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah9_6" aria-expanded="false" aria-controls="collapseIsaiah9_6">
 				  Isaiah 9:6
 				</button>
-				<div class="collapse" id="collapseThemeIsaiah9_6">
+				<div class="collapse" id="collapseIsaiah9_6">
 				  <div class="well">
 				    For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.
 				  </div>
@@ -504,23 +740,61 @@
 
 				<p></p>
 
+				<input class = "Checkbox26" type="checkbox" name="groupIsa" id="checkIsaiah26_3" onclick="javascript:updateIsa()"/>
+				<label for="checkIsaiah26_3">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah26_3" aria-expanded="false" aria-controls="collapseIsaiah26_3">
+				  Isaiah 26:3
+				</button>
+				<div class="collapse" id="collapseIsaiah26_3">
+				  <div class="well">
+				    You keep him in perfect peace whose mind is stayed on you, because he trusts in you.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox27" type="checkbox" name="groupIsa" id="checkIsaiah53_5" onclick="javascript:updateIsa()"/>
+				<label for="checkIsaiah53_5">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah53_5" aria-expanded="false" aria-controls="collapseIsaiah53_5">
+				  Isaiah 53:5
+				</button>
+				<div class="collapse" id="collapseIsaiah53_5">
+				  <div class="well">
+				    But he was pierced for our transgressions; he was crushed for ouy iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox28" type="checkbox" name="groupIsa" id="checkIsaiah53_6" onclick="javascript:updateIsa()"/>
+				<label for="checkIsaiah53_6">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah53_6" aria-expanded="false" aria-controls="collapseIsaiah53_6">
+				  Isaiah 53:6
+				</button>
+				<div class="collapse" id="collapseIsaiah53_6">
+				  <div class="well">
+				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
+				  </div>
+				</div>
+
+				<p></p>
 			</div>
 			
 			<p> </p>
 
-
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJeremiah" aria-expanded="false" aria-controls="collapseJeremiah">
 			  Jeremiah
 			</button>
+			<span id="textJere"></span>
 			<div class="collapse" id="collapseJeremiah">
 				<p></p>
 
-				<input class = "Checkbox35" type="checkbox" name="group" id="checkJeremiah29_11" />
+				<input class = "Checkbox35" type="checkbox" name="groupJere" id="checkJeremiah29_11" onclick="javascript:updateJere()"/>
 				<label for="checkJeremiah29_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJeremiah29_11" aria-expanded="false" aria-controls="collapseThemeJeremiah29_11">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJeremiah29_11" aria-expanded="false" aria-controls="collapseJeremiah29_11">
 				  Jeremiah 29:11
 				</button>
-				<div class="collapse" id="collapseThemeJeremiah29_11">
+				<div class="collapse" id="collapseJeremiah29_11">
 				  <div class="well">
 					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
 				  </div>
@@ -537,15 +811,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatthew" aria-expanded="false" aria-controls="collapseMatthew">
 			  Matthew
 			</button>
+			<span id="textMatt"></span>
 			<div class="collapse" id="collapseMatthew">
 				<p></p>
 
-			    <input class = "Checkbox33" type="checkbox" name="group" id="checkMatt6_33" />
+			    <input class = "Checkbox33" type="checkbox" name="groupMatt" id="checkMatt6_33" onclick="javascript:updateMatt()"/>
 				<label for="checkMatt6_33">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt6_33" aria-expanded="false" aria-controls="collapseThemeMatt6_33">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatt6_33" aria-expanded="false" aria-controls="collapseMatt6_33">
 				  Matthew 6:33
 				</button>
-				<div class="collapse" id="collapseThemeMatt6_33">
+				<div class="collapse" id="collapseMatt6_33">
 				  <div class="well">
 				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
 				  </div>
@@ -553,12 +828,12 @@
 
 				<p></p>
 
-			    <input class = "Checkbox83" type="checkbox" name="group" id="checkMatt28_18" />
+			    <input class = "Checkbox83" type="checkbox" name="groupMatt" id="checkMatt28_18" onclick="javascript:updateMatt()"/>
 				<label for="checkMatt28_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_18" aria-expanded="false" aria-controls="collapseThemeMatt28_18">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatt28_18" aria-expanded="false" aria-controls="collapseMatt28_18">
 				  Matthew 28:18
 				</button>
-				<div class="collapse" id="collapseThemeMatt28_18">
+				<div class="collapse" id="collapseMatt28_18">
 				  <div class="well">
 				    And Jesus came and said the them, "All authority in heaven and on earth has been given to me."
 				  </div>
@@ -566,12 +841,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox84" type="checkbox" name="group" id="checkMatt28_19" />
+				<input class = "Checkbox84" type="checkbox" name="groupMatt" id="checkMatt28_19" onclick="javascript:updateMatt()"/>
 				<label for="checkMatt28_19">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_19" aria-expanded="false" aria-controls="collapseThemeMatt28_19">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatt28_19" aria-expanded="false" aria-controls="collapseMatt28_19">
 				  Matthew 28:19
 				</button>
-				<div class="collapse" id="collapseThemeMatt28_19">
+				<div class="collapse" id="collapseMatt28_19">
 				  <div class="well">
 				     Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,
 				  </div>
@@ -579,12 +854,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox85" type="checkbox" name="group" id="checkMatt28_20" />
+				<input class = "Checkbox85" type="checkbox" name="groupMatt" id="checkMatt28_20" onclick="javascript:updateMatt()"/>
 				<label for="checkMatt28_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_20" aria-expanded="false" aria-controls="collapseThemeMatt28_20">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatt28_20" aria-expanded="false" aria-controls="collapseMatt28_20">
 				  Matthew 28:20
 				</button>
-				<div class="collapse" id="collapseThemeMatt28_20">
+				<div class="collapse" id="collapseMatt28_20">
 				  <div class="well">
 					teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.
 				  </div>
@@ -598,15 +873,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke" aria-expanded="false" aria-controls="collapseLuke">
 			  Luke
 			</button>
+			<span id="textLuke"></span>
 			<div class="collapse" id="collapseLuke">
 				<p></p>
 
-				<input class = "Checkbox94" type="checkbox" name="group" id="checkLuke2_10" />
+				<input class = "Checkbox94" type="checkbox" name="groupLuke" id="checkLuke2_10" onclick="javascript:updateLuke()"/>
 				<label for="checkLuke2_10">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_10" aria-expanded="false" aria-controls="collapseThemeLuke2_10">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke2_10" aria-expanded="false" aria-controls="collapseLuke2_10">
 				  Luke 2:10
 				</button>
-				<div class="collapse" id="collapseThemeLuke2_10">
+				<div class="collapse" id="collapseLuke2_10">
 				  <div class="well">
 				     And the angel said to them, "Fear not, for behold, I bring you good news of great joy that will be for all the people. "
 				  </div>
@@ -614,12 +890,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox95" type="checkbox" name="group" id="checkLuke2_11" />
+				<input class = "Checkbox95" type="checkbox" name="groupLuke" id="checkLuke2_11" onclick="javascript:updateLuke()"/>
 				<label for="checkLuke2_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_11" aria-expanded="false" aria-controls="collapseThemeLuke2_11">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke2_11" aria-expanded="false" aria-controls="collapseLuke2_11">
 				  Luke 2:11
 				</button>
-				<div class="collapse" id="collapseThemeLuke2_11">
+				<div class="collapse" id="collapseLuke2_11">
 				  <div class="well">
 					For unto you is born this day in the city of David a Savior, who is Christ the Lord
 				  </div>
@@ -627,12 +903,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox96" type="checkbox" name="group" id="checkLuke2_12" />
+				<input class = "Checkbox96" type="checkbox" name="groupLuke" id="checkLuke2_12" onclick="javascript:updateLuke()"/>
 				<label for="checkLuke2_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_12" aria-expanded="false" aria-controls="collapseThemeLuke2_12">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke2_12" aria-expanded="false" aria-controls="collapseLuke2_12">
 				  Luke 2:12
 				</button>
-				<div class="collapse" id="collapseThemeLuke2_12">
+				<div class="collapse" id="collapseLuke2_12">
 				  <div class="well">
 					And this will be a sign for you: you will find a baby wrapped in swaddling cloths and lying in a manger.
 				  </div>
@@ -646,25 +922,26 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn" aria-expanded="false" aria-controls="collapseJohn">
 			  John
 			</button>
+			<span id="textJohn"></span>
 			<div class="collapse" id="collapseJohn">
-				<input class = "Checkbox2" type="checkbox" name="group" id="checkJohn1_1" />
+				<input class = "Checkbox2" type="checkbox" name="groupJohn" id="checkJohn1_1" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn1_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn1_1" aria-expanded="false" aria-controls="collapseJohn1_1">
 				  John 1:1
 				</button>
-				<div class="collapse" id="collapseThemeJohn1_1">
+				<div class="collapse" id="collapseJohn1_1">
 				  <div class="well">
 				    In the beginning was the Word, and the Word was with God, and the Word was God.
 				  </div>
 				</div>
 				<p></p>
 
-				<input class = "Checkbox3" type="checkbox" name="group" id="checkJohn1_14" />
+				<input class = "Checkbox3" type="checkbox" name="groupJohn" id="checkJohn1_14" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn1_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_14" aria-expanded="false" aria-controls="collapseThemeJohn1_14">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn1_14" aria-expanded="false" aria-controls="collapseJohn1_14">
 				  John 1:14
 				</button>
-				<div class="collapse" id="collapseThemeJohn1_14">
+				<div class="collapse" id="collapseJohn1_14">
 				  <div class="well">
 				    And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.
 				  </div>
@@ -672,12 +949,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox4" type="checkbox" name="group" id="checkJohn3_16" />
+				<input class = "Checkbox4" type="checkbox" name="groupJohn" id="checkJohn3_16" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn3_16" aria-expanded="false" aria-controls="collapseThemeJohn3_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn3_16" aria-expanded="false" aria-controls="collapseJohn3_16">
 				  John 3:16
 				</button>
-				<div class="collapse" id="collapseThemeJohn3_16">
+				<div class="collapse" id="collapseJohn3_16">
 				  <div class="well">
 				    For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.
 				  </div>
@@ -685,12 +962,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox21" type="checkbox" name="group" id="checkJohn14_1" />
+				<input class = "Checkbox21" type="checkbox" name="groupJohn" id="checkJohn14_1" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn14_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_1" aria-expanded="false" aria-controls="collapseThemeJohn14_1">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn14_1" aria-expanded="false" aria-controls="collapseJohn14_1">
 				  John 14:1
 				</button>
-				<div class="collapse" id="collapseThemeJohn14_1">
+				<div class="collapse" id="collapseJohn14_1">
 				  <div class="well">
 					Let not your hearts be troubled, Believe in God; believe also in me.
 				  </div>
@@ -698,12 +975,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox22" type="checkbox" name="group" id="checkJohn14_2" />
+				<input class = "Checkbox22" type="checkbox" name="groupJohn" id="checkJohn14_2" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn14_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_2" aria-expanded="false" aria-controls="collapseThemeJohn14_2">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn14_2" aria-expanded="false" aria-controls="collapseJohn14_2">
 				  John 14:2
 				</button>
-				<div class="collapse" id="collapseThemeJohn14_2">
+				<div class="collapse" id="collapseJohn14_2">
 				  <div class="well">
 				    In my Father's house are many rooms. If it were not so, would I have told you that I go to prepare a place for you?
 				  </div>
@@ -711,12 +988,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox23" type="checkbox" name="group" id="checkJohn14_3" />
+				<input class = "Checkbox23" type="checkbox" name="groupJohn" id="checkJohn14_3" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn14_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_3" aria-expanded="false" aria-controls="collapseThemeJohn14_3">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn14_3" aria-expanded="false" aria-controls="collapseJohn14_3">
 				  John 14:3
 				</button>
-				<div class="collapse" id="collapseThemeJohn14_3">
+				<div class="collapse" id="collapseJohn14_3">
 				  <div class="well">
 				    And if I go and prepare a place for you, I will come again and will take you to myself, that where I am you may be also.
 				  </div>
@@ -724,12 +1001,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox24" type="checkbox" name="group" id="checkJohn14_6" />
+				<input class = "Checkbox24" type="checkbox" name="groupJohn" id="checkJohn14_6" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn14_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_6" aria-expanded="false" aria-controls="collapseThemeJohn14_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn14_6" aria-expanded="false" aria-controls="collapseJohn14_6">
 				  John 14:6
 				</button>
-				<div class="collapse" id="collapseThemeJohn14_6">
+				<div class="collapse" id="collapseJohn14_6">
 				  <div class="well">
 				    Jesus said to him, "I am the way, and the truth, and the life. No one comes to the Father except through me."
 				  </div>
@@ -737,12 +1014,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox25" type="checkbox" name="group" id="checkJohn14_27" />
+				<input class = "Checkbox25" type="checkbox" name="groupJohn" id="checkJohn14_27" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn14_27">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_27" aria-expanded="false" aria-controls="collapseThemeJohn14_27">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn14_27" aria-expanded="false" aria-controls="collapseJohn14_27">
 				  John 14:27
 				</button>
-				<div class="collapse" id="collapseThemeJohn14_27">
+				<div class="collapse" id="collapseJohn14_27">
 				  <div class="well">
 				    Peace I leave with you; my peae I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.
 				  </div>
@@ -756,15 +1033,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs" aria-expanded="false" aria-controls="collapseActs">
 			  Acts
 			</button>
+			<span id="textActs"> here </span>
 			<div class="collapse" id="collapseActs">
 				<p></p>
 
-				<input class = "Checkbox86" type="checkbox" name="group" id="checkActs1_8" />
+				<input class = "Checkbox86" type="checkbox" name="groupActs" id="checkActs1_8" onclick="javascript:updateActs()"/>
 				<label for="checkActs1_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_8" aria-expanded="false" aria-controls="collapseThemeActs1_8">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs1_8" aria-expanded="false" aria-controls="collapseActs1_8">
 				  Acts 1:8
 				</button>
-				<div class="collapse" id="collapseThemeActs1_8">
+				<div class="collapse" id="collapseActs1_8">
 				  <div class="well">
 					But you will receieve power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.
 				  </div>
@@ -772,12 +1050,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox97" type="checkbox" name="group" id="checkActs1_11" />
+				<input class = "Checkbox97" type="checkbox" name="groupActs" id="checkActs1_11" onclick="javascript:updateActs()"/>
 				<label for="checkActs1_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_11" aria-expanded="false" aria-controls="collapseThemeActs1_11">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs1_11" aria-expanded="false" aria-controls="collapseActs1_11">
 				  Acts 1:11
 				</button>
-				<div class="collapse" id="collapseThemeActs1_11">
+				<div class="collapse" id="collapseActs1_11">
 				  <div class="well">
 					and said, "Men of Galilee, why do you stand looking into heaven? This Jesus, who was taken up from you into heaven, will come in the same way as you saw him go into heaven."
 				  </div>
@@ -791,156 +1069,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans" aria-expanded="false" aria-controls="collapseRomans">
 			  Romans
 			</button>
+			<span id="textBookRom"></span>
 			<div class="collapse" id="collapseRomans">
-				<input class = "Checkbox5" type="checkbox" name="group" id="checkRomans3_23" />
-				<label for="checkRomans3_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans3_23" aria-expanded="false" aria-controls="collapseThemeRomans3_23">
-				  Romans 3:23
-				</button>
-				<div class="collapse" id="collapseThemeRomans3_23">
-				  <div class="well">
-				    In the beginning, God created the heavens and the earth.
-				  </div>
-				</div>
-
 				<p></p>
 
-				<input class = "Checkbox6" type="checkbox" name="group" id="checkRomans6_23" />
-				<label for="checkRomans6_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans6_23" aria-expanded="false" aria-controls="collapseThemeRomans6_23">
-				  Romans 6:23
-				</button>
-				<div class="collapse" id="collapseThemeRomans6_23">
-				  <div class="well">
-				     for all have sinned and fall short of the glory of God
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox7" type="checkbox" name="group" id="checkRomans5_8" />
-				<label for="checkRomans5_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans5_8" aria-expanded="false" aria-controls="collapseThemeRomans5_8">
-				  Romans 5:8
-				</button>
-				<div class="collapse" id="collapseThemeRomans5_8">
-				  <div class="well">
-					but God shows his love in that while we were still sinners, Christ died for us
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox8" type="checkbox" name="group" id="checkRomans10_9" />
-				<label for="checkRomans10_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_9" aria-expanded="false" aria-controls="collapseThemeRomans10_9">
-				  Romans 10:9
-				</button>
-				<div class="collapse" id="collapseThemeRomans10_9">
-				  <div class="well">
-				    because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox9" type="checkbox" name="group" id="checkRomans10_10" />
-				<label for="checkRomans10_10">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_10" aria-expanded="false" aria-controls="collapseThemeRomans10_10">
-				  Romans 10:10
-				</button>
-				<div class="collapse" id="collapseThemeRomans10_10">
-				  <div class="well">
-				    For with the heart one believes and is justified, and with the mouth one confesses and is saved.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox34" type="checkbox" name="group" id="checkRomans8_28" />
-				<label for="checkRomans8_28">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans8_28" aria-expanded="false" aria-controls="collapseThemeRomans8_28">
-				  Romans 8:28
-				</button>
-				<div class="collapse" id="collapseThemeRomans8_28">
-				  <div class="well">
-				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox44" type="checkbox" name="group" id="checkRomans12_1" />
-				<label for="checkRomans12_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_1" aria-expanded="false" aria-controls="collapseThemeRomans12_1">
-				  Romans 12:1
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_1">
-				  <div class="well">
-				     I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox45" type="checkbox" name="group" id="checkRomans12_2" />
-				<label for="checkRomans12_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_2" aria-expanded="false" aria-controls="collapseThemeRomans12_2">
-				  Romans 12:2
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_2">
-				  <div class="well">
-					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox46" type="checkbox" name="group" id="checkRomans12_11" />
-				<label for="checkRomans12_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_11" aria-expanded="false" aria-controls="collapseThemeRomans12_11">
-				  Romans 12:11
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_11">
-				  <div class="well">
-					Do not be slothful in zeal, be fervent in spirit, serve the Lord.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox47" type="checkbox" name="group" id="checkRomans12_12" />
-				<label for="checkRomans12_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_12" aria-expanded="false" aria-controls="collapseThemeRomans12_12">
-				  Romans 12:12
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_12">
-				  <div class="well">
-					Rejoice in hope, be patient in tribulation, be constant in prayer.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox48" type="checkbox" name="group" id="checkRomans12_18" />
-				<label for="checkRomans12_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_18" aria-expanded="false" aria-controls="collapseThemeRomans12_18">
-				  Romans 12:18
-				</button>
-				<div class="collapse" id="collapseThemeRomans12_18">
-				  <div class="well">
-					If possible, so far as it depends on you, live peaceably with all.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox78" type="checkbox" name="group" id="checkRom1_16" />
+				<input class = "Checkbox78" type="checkbox" name="groupBookRom" id="checkRom1_16" onclick="javascript:updateBookRom()"/>
 				<label for="checkRom1_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_16" aria-expanded="false" aria-controls="collapseThemeRom1_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRom1_16" aria-expanded="false" aria-controls="collapseRom1_16">
 				  Romans 1:16
 				</button>
-				<div class="collapse" id="collapseThemeRom1_16">
+				<div class="collapse" id="collapseRom1_16">
 				  <div class="well">
 					For I am not ashamed of the gospel, for it is the power of Godfor salvation to everyone who believes, to the Jew first and also to the Greek.
 				  </div>
@@ -948,14 +1086,157 @@
 
 				<p></p>
 
-				<input class = "Checkbox79" type="checkbox" name="group" id="checkRom1_17" />
+				<input class = "Checkbox79" type="checkbox" name="groupBookRom" id="checkRom1_17" onclick="javascript:updateBookRom()"/>
 				<label for="checkRom1_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_17" aria-expanded="false" aria-controls="collapseThemeJRom1_17">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRom1_17" aria-expanded="false" aria-controls="collapseJRom1_17">
 				  Romans 1:17
 				</button>
-				<div class="collapse" id="collapseThemeRom1_17">
+				<div class="collapse" id="collapseRom1_17">
 				  <div class="well">
 					For in it the righteousness of God is revealed from faith for faith, as it is written, "The righteous shal live by faith."
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox5" type="checkbox" name="groupBookRom" id="checkRomans3_23" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans3_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans3_23" aria-expanded="false" aria-controls="collapseRomans3_23">
+				  Romans 3:23
+				</button>
+				<div class="collapse" id="collapseRomans3_23">
+				  <div class="well">
+				    In the beginning, God created the heavens and the earth.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox7" type="checkbox" name="groupBookRom" id="checkRomans5_8" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans5_8">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans5_8" aria-expanded="false" aria-controls="collapseRomans5_8">
+				  Romans 5:8
+				</button>
+				<div class="collapse" id="collapseRomans5_8">
+				  <div class="well">
+					but God shows his love in that while we were still sinners, Christ died for us
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox6" type="checkbox" name="groupBookRom" id="checkRomans6_23" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans6_23">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans6_23" aria-expanded="false" aria-controls="collapseRomans6_23">
+				  Romans 6:23
+				</button>
+				<div class="collapse" id="collapseRomans6_23">
+				  <div class="well">
+				     for all have sinned and fall short of the glory of God
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox34" type="checkbox" name="groupBookRom" id="checkRomans8_28" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans8_28">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans8_28" aria-expanded="false" aria-controls="collapseRomans8_28">
+				  Romans 8:28
+				</button>
+				<div class="collapse" id="collapseRomans8_28">
+				  <div class="well">
+				     Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox8" type="checkbox" name="groupBookRom" id="checkRomans10_9" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans10_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans10_9" aria-expanded="false" aria-controls="collapseRomans10_9">
+				  Romans 10:9
+				</button>
+				<div class="collapse" id="collapseRomans10_9">
+				  <div class="well">
+				    because, if you confess with your mouth that Jesus is Lord and believe in your heart that God raised him from the dead, you will be saved.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox9" type="checkbox" name="groupBookRom" id="checkRomans10_10" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans10_10">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans10_10" aria-expanded="false" aria-controls="collapseRomans10_10">
+				  Romans 10:10
+				</button>
+				<div class="collapse" id="collapseRomans10_10">
+				  <div class="well">
+				    For with the heart one believes and is justified, and with the mouth one confesses and is saved.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox44" type="checkbox" name="groupBookRom" id="checkRomans12_1" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans12_1">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans12_1" aria-expanded="false" aria-controls="collapseRomans12_1">
+				  Romans 12:1
+				</button>
+				<div class="collapse" id="collapseRomans12_1">
+				  <div class="well">
+				     I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox45" type="checkbox" name="groupBookRom" id="checkRomans12_2" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans12_2">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans12_2" aria-expanded="false" aria-controls="collapseRomans12_2">
+				  Romans 12:2
+				</button>
+				<div class="collapse" id="collapseRomans12_2">
+				  <div class="well">
+					Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox46" type="checkbox" name="groupBookRom" id="checkRomans12_11" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans12_11">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans12_11" aria-expanded="false" aria-controls="collapseRomans12_11">
+				  Romans 12:11
+				</button>
+				<div class="collapse" id="collapseRomans12_11">
+				  <div class="well">
+					Do not be slothful in zeal, be fervent in spirit, serve the Lord.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox47" type="checkbox" name="groupBookRom" id="checkRomans12_12" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans12_12">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans12_12" aria-expanded="false" aria-controls="collapseRomans12_12">
+				  Romans 12:12
+				</button>
+				<div class="collapse" id="collapseRomans12_12">
+				  <div class="well">
+					Rejoice in hope, be patient in tribulation, be constant in prayer.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox48" type="checkbox" name="groupBookRom" id="checkRomans12_18" onclick="javascript:updateBookRom()"/>
+				<label for="checkRomans12_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans12_18" aria-expanded="false" aria-controls="collapseRomans12_18">
+				  Romans 12:18
+				</button>
+				<div class="collapse" id="collapseRomans12_18">
+				  <div class="well">
+					If possible, so far as it depends on you, live peaceably with all.
 				  </div>
 				</div>
 
@@ -967,15 +1248,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Corinthians" aria-expanded="false" aria-controls="collapse1Corinthians">
 			  1 Corinthians
 			</button>
+			<span id="text1Cor"></span>
 			<div class="collapse" id="collapse1Corinthians">
 				<p></p>
 
-				<input class = "Checkbox40" type="checkbox" name="group" id="check1Cor10_13" />
+				<input class = "Checkbox40" type="checkbox" name="group1Cor" id="check1Cor10_13" onclick="javascript:update1Cor()"/>
 				<label for="check1Cor10_13">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Cor10_13" aria-expanded="false" aria-controls="collapseTheme1Cor10_13">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Cor10_13" aria-expanded="false" aria-controls="collapse1Cor10_13">
 				  1 Corinthians 10:13
 				</button>
-				<div class="collapse" id="collapseTheme1Cor10_13">
+				<div class="collapse" id="collapse1Cor10_13">
 				  <div class="well">
 					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
 				  </div>
@@ -990,15 +1272,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Corinthians" aria-expanded="false" aria-controls="collapse2Corinthians">
 			  2 Corinthians
 			</button>
+			<span id="text2Cor"></span>
 			<div class="collapse" id="collapse2Corinthians">
 				<p></p>
 
-				<input class = "Checkbox49" type="checkbox" name="group" id="check2Cor9_7" />
+				<input class = "Checkbox49" type="checkbox" name="group2Cor" id="check2Cor9_7" onclick="javascript:update2Cor()"/>
 				<label for="check2Cor9_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Cor9_7" aria-expanded="false" aria-controls="collapseTheme2Cor9_7">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Cor9_7" aria-expanded="false" aria-controls="collapse2Cor9_7">
 				  2 Corinthians 9:7
 				</button>
-				<div class="collapse" id="collapseTheme2Cor9_7">
+				<div class="collapse" id="collapse2Cor9_7">
 				  <div class="well">
 					Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver.
 				  </div>
@@ -1013,15 +1296,29 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGalatians" aria-expanded="false" aria-controls="collapseGalatians">
 			  Galatians
 			</button>
+			<span id="textGal"></span>
 			<div class="collapse" id="collapseGalatians">
 				<p></p>
 
-				<input class = "Checkbox57" type="checkbox" name="group" id="checkGal5_22" />
+				<input class = "Checkbox74" type="checkbox" name="groupGal" id="checkGal2_20" onclick="javascript:updateGal()"/>
+				<label for="checkGal2_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGal2_20" aria-expanded="false" aria-controls="collapseGal2_20">
+				  Galatians 2:20
+				</button>
+				<div class="collapse" id="collapseGal2_20">
+				  <div class="well">
+					I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox57" type="checkbox" name="groupGal" id="checkGal5_22" onclick="javascript:updateGal()"/>
 				<label for="checkGal5_22">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_22" aria-expanded="false" aria-controls="collapseThemeGal5_22">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGal5_22" aria-expanded="false" aria-controls="collapseGal5_22">
 				  Galatians 5:22
 				</button>
-				<div class="collapse" id="collapseThemeGal5_22">
+				<div class="collapse" id="collapseGal5_22">
 				  <div class="well">
 					But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,
 				  </div>
@@ -1029,27 +1326,14 @@
 
 				<p></p>
 
-				<input class = "Checkbox58" type="checkbox" name="group" id="checkGal5_23" />
+				<input class = "Checkbox58" type="checkbox" name="groupGal" id="checkGal5_23" onclick="javascript:updateGal()"/>
 				<label for="checkGal5_23">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_23" aria-expanded="false" aria-controls="collapseThemeGal5_23">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGal5_23" aria-expanded="false" aria-controls="collapseGal5_23">
 				  Galatians 5:23
 				</button>
-				<div class="collapse" id="collapseThemeGal5_23">
+				<div class="collapse" id="collapseGal5_23">
 				  <div class="well">
 					gentleness, self-control; against such things there is no law.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox74" type="checkbox" name="group" id="checkGal2_20" />
-				<label for="checkGal2_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal2_20" aria-expanded="false" aria-controls="collapseThemeGal2_20">
-				  Galatians 2:20
-				</button>
-				<div class="collapse" id="collapseThemeGal2_20">
-				  <div class="well">
-					I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.
 				  </div>
 				</div>
 
@@ -1061,67 +1345,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEphesians" aria-expanded="false" aria-controls="collapseEphesians">
 			  Ephesians
 			</button>
+			<span id="textEph"></span>
 			<div class="collapse" id="collapseEphesians">
 				<p></p>
 
-			    <input class = "Checkbox53" type="checkbox" name="group" id="checkEph5_18" />
-				<label for="checkEph5_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_18" aria-expanded="false" aria-controls="collapseThemeEph5_18">
-				  Ephesians 5:18
-				</button>
-				<div class="collapse" id="collapseThemeEph5_18">
-				  <div class="well">
-				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox54" type="checkbox" name="group" id="checkEph5_19" />
-				<label for="checkEph5_19">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_19" aria-expanded="false" aria-controls="collapseThemeEph5_19">
-				  Ephesians 5:19
-				</button>
-				<div class="collapse" id="collapseThemeEph5_19">
-				  <div class="well">
-				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox55" type="checkbox" name="group" id="checkEph5_20" />
-				<label for="checkEph5_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_20" aria-expanded="false" aria-controls="collapseThemeEph5_20">
-				  Ephesians 5:20
-				</button>
-				<div class="collapse" id="collapseThemeEph5_20">
-				  <div class="well">
-					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox56" type="checkbox" name="group" id="checkEph5_21" />
-				<label for="checkEph5_21">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_21" aria-expanded="false" aria-controls="collapseThemeEph5_21">
-				  Ephesians 5:21
-				</button>
-				<div class="collapse" id="collapseThemeEph5_21">
-				  <div class="well">
-					submitting to one another out of reverence for Christ.
-				  </div>
-				</div>
-
-				<p></p>
-
-				<input class = "Checkbox71" type="checkbox" name="group" id="checkEph2_8" />
+				<input class = "Checkbox71" type="checkbox" name="groupEph" id="checkEph2_8" onclick="javascript:updateEph()"/>
 				<label for="checkEph2_8">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_8" aria-expanded="false" aria-controls="collapseThemeEph2_8">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph2_8" aria-expanded="false" aria-controls="collapseEph2_8">
 				  Ephesians 2:8
 				</button>
-				<div class="collapse" id="collapseThemeEph2_8">
+				<div class="collapse" id="collapseEph2_8">
 				  <div class="well">
 				    For by grace you have been saved through faith. And this is not your own doingl it is the gift of God,
 				  </div>
@@ -1129,12 +1362,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox72" type="checkbox" name="group" id="checkEph2_9" />
+				<input class = "Checkbox72" type="checkbox" name="groupEph" id="checkEph2_9" onclick="javascript:updateEph()"/>
 				<label for="checkEph2_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_9" aria-expanded="false" aria-controls="collapseThemeEph2_9">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph2_9" aria-expanded="false" aria-controls="collapseEph2_9">
 				  Ephesians 2:9
 				</button>
-				<div class="collapse" id="collapseThemeEph2_9">
+				<div class="collapse" id="collapseEph2_9">
 				  <div class="well">
 				     not a result of works, so that no one may boast.
 				  </div>
@@ -1142,17 +1375,70 @@
 
 				<p></p>
 
-				<input class = "Checkbox73" type="checkbox" name="group" id="checkEph2_10" />
+				<input class = "Checkbox73" type="checkbox" name="groupEph" id="checkEph2_10" onclick="javascript:updateEph()"/>
 				<label for="checkEph2_10">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_10" aria-expanded="false" aria-controls="collapseThemeEph2_10">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph2_10" aria-expanded="false" aria-controls="collapseEph2_10">
 				  Ephesians 2:10
 				</button>
-				<div class="collapse" id="collapseThemeEph2_10">
+				<div class="collapse" id="collapseEph2_10">
 				  <div class="well">
 					For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.
 				  </div>
 				</div>
 
+				<p></p>
+
+			    <input class = "Checkbox53" type="checkbox" name="groupEph" id="checkEph5_18" onclick="javascript:updateEph()"/>
+				<label for="checkEph5_18">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph5_18" aria-expanded="false" aria-controls="collapseEph5_18">
+				  Ephesians 5:18
+				</button>
+				<div class="collapse" id="collapseEph5_18">
+				  <div class="well">
+				    And do not get drunk with wine, for that is debauchery, but be filled with the Spirit
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox54" type="checkbox" name="groupEph" id="checkEph5_19" onclick="javascript:updateEph()"/>
+				<label for="checkEph5_19">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph5_19" aria-expanded="false" aria-controls="collapseEph5_19">
+				  Ephesians 5:19
+				</button>
+				<div class="collapse" id="collapseEph5_19">
+				  <div class="well">
+				     addressing one another in psalms and hymns and spiritual songs, singing and making melody to the Lord with your heart
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox55" type="checkbox" name="groupEph" id="checkEph5_20" onclick="javascript:updateEph()"/>
+				<label for="checkEph5_20">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph5_20" aria-expanded="false" aria-controls="collapseEph5_20">
+				  Ephesians 5:20
+				</button>
+				<div class="collapse" id="collapseEph5_20">
+				  <div class="well">
+					giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ
+				  </div>
+				</div>
+
+				<p></p>
+
+				<input class = "Checkbox56" type="checkbox" name="groupEph" id="checkEph5_21" onclick="javascript:updateEph()"/>
+				<label for="checkEph5_21">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEph5_21" aria-expanded="false" aria-controls="collapseEph5_21">
+				  Ephesians 5:21
+				</button>
+				<div class="collapse" id="collapseEph5_21">
+				  <div class="well">
+					submitting to one another out of reverence for Christ.
+				  </div>
+				</div>
+
+				
 				<p></p>
 			</div>
 			
@@ -1161,14 +1447,15 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhilippians" aria-expanded="false" aria-controls="collapsePhilippians">
 			  Philippians
 			</button>
+			<span id="textPhil"></span>
 			<div class="collapse" id="collapsePhilippians">
 				<p></p>
-				<input class = "Checkbox60" type="checkbox" name="group" id="checkPhil4_4" />
+				<input class = "Checkbox60" type="checkbox" name="groupPhil" id="checkPhil4_4" onclick="javascript:updatePhil()"/>
 				<label for="checkPhil4_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_4" aria-expanded="false" aria-controls="collapseThemePhil4_4">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhil4_4" aria-expanded="false" aria-controls="collapsePhil4_4">
 				  Philippians 4:4
 				</button>
-				<div class="collapse" id="collapseThemePhil4_4">
+				<div class="collapse" id="collapsePhil4_4">
 				  <div class="well">
 				     Rejoice in the Lord always; again I will say, rejoice.
 				  </div>
@@ -1176,12 +1463,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox61" type="checkbox" name="group" id="checkPhil4_5" />
+				<input class = "Checkbox61" type="checkbox" name="groupPhil" id="checkPhil4_5" onclick="javascript:updatePhil()"/>
 				<label for="checkPhil4_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_5" aria-expanded="false" aria-controls="collapseThemePhil4_5">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhil4_5" aria-expanded="false" aria-controls="collapsePhil4_5">
 				  Philippians 4:5
 				</button>
-				<div class="collapse" id="collapseThemePhil4_5">
+				<div class="collapse" id="collapsePhil4_5">
 				  <div class="well">
 					Let your reasonableness be known to everyone. The Lord is at hand;
 				  </div>
@@ -1189,12 +1476,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox62" type="checkbox" name="group" id="checkPhil4_6" />
+				<input class = "Checkbox62" type="checkbox" name="groupPhil" id="checkPhil4_6" onclick="javascript:updatePhil()"/>
 				<label for="checkPhil4_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_6" aria-expanded="false" aria-controls="collapseThemePhil4_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhil4_6" aria-expanded="false" aria-controls="collapsePhil4_6">
 				  Philippians 4:6
 				</button>
-				<div class="collapse" id="collapseThemePhil4_6">
+				<div class="collapse" id="collapsePhil4_6">
 				  <div class="well">
 					do not be anxious about anything, but in everything by prayer and aupplication with thanksgiving let your requests be made known to God.
 				  </div>
@@ -1202,12 +1489,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox63" type="checkbox" name="group" id="checkPhil4_7" />
+				<input class = "Checkbox63" type="checkbox" name="groupPhil" id="checkPhil4_7" onclick="javascript:updatePhil()"/>
 				<label for="checkPhil4_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_7" aria-expanded="false" aria-controls="collapseThemePhil4_7">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhil4_7" aria-expanded="false" aria-controls="collapsePhil4_7">
 				  Philippians 4:7
 				</button>
-				<div class="collapse" id="collapseThemePhil4_7">
+				<div class="collapse" id="collapsePhil4_7">
 				  <div class="well">
 					And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.
 				  </div>
@@ -1221,14 +1508,15 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseColossians" aria-expanded="false" aria-controls="collapseColossians">
 			  Colossians
 			</button>
+			<span id="textCol"></span>
 			<div class="collapse" id="collapseColossians">
 				<p></p>
-				<input class = "Checkbox75" type="checkbox" name="group" id="checkCol3_15" />
+				<input class = "Checkbox75" type="checkbox" name="groupCol" id="checkCol3_15" onclick="javascript:updateCol()"/>
 				<label for="checkCol3_15">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_15" aria-expanded="false" aria-controls="collapseThemeCol3_15">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCol3_15" aria-expanded="false" aria-controls="collapseCol3_15">
 				  Colossians 3:15
 				</button>
-				<div class="collapse" id="collapseThemeCol3_15">
+				<div class="collapse" id="collapseCol3_15">
 				  <div class="well">
 					And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.
 				  </div>
@@ -1236,12 +1524,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox76" type="checkbox" name="group" id="checkCol3_16" />
+				<input class = "Checkbox76" type="checkbox" name="groupCol" id="checkCol3_16" onclick="javascript:updateCol()"/>
 				<label for="checkCol3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_16" aria-expanded="false" aria-controls="collapseThemeCol3_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCol3_16" aria-expanded="false" aria-controls="collapseCol3_16">
 				  Colossians 3:16
 				</button>
-				<div class="collapse" id="collapseThemeCol3_16">
+				<div class="collapse" id="collapseCol3_16">
 				  <div class="well">
 					Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God.
 				  </div>
@@ -1249,12 +1537,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox77" type="checkbox" name="group" id="checkCol3_17" />
+				<input class = "Checkbox77" type="checkbox" name="groupCol" id="checkCol3_17" onclick="javascript:updateCol()"/>
 				<label for="checkCol3_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_17" aria-expanded="false" aria-controls="collapseThemeCol3_17">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseCol3_17" aria-expanded="false" aria-controls="collapseCol3_17">
 				  Colossians 3:17
 				</button>
-				<div class="collapse" id="collapseThemeCol3_17">
+				<div class="collapse" id="collapseCol3_17">
 				  <div class="well">
 					And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.
 				  </div>
@@ -1268,15 +1556,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thessalonians" aria-expanded="false" aria-controls="collapse1Thessalonians">
 			  1 Thessalonians
 			</button>
+			<span id="text1Thess"></span>
 			<div class="collapse" id="collapse1Thessalonians">
 				<p></p>
 
-				<input class = "Checkbox68" type="checkbox" name="group" id="check1Thess5_16" />
+				<input class = "Checkbox68" type="checkbox" name="group1Thess" id="check1Thess5_16" onclick="javascript:update1Thess()"/>
 				<label for="check1Thess5_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_16" aria-expanded="false" aria-controls="collapseTheme1Thess5_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thess5_16" aria-expanded="false" aria-controls="collapse1Thess5_16">
 				  1 Thessalonians 5:16
 				</button>
-				<div class="collapse" id="collapseTheme1Thess5_16">
+				<div class="collapse" id="collapse1Thess5_16">
 				  <div class="well">
 					Rejoice always,
 				  </div>
@@ -1284,12 +1573,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox69" type="checkbox" name="group" id="check1Thess5_17" />
+				<input class = "Checkbox69" type="checkbox" name="group1Thess" id="check1Thess5_17" onclick="javascript:update1Thess()"/>
 				<label for="check1Thess5_17">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_17" aria-expanded="false" aria-controls="collapseTheme1Thess5_17">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thess5_17" aria-expanded="false" aria-controls="collapse1Thess5_17">
 				  1 Thessalonians 5:17
 				</button>
-				<div class="collapse" id="collapseTheme1Thess5_17">
+				<div class="collapse" id="collapse1Thess5_17">
 				  <div class="well">
 					pray without ceasing,
 				  </div>
@@ -1297,12 +1586,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox70" type="checkbox" name="group" id="check1Thess5_18" />
+				<input class = "Checkbox70" type="checkbox" name="group1Thess" id="check1Thess5_18" onclick="javascript:update1Thess()"/>
 				<label for="check1Thess5_18">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_18" aria-expanded="false" aria-controls="collapseTheme1Thess5_18">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thess5_18" aria-expanded="false" aria-controls="collapse1Thess5_18">
 				  1 Thessalonians 5:18
 				</button>
-				<div class="collapse" id="collapseTheme1Thess5_18">
+				<div class="collapse" id="collapse1Thess5_18">
 				  <div class="well">
 					give thanks in all circumstances; for this is the will of God in Christ Jesus for you.
 				  </div>
@@ -1314,15 +1603,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Timothy" aria-expanded="false" aria-controls="collapse2Timothy">
 			  2 Timothy
 			</button>
+			<span id="text2Tim"></span>
 			<div class="collapse" id="collapse2Timothy">
 				<p></p>
 
-				<input class = "Checkbox10" type="checkbox" name="group" id="checkTheme2Tim3_16" />
+				<input class = "Checkbox10" type="checkbox" name="group2Tim" id="checkTheme2Tim3_16" onclick="javascript:2Tim()"/>
 				<label for="checkTheme2Tim3_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Tim3_16" aria-expanded="false" aria-controls="collapseTheme2Tim3_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Tim3_16" aria-expanded="false" aria-controls="collapse2Tim3_16">
 				  2 Timothy 3:16
 				</button>
-				<div class="collapse" id="collapseTheme2Tim3_16">
+				<div class="collapse" id="collapse2Tim3_16">
 				  <div class="well">
 				    All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness
 				  </div>
@@ -1334,15 +1624,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHebrews" aria-expanded="false" aria-controls="collapseHebrews">
 			  Hebrews
 			</button>
+			<span id="textHeb"></span>
 			<div class="collapse" id="collapseHebrews">
 				<p></p>
 
-				<input class = "Checkbox15" type="checkbox" name="group" id="checkHeb4_12" />
+				<input class = "Checkbox15" type="checkbox" name="groupHeb" id="checkHeb4_12" onclick="javascript:updateHeb()"/>
 				<label for="checkHeb4_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_12" aria-expanded="false" aria-controls="collapseThemeHeb4_12">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHeb4_12" aria-expanded="false" aria-controls="collapseHeb4_12">
 				  Hebrews 4:12
 				</button>
-				<div class="collapse" id="collapseThemeHeb4_12">
+				<div class="collapse" id="collapseHeb4_12">
 				  <div class="well">
 				    For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.
 				  </div>
@@ -1350,12 +1641,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox16" type="checkbox" name="group" id="checkHeb4_16" />
+				<input class = "Checkbox16" type="checkbox" name="groupHeb" id="checkHeb4_16" onclick="javascript:updateHeb()"/>
 				<label for="checkHeb4_16">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_16" aria-expanded="false" aria-controls="collapseThemeHeb4_16">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHeb4_16" aria-expanded="false" aria-controls="collapseHeb4_16">
 				  Hebrews 4:16
 				</button>
-				<div class="collapse" id="collapseThemeHeb4_16">
+				<div class="collapse" id="collapseHeb4_16">
 				  <div class="well">
 				    Let us then with confidence draw near you the throne of grace, that we may receive mercy and find grace to help in time of need.
 				  </div>
@@ -1363,12 +1654,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox50" type="checkbox" name="group" id="checkHeb10_25" />
+				<input class = "Checkbox50" type="checkbox" name="groupHeb" id="checkHeb10_25" onclick="javascript:updateHeb()"/>
 				<label for="checkThemeHeb10_25">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb10_25" aria-expanded="false" aria-controls="collapseThemeHeb10_25">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHeb10_25" aria-expanded="false" aria-controls="collapseHeb10_25">
 				  Hebrews 10:25
 				</button>
-				<div class="collapse" id="collapseThemeHeb10_25">
+				<div class="collapse" id="collapseHeb10_25">
 				  <div class="well">
 					not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near.
 				  </div>
@@ -1376,12 +1667,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox82" type="checkbox" name="group" id="checkHebrews11_6" />
+				<input class = "Checkbox82" type="checkbox" name="groupHeb" id="checkHebrews11_6" onclick="javascript:updateHeb()"/>
 				<label for="checkHebrews11_6">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHebrews11_6" aria-expanded="false" aria-controls="collapseThemeHebrews11_6">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHebrews11_6" aria-expanded="false" aria-controls="collapseHebrews11_6">
 				  Hebrews 11:6
 				</button>
-				<div class="collapse" id="collapseThemeHebrews11_6">
+				<div class="collapse" id="collapseHebrews11_6">
 				  <div class="well">
 					And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.
 				  </div>
@@ -1394,15 +1685,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames" aria-expanded="false" aria-controls="collapseJames">
 			  James
 			</button>
+			<span id="textJames"></span>
 			<div class="collapse" id="collapseJames">
 				<p></p>
 
-				<input class = "Checkbox64" type="checkbox" name="group" id="checkJames1_2" />
+				<input class = "Checkbox64" type="checkbox" name="groupJames" id="checkJames1_2" onclick="javascript:updateJames()"/>
 				<label for="checkJames1_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_2" aria-expanded="false" aria-controls="collapseThemeJames1_2">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames1_2" aria-expanded="false" aria-controls="collapseJames1_2">
 				  James 1:2
 				</button>
-				<div class="collapse" id="collapseThemeJames1_2">
+				<div class="collapse" id="collapseJames1_2">
 				  <div class="well">
 					Count it all joy, my brothers, when you meet trials of various kinds,
 				  </div>
@@ -1410,12 +1702,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox65" type="checkbox" name="group" id="checkJames1_3" />
+				<input class = "Checkbox65" type="checkbox" name="groupJames" id="checkJames1_3" onclick="javascript:updateJames()"/>
 				<label for="checkJames1_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_3" aria-expanded="false" aria-controls="collapseThemeJames1_3">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames1_3" aria-expanded="false" aria-controls="collapseJames1_3">
 				  James 1:3
 				</button>
-				<div class="collapse" id="collapseThemeJames1_3">
+				<div class="collapse" id="collapseJames1_3">
 				  <div class="well">
 					for you know that the testing of your faith produces steadfastness.
 				  </div>
@@ -1423,12 +1715,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox66" type="checkbox" name="group" id="checkJames1_4" />
+				<input class = "Checkbox66" type="checkbox" name="groupJames" id="checkJames1_4" onclick="javascript:updateJames()"/>
 				<label for="checkJames1_4">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_4" aria-expanded="false" aria-controls="collapseThemeJames1_4">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames1_4" aria-expanded="false" aria-controls="collapseJames1_4">
 				  James 1:4
 				</button>
-				<div class="collapse" id="collapseThemeJames1_4">
+				<div class="collapse" id="collapseJames1_4">
 				  <div class="well">
 					And let steadfastness have its full effect, that you may be perfect and complete, lacking in nothing.
 				  </div>
@@ -1436,12 +1728,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox67" type="checkbox" name="group" id="checkJames1_5" />
+				<input class = "Checkbox67" type="checkbox" name="groupJames" id="checkJames1_5" onclick="javascript:updateJames()"/>
 				<label for="checkJames1_5">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_5" aria-expanded="false" aria-controls="collapseThemeJames1_5">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames1_5" aria-expanded="false" aria-controls="collapseJames1_5">
 				  James 1:5
 				</button>
-				<div class="collapse" id="collapseThemeJames1_5">
+				<div class="collapse" id="collapseJames1_5">
 				  <div class="well">
 					If any of you lacks wisdom, let him ask God who gives generously to all without reproach, and it will be given him.
 				  </div>
@@ -1455,15 +1747,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter" aria-expanded="false" aria-controls="collapse1Peter">
 			  1 Peter
 			</button>
+			<span id="text1Pet"></span>
 			<div class="collapse" id="collapse1Peter">
 				<p></p>
 
-			    <input class = "Checkbox29" type="checkbox" name="group" id="check1Peter1_3" />
+			    <input class = "Checkbox29" type="checkbox" name="group1Pet" id="check1Peter1_3" onclick="javascript:update1Pet()"/>
 				<label for="check1Peter1_3">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter1_3" aria-expanded="false" aria-controls="collapseTheme1Peter1_3">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter1_3" aria-expanded="false" aria-controls="collapse1Peter1_3">
 				  1 Peter 1:3
 				</button>
-				<div class="collapse" id="collapseTheme1Peter1_3">
+				<div class="collapse" id="collapse1Peter1_3">
 				  <div class="well">
 				    Blessed be the God and Father of our Lord Jesus Christ! According to his great mercy, he has caused us to be born again to a living hope through the resurrection of Jesus Christ from the dead
 				  </div>
@@ -1472,12 +1765,12 @@
 				<p></p>
 
 
-				<input class = "Checkbox42" type="checkbox" name="group" id="check1Peter5_7" />
+				<input class = "Checkbox42" type="checkbox" name="group1Pet" id="check1Peter5_7" onclick="javascript:update1Pet()"/>
 				<label for="check1Peter5_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter5_7" aria-expanded="false" aria-controls="collapseTheme1Peter5_7">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter5_7" aria-expanded="false" aria-controls="collapse1Peter5_7">
 				  1 Peter 5:7
 				</button>
-				<div class="collapse" id="collapseTheme1Peter5_7">
+				<div class="collapse" id="collapse1Peter5_7">
 				  <div class="well">
 					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
 				  </div>
@@ -1491,41 +1784,41 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John" aria-expanded="false" aria-controls="collapse1John">
 			  1 John
 			</button>
+			<span id="text1John"></span>
 			<div class="collapse" id="collapse1John">
 				<p></p>
 
-				<input class = "Checkbox17" type="checkbox" name="group" id="check1John5_14" />
-				<label for="check1John5_14">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_14" aria-expanded="false" aria-controls="collapseTheme1John5_14">
-				  1 John 5:14
+				<input class = "Checkbox36" type="checkbox" name="group1John" id="check1John1_7" onclick="javascript:update1John()"/>
+				<label for="check1John1_7">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John1_7" aria-expanded="false" aria-controls="collapse1John1_7">
+				  1 John 1:7
 				</button>
-				<div class="collapse" id="collapseTheme1John5_14">
+				<div class="collapse" id="collapse1John1_7">
 				  <div class="well">
-				    And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
 				  </div>
 				</div>
 
 				<p></p>
 
-				<input class = "Checkbox18" type="checkbox" name="group" id="check1John5_15" />
-				<label for="check1John5_15">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_15" aria-expanded="false" aria-controls="collapseTheme1John5_15">
-				  1 John 5:15
+				<input class = "Checkbox37" type="checkbox" name="group1John" id="check1John1_9" onclick="javascript:update1John()"/>
+				<label for="check1John1_9">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John1_9" aria-expanded="false" aria-controls="collapse1John1_9">
+				  1 John 1:9
 				</button>
-				<div class="collapse" id="collapseTheme1John5_15">
+				<div class="collapse" id="collapse1John1_9">
 				  <div class="well">
-				    And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
+					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
 				  </div>
 				</div>
-
 				<p></p>
 
-			    <input class = "Checkbox19" type="checkbox" name="group" id="check1John5_11" />
+			    <input class = "Checkbox19" type="checkbox" name="group1John" id="check1John5_11" onclick="javascript:update1John()"/>
 				<label for="check1John5_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_11" aria-expanded="false" aria-controls="collapseTheme1John5_11">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John5_11" aria-expanded="false" aria-controls="collapse1John5_11">
 				  1 John 5:11
 				</button>
-				<div class="collapse" id="collapseTheme1John5_11">
+				<div class="collapse" id="collapse1John5_11">
 				  <div class="well">
 				    And this is the testimony, that God gave us eternal life, and this life is in his Son.
 				  </div>
@@ -1533,12 +1826,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox20" type="checkbox" name="group" id="check1John5_12" />
+				<input class = "Checkbox20" type="checkbox" name="group1John" id="check1John5_12" onclick="javascript:update1John()"/>
 				<label for="check1John5_12">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_12" aria-expanded="false" aria-controls="collapseTheme1John5_12">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John5_12" aria-expanded="false" aria-controls="collapse1John5_12">
 				  1 John 5:12
 				</button>
-				<div class="collapse" id="collapseTheme1John5_12">
+				<div class="collapse" id="collapse1John5_12">
 				  <div class="well">
 				     Whoever has the Son has life; whoever does not have the Son of God does not have life.
 				  </div>
@@ -1546,29 +1839,31 @@
 
 				<p></p>
 
-				<input class = "Checkbox36" type="checkbox" name="group" id="check1John1_7" />
-				<label for="check1John1_7">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_7" aria-expanded="false" aria-controls="collapseTheme1John1_7">
-				  1 John 1:7
+				<input class = "Checkbox17" type="checkbox" name="group1John" id="check1John5_14" onclick="javascript:update1John()"/>
+				<label for="check1John5_14">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John5_14" aria-expanded="false" aria-controls="collapse1John5_14">
+				  1 John 5:14
 				</button>
-				<div class="collapse" id="collapseTheme1John1_7">
+				<div class="collapse" id="collapse1John5_14">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				    And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.
 				  </div>
 				</div>
 
 				<p></p>
 
-				<input class = "Checkbox37" type="checkbox" name="group" id="check1John1_9" />
-				<label for="check1John1_9">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_9" aria-expanded="false" aria-controls="collapseTheme1John1_9">
-				  1 John 1:9
+				<input class = "Checkbox18" type="checkbox" name="group1John" id="check1John5_15" onclick="javascript:update1John()"/>
+				<label for="check1John5_15">Memorized!</label>
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John5_15" aria-expanded="false" aria-controls="collapse1John5_15">
+				  1 John 5:15
 				</button>
-				<div class="collapse" id="collapseTheme1John1_9">
+				<div class="collapse" id="collapse1John5_15">
 				  <div class="well">
-					For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.
+				    And if we know that he hears us in whatever we ask, we know that we have the requests that we have asked of him.
 				  </div>
 				</div>
+
+				
 
 				<p></p>
 			</div>
@@ -1578,15 +1873,16 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRevelation" aria-expanded="false" aria-controls="collapseRevelation">
 			  Revelation
 			</button>
+			<span id="textRev"></span>
 			<div class="collapse" id="collapseRevelation">
 				<p></p>
 
-				<input class = "Checkbox32" type="checkbox" name="group" id="checkRev4_11" />
+				<input class = "Checkbox32" type="checkbox" name="groupRev" id="checkRev4_11" onclick="javascript:updateRev()"/>
 				<label for="checkRev4_11">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev4_11" aria-expanded="false" aria-controls="collapseThemeRev4_11">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRev4_11" aria-expanded="false" aria-controls="collapseRev4_11">
 				  Revelation 4:11
 				</button>
-				<div class="collapse" id="collapseThemeRev4_11">
+				<div class="collapse" id="collapseRev4_11">
 				  <div class="well">
 					Worthy are you, our Lord and God, to receive glory and honor and power, for you created all things, and by your will they existed and were created.
 				  </div>
@@ -1594,12 +1890,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox98" type="checkbox" name="group" id="checkRev21_1" />
+				<input class = "Checkbox98" type="checkbox" name="groupRev" id="checkRev21_1" onclick="javascript:updateRev()"/>
 				<label for="checkRev21_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_1" aria-expanded="false" aria-controls="collapseThemeRev21_1">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRev21_1" aria-expanded="false" aria-controls="collapseRev21_1">
 				  Revelation 21:1
 				</button>
-				<div class="collapse" id="collapseThemeRev21_1">
+				<div class="collapse" id="collapseRev21_1">
 				  <div class="well">
 					He who has an ear, let him hear what the Spirit says to the churches. The one who conquers will not be hurt by the second death.
 				  </div>
@@ -1607,12 +1903,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox99" type="checkbox" name="group" id="checkRev21_2" />
+				<input class = "Checkbox99" type="checkbox" name="groupRev" id="checkRev21_2" onclick="javascript:updateRev()"/>
 				<label for="checkRev21_2">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_2" aria-expanded="false" aria-controls="collapseThemeRev21_2">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRev21_2" aria-expanded="false" aria-controls="collapseRev21_2">
 				  Revelation 21:2
 				</button>
-				<div class="collapse" id="collapseThemeRev21_2">
+				<div class="collapse" id="collapseRev21_2">
 				  <div class="well">
 					And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
 				  </div>
@@ -1620,12 +1916,12 @@
 
 				<p></p>
 
-				<input class = "Checkbox100" type="checkbox" name="group" id="checkRev22_20" />
+				<input class = "Checkbox100" type="checkbox" name="groupRev" id="checkRev22_20" onclick="javascript:updateRev()"/>
 				<label for="checkRev22_20">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev22_20" aria-expanded="false" aria-controls="collapseThemeRev22_20">
+				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRev22_20" aria-expanded="false" aria-controls="collapseRev22_20">
 				  Revelation 22:20
 				</button>
-				<div class="collapse" id="collapseThemeRev22_20">
+				<div class="collapse" id="collapseRev22_20">
 				  <div class="well">
 					He who testifies to these things says, "Surely I am coming soon." Amen. Come, Lord Jesus!
 				  </div>
@@ -1658,18 +1954,155 @@
 	   -->
 
 	    <div role="tabpanel" class="tab-pane fade" id="other">
+
+	    	<script type="text/javascript">
+	    		var updateAll = function (){
+	    			updateBeg()
+	    			updateRom()
+	    			updateList()
+	    			updateAssur()
+	    			updatePraise()
+	    			updateProm()
+	    			updateHol()
+	    			updateFull()
+	    			updateJoy()
+	    			updateFaith()
+	    			updateSent()
+	    			updatePsalm()
+	    			updateAlpha()
+	    		}
+	 			var updateBeg = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupBeg"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupBeg"]').length
+		 			var progressSoFar =  '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textBeg').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textBeg').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateRom = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupRom"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupRom"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textRom').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textRom').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateList = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupList"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupList"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textList').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textList').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateAssur = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupAssur"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupAssur"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textAssur').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textAssur').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updatePraise = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupPraise"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupPraise"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textPraise').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textPraise').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateProm = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupProm"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupProm"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textProm').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textProm').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 			
+		 		}
+		 		var updateHol = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupHol"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupHol"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textHol').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textHol').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateFull = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupFull"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupFull"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textFull').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textFull').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateJoy = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupJoy"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupJoy"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textJoy').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textJoy').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateFaith = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupFaith"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupFaith"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textFaith').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textFaith').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateSent = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupSent"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupSent"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textSent').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textSent').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updatePsalm = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupPsalm"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupPsalm"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textPsalm').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textPsalm').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+		 		var updateAlpha = function (){
+		 			var numChecked = document.querySelectorAll('input[name="groupAlpha"]:checked').length
+		 			var numCheckBoxes = document.querySelectorAll('input[name="groupAlpha"]').length
+		 			var progressSoFar = '&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			document.getElementById('textAlpha').innerHTML = progressSoFar
+		 			if (numChecked == numCheckBoxes){
+		 				document.getElementById('textAlpha').innerHTML = '<strong>' + progressSoFar + '</strong>';
+		 			}
+		 		}
+			</script>
+
 	    	<p></p>
 
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBeginnings" aria-expanded="false" aria-controls="collapseBeginnings">
 			  Beginnings: Bible's Fantastic Four
 			</button>
-			0/4 
+			<span id = "textBeg"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseBeginnings">
 			  	<p></p>
 
-			    <input class = "Checkbox1" type="checkbox" name="group" id="checkThemeGen1_1" />
+			    <input class = "Checkbox1" type="checkbox" name="groupBeg" id="checkThemeGen1_1"  onclick="javascript:updateBeg()"/>
 				<label for="checkThemeGen1_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGen1_1" aria-expanded="false" aria-controls="collapseThemeGen1_1">
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGen1_1" aria-expanded="false" aria-controls="collapseThemeGen1_1">
 				  Genesis 1:1
 				</button>
 				<div class="collapse" id="collapseThemeGen1_1">
@@ -1680,20 +2113,20 @@
 
 				<p></p>
 
-				<input class = "Checkbox2" type="checkbox" name="group" id="checkThemeJohn1_1" />
+				<input class = "Checkbox2" type="checkbox" name="groupBeg" id="checkThemeJohn1_1" onclick="javascript:updateBeg()"/>
 				<label for="checkThemeJohn1_1">Memorized!</label>
-				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_1" aria-expanded="false" aria-controls="collapseThemeJohn1_1">
 				  John 1:1
 				</button>
 				<div class="collapse" id="collapseThemeJohn1_1">
-				  <div class="well">
-				    In the beginning was the Word, and the Word was with God, and the Word was God.
-				  </div>
+					<div class="well">
+						In the beginning was the Word, and the Word was with God, and the Word was God.
+					</div>
 				</div>
 
 				<p></p>
 
-				<input class = "Checkbox3" type="checkbox" name="group" id="checkThemeJohn1_14" />
+				<input class = "Checkbox3" type="checkbox" name="groupBeg" id="checkThemeJohn1_14" onclick="javascript:updateBeg()"/>
 				<label for="checkThemeJohn1_14">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn1_14" aria-expanded="false" aria-controls="collapseThemeJohn1_14">
 				  John 1:14
@@ -1706,7 +2139,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox4" type="checkbox" name="group" id="checkThemeJohn3_16" />
+				<input class = "Checkbox4" type="checkbox" name="groupBeg" id="checkThemeJohn3_16" onclick="javascript:updateBeg()"/>
 				<label for="checkThemeJohn3_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn3_16" aria-expanded="false" aria-controls="collapseThemeJohn3_16">
 				  John 3:16
@@ -1723,10 +2156,11 @@
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRoman" aria-expanded="true" aria-controls="collapseRoman">
 			  The Roman Road: The Plan of Salvation
 			</button>
+			<span id = "textRom"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseRoman">
 			  	<p></p>
 
-			    <input class = "Checkbox5" type="checkbox" name="group" id="checkThemeRomans3_23" />
+			    <input class = "Checkbox5" type="checkbox" name="groupRom" id="checkThemeRomans3_23" onclick="javascript:updateRom()"/>
 				<label for="checkThemeRomans3_23">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans3_23" aria-expanded="false" aria-controls="collapseThemeRomans3_23">
 				  Romans 3:23
@@ -1739,7 +2173,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox6" type="checkbox" name="group" id="checkThemeRomans6_23" />
+				<input class = "Checkbox6" type="checkbox" name="groupRom" id="checkThemeRomans6_23" onclick="javascript:updateRom()"/>
 				<label for="checkThemeRomans6_23">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans6_23" aria-expanded="false" aria-controls="collapseThemeRomans6_23">
 				  Romans 6:23
@@ -1752,7 +2186,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox7" type="checkbox" name="group" id="checkThemeRomans5_8" />
+				<input class = "Checkbox7" type="checkbox" name="groupRom" id="checkThemeRomans5_8" onclick="javascript:updateRom()"/>
 				<label for="checkThemeRomans5_8">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans5_8" aria-expanded="false" aria-controls="collapseThemeRomans5_8">
 				  Romans 5:8
@@ -1765,7 +2199,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox8" type="checkbox" name="group" id="checkThemeRomans10_9" />
+				<input class = "Checkbox8" type="checkbox" name="groupRom" id="checkThemeRomans10_9" onclick="javascript:updateRom()"/>
 				<label for="checkThemeRomans10_9">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_9" aria-expanded="false" aria-controls="collapseThemeRomans10_9">
 				  Romans 10:9
@@ -1778,7 +2212,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox9" type="checkbox" name="group" id="checkThemeRomans10_10" />
+				<input class = "Checkbox9" type="checkbox" name="groupRom" id="checkThemeRomans10_10" onclick="javascript:updateRom()"/>
 				<label for="checkThemeRomans10_10">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans10_10" aria-expanded="false" aria-controls="collapseThemeRomans10_10">
 				  Romans 10:10
@@ -1795,10 +2229,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseListening" aria-expanded="false" aria-controls="collapseListening">
 			  Listening: Word of God &amp; Prayer
 			</button>
+			<span id = "textList"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseListening">
 			  	<p></p>
 
-			    <input class = "Checkbox10" type="checkbox" name="group" id="checkTheme2Tim3_16" />
+			    <input class = "Checkbox10" type="checkbox" name="groupList" id="checkTheme2Tim3_16" onclick="javascript:updateList()"/>
 				<label for="checkTheme2Tim3_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Tim3_16" aria-expanded="false" aria-controls="collapseTheme2Tim3_16">
 				  2 Timothy 3:16
@@ -1811,7 +2246,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox11" type="checkbox" name="group" id="checkThemeJosh1_8" />
+				<input class = "Checkbox11" type="checkbox" name="groupList" id="checkThemeJosh1_8" onclick="javascript:updateList()"/>
 				<label for="checkThemeJosh1_8">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJosh1_8" aria-expanded="false" aria-controls="collapseThemeJosh1_8">
 				  Joshua 1:8
@@ -1824,7 +2259,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox12" type="checkbox" name="group" id="checkThemePsalm119_11" />
+				<input class = "Checkbox12" type="checkbox" name="groupList" id="checkThemePsalm119_11" onclick="javascript:updateList()"/>
 				<label for="checkThemePsalm119_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm119_11" aria-expanded="false" aria-controls="collapseThemePsalm119_11">
 				  Psalm 119:11
@@ -1837,7 +2272,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox13" type="checkbox" name="group" id="checkThemeDeut6_6" />
+				<input class = "Checkbox13" type="checkbox" name="groupList" id="checkThemeDeut6_6" onclick="javascript:updateList()"/>
 				<label for="checkThemeDeut6_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_6" aria-expanded="false" aria-controls="collapseThemeDeut6_6">
 				  Deuteronomy 6:6
@@ -1850,7 +2285,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox14" type="checkbox" name="group" id="checkThemeDeut6_7" />
+				<input class = "Checkbox14" type="checkbox" name="groupList" id="checkThemeDeut6_7" onclick="javascript:updateList()"/>
 				<label for="checkThemeDeut6_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeDeut6_7" aria-expanded="false" aria-controls="collapseThemeDeut6_7">
 				  Deuteronomy 6:7
@@ -1863,7 +2298,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox15" type="checkbox" name="group" id="checkThemeHeb4_12" />
+				<input class = "Checkbox15" type="checkbox" name="groupList" id="checkThemeHeb4_12" onclick="javascript:updateList()"/>
 				<label for="checkThemeHeb4_12">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_12" aria-expanded="false" aria-controls="collapseThemeHeb4_12">
 				  Hebrews 4:12
@@ -1876,7 +2311,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox16" type="checkbox" name="group" id="checkThemeHeb4_16" />
+				<input class = "Checkbox16" type="checkbox" name="groupList" id="checkThemeHeb4_16" onclick="javascript:updateList()"/>
 				<label for="checkThemeHeb4_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb4_16" aria-expanded="false" aria-controls="collapseThemeHeb4_16">
 				  Hebrews 4:16
@@ -1889,7 +2324,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox17" type="checkbox" name="group" id="checkTheme1John5_14" />
+				<input class = "Checkbox17" type="checkbox" name="groupList" id="checkTheme1John5_14" onclick="javascript:updateList()"/>
 				<label for="checkTheme1John5_14">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_14" aria-expanded="false" aria-controls="collapseTheme1John5_14">
 				  1 John 5:14
@@ -1902,7 +2337,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox18" type="checkbox" name="group" id="checkTheme1John5_15" />
+				<input class = "Checkbox18" type="checkbox" name="groupList" id="checkTheme1John5_15" onclick="javascript:updateList()"/>
 				<label for="checkTheme1John5_15">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_15" aria-expanded="false" aria-controls="collapseTheme1John5_15">
 				  1 John 5:15
@@ -1919,10 +2354,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAssurance" aria-expanded="false" aria-controls="collapseAssurance">
 			  Assurance: Inner Peace &amp; Security
 			</button>
+			<span id = "textAssur"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseAssurance">
 			  	<p></p>
 
-			    <input class = "Checkbox19" type="checkbox" name="group" id="checkTheme1John5_11" />
+			    <input class = "Checkbox19" type="checkbox" name="groupAssur" id="checkTheme1John5_11" onclick="javascript:updateAssur()"/>
 				<label for="checkTheme1John5_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_11" aria-expanded="false" aria-controls="collapseTheme1John5_11">
 				  1 John 5:11
@@ -1935,7 +2371,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox20" type="checkbox" name="group" id="checkTheme1John5_12" />
+				<input class = "Checkbox20" type="checkbox" name="groupAssur" id="checkTheme1John5_12" onclick="javascript:updateAssur()"/>
 				<label for="checkTheme1John5_12">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John5_12" aria-expanded="false" aria-controls="collapseTheme1John5_12">
 				  1 John 5:12
@@ -1948,7 +2384,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox21" type="checkbox" name="group" id="checkThemeJohn14_1" />
+				<input class = "Checkbox21" type="checkbox" name="groupAssur" id="checkThemeJohn14_1" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeJohn14_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_1" aria-expanded="false" aria-controls="collapseThemeJohn14_1">
 				  John 14:1
@@ -1961,7 +2397,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox22" type="checkbox" name="group" id="checkThemeJohn14_2" />
+				<input class = "Checkbox22" type="checkbox" name="groupAssur" id="checkThemeJohn14_2" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeJohn14_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_2" aria-expanded="false" aria-controls="collapseThemeJohn14_2">
 				  John 14:2
@@ -1974,7 +2410,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox23" type="checkbox" name="group" id="checkThemeJohn14_3" />
+				<input class = "Checkbox23" type="checkbox" name="groupAssur" id="checkThemeJohn14_3" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeJohn14_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_3" aria-expanded="false" aria-controls="collapseThemeJohn14_3">
 				  John 14:3
@@ -1987,7 +2423,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox24" type="checkbox" name="group" id="checkThemeJohn14_6" />
+				<input class = "Checkbox24" type="checkbox" name="groupAssur" id="checkThemeJohn14_6" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeJohn14_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_6" aria-expanded="false" aria-controls="collapseThemeJohn14_6">
 				  John 14:6
@@ -2000,7 +2436,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox25" type="checkbox" name="group" id="checkThemeJohn14_27" />
+				<input class = "Checkbox25" type="checkbox" name="groupAssur" id="checkThemeJohn14_27" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeJohn14_27">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJohn14_27" aria-expanded="false" aria-controls="collapseThemeJohn14_27">
 				  John 14:27
@@ -2013,7 +2449,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox26" type="checkbox" name="group" id="checkThemeIsaiah26_3" />
+				<input class = "Checkbox26" type="checkbox" name="groupAssur" id="checkThemeIsaiah26_3" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeIsaiah26_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah26_3" aria-expanded="false" aria-controls="collapseThemeIsaiah26_3">
 				  Isaiah 26:3
@@ -2026,7 +2462,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox27" type="checkbox" name="group" id="checkThemeIsaiah53_5" />
+				<input class = "Checkbox27" type="checkbox" name="groupAssur" id="checkThemeIsaiah53_5" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeIsaiah53_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_5" aria-expanded="false" aria-controls="collapseThemeIsaiah53_5">
 				  Isaiah 53:5
@@ -2039,7 +2475,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox28" type="checkbox" name="group" id="checkThemeIsaiah53_6" />
+				<input class = "Checkbox28" type="checkbox" name="groupAssur" id="checkThemeIsaiah53_6" onclick="javascript:updateAssur()"/>
 				<label for="checkThemeIsaiah53_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah53_6" aria-expanded="false" aria-controls="collapseThemeIsaiah53_6">
 				  Isaiah 53:6
@@ -2056,10 +2492,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePraise" aria-expanded="false" aria-controls="collapsePraise">
 			  Praise: Worship &amp; Thanksgiving
 			</button>
+			<span id = "textPraise"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapsePraise">
 			  	<p></p>
 
-			    <input class = "Checkbox29" type="checkbox" name="group" id="checkTheme1Peter1_3" />
+			    <input class = "Checkbox29" type="checkbox" name="groupPraise" id="checkTheme1Peter1_3" onclick="javascript:updatePraise()"/>
 				<label for="checkTheme1Peter1_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter1_3" aria-expanded="false" aria-controls="collapseTheme1Peter1_3">
 				  1 Peter 1:3
@@ -2072,7 +2509,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox30" type="checkbox" name="group" id="checkThemePsalm100_4" />
+				<input class = "Checkbox30" type="checkbox" name="groupPraise" id="checkThemePsalm100_4" onclick="javascript:updatePraise()"/>
 				<label for="checkThemePsalm100_4">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_4" aria-expanded="false" aria-controls="collapseThemePsalm100_4">
 				  Psalm 100:4
@@ -2085,7 +2522,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox31" type="checkbox" name="group" id="checkThemePsalm100_5" />
+				<input class = "Checkbox31" type="checkbox" name="groupPraise" id="checkThemePsalm100_5" onclick="javascript:updatePraise()"/>
 				<label for="checkThemePsalm100_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm100_5" aria-expanded="false" aria-controls="collapseThemePsalm100_5">
 				  Psalm 100:5
@@ -2098,7 +2535,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox32" type="checkbox" name="group" id="checkThemeRev4_11" />
+				<input class = "Checkbox32" type="checkbox" name="groupPraise" id="checkThemeRev4_11" onclick="javascript:updatePraise()"/>
 				<label for="checkThemeRev4_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev4_11" aria-expanded="false" aria-controls="collapseThemeRev4_11">
 				  Revelation 4:11
@@ -2115,10 +2552,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePromises" aria-expanded="false" aria-controls="collapsePromises">
 			  Promises: Verses to Stand On
 			</button>
+			<span id = "textProm"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapsePromises">
 			  	<p></p>
 
-			    <input class = "Checkbox33" type="checkbox" name="group" id="checkThemeMatt6_33" />
+			    <input class = "Checkbox33" type="checkbox" name="groupProm" id="checkThemeMatt6_33" onclick="javascript:updateProm()"/>
 				<label for="checkThemeMatt6_33">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt6_33" aria-expanded="false" aria-controls="collapseThemeMatt6_33">
 				  Matthew 6:33
@@ -2131,7 +2569,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox34" type="checkbox" name="group" id="checkThemeRomans8_28" />
+				<input class = "Checkbox34" type="checkbox" name="groupProm" id="checkThemeRomans8_28" onclick="javascript:updateProm()"/>
 				<label for="checkThemeRomans8_28">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans8_28" aria-expanded="false" aria-controls="collapseThemeRomans8_28">
 				  Romans 8:28
@@ -2144,7 +2582,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox35" type="checkbox" name="group" id="checkThemeJeremiah29_11" />
+				<input class = "Checkbox35" type="checkbox" name="groupProm" id="checkThemeJeremiah29_11" onclick="javascript:updateProm()"/>
 				<label for="checkThemeJeremiah29_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJeremiah29_11" aria-expanded="false" aria-controls="collapseThemeJeremiah29_11">
 				  Jeremiah 29:11
@@ -2157,7 +2595,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox36" type="checkbox" name="group" id="checkTheme1John1_7" />
+				<input class = "Checkbox36" type="checkbox" name="groupProm" id="checkTheme1John1_7" onclick="javascript:updateProm()"/>
 				<label for="checkTheme1John1_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_7" aria-expanded="false" aria-controls="collapseTheme1John1_7">
 				  1 John 1:7
@@ -2170,7 +2608,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox37" type="checkbox" name="group" id="checkTheme1John1_9" />
+				<input class = "Checkbox37" type="checkbox" name="groupProm" id="checkTheme1John1_9" onclick="javascript:updateProm()"/>
 				<label for="checkTheme1John1_9">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1John1_9" aria-expanded="false" aria-controls="collapseTheme1John1_9">
 				  1 John 1:9
@@ -2183,7 +2621,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox38" type="checkbox" name="group" id="checkThemeProverbs3_5" />
+				<input class = "Checkbox38" type="checkbox" name="groupProm" id="checkThemeProverbs3_5" onclick="javascript:updateProm()"/>
 				<label for="checkThemeProverbs3_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_5" aria-expanded="false" aria-controls="collapseThemeProverbs3_5">
 				  Proverbs 3:5
@@ -2196,7 +2634,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox39" type="checkbox" name="group" id="checkThemeProverbs3_6" />
+				<input class = "Checkbox39" type="checkbox" name="groupProm" id="checkThemeProverbs3_6" onclick="javascript:updateProm()"/>
 				<label for="checkThemeProverbs3_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProverbs3_6" aria-expanded="false" aria-controls="collapseThemeProverbs3_6">
 				  Proverbs 3:6
@@ -2209,7 +2647,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox40" type="checkbox" name="group" id="checkTheme1Cor10_13" />
+				<input class = "Checkbox40" type="checkbox" name="groupProm" id="checkTheme1Cor10_13" onclick="javascript:updateProm()"/>
 				<label for="checkTheme1Cor10_13">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Cor10_13" aria-expanded="false" aria-controls="collapseTheme1Cor10_13">
 				  1 Corinthians 10:13
@@ -2222,7 +2660,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox41" type="checkbox" name="group" id="checkThemePsalm55_22" />
+				<input class = "Checkbox41" type="checkbox" name="groupProm" id="checkThemePsalm55_22" onclick="javascript:updateProm()"/>
 				<label for="checkThemePsalm55_22">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm55_22" aria-expanded="false" aria-controls="collapseThemePsalm55_22">
 				  Psalm 55:22
@@ -2235,7 +2673,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox42" type="checkbox" name="group" id="checkTheme1Peter5_7" />
+				<input class = "Checkbox42" type="checkbox" name="groupProm" id="checkTheme1Peter5_7" onclick="javascript:updateProm()"/>
 				<label for="checkTheme1Peter5_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Peter5_7" aria-expanded="false" aria-controls="collapseTheme1Peter5_7">
 				  1 Peter 5:7
@@ -2252,10 +2690,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHoliness" aria-expanded="false" aria-controls="collapseHoliness">
 			  Holiness: Obeying God's Commands
 			</button>
+			<span id = "textHol"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseHoliness">
 			  	<p></p>
 
-			    <input class = "Checkbox43" type="checkbox" name="group" id="checkTheme2Chron7_14" />
+			    <input class = "Checkbox43" type="checkbox" name="groupHol" id="checkTheme2Chron7_14" onclick="javascript:updateHol()"/>
 				<label for="checkTheme2Chron7_14">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Chron7_14" aria-expanded="false" aria-controls="collapseTheme2Chron7_14">
 				  2 Chronicles 7:14
@@ -2268,7 +2707,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox44" type="checkbox" name="group" id="checkThemeRomans12_1" />
+				<input class = "Checkbox44" type="checkbox" name="groupHol" id="checkThemeRomans12_1" onclick="javascript:updateHol()"/>
 				<label for="checkThemeRomans12_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_1" aria-expanded="false" aria-controls="collapseThemeRomans12_1">
 				  Romans 12:1
@@ -2281,7 +2720,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox45" type="checkbox" name="group" id="checkThemeRomans12_2" />
+				<input class = "Checkbox45" type="checkbox" name="groupHol" id="checkThemeRomans12_2" onclick="javascript:updateHol()"/>
 				<label for="checkThemeRomans12_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_2" aria-expanded="false" aria-controls="collapseThemeRomans12_2">
 				  Romans 12:2
@@ -2294,7 +2733,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox46" type="checkbox" name="group" id="checkThemeRomans12_11" />
+				<input class = "Checkbox46" type="checkbox" name="groupHol" id="checkThemeRomans12_11" onclick="javascript:updateHol()"/>
 				<label for="checkThemeRomans12_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_11" aria-expanded="false" aria-controls="collapseThemeRomans12_11">
 				  Romans 12:11
@@ -2307,7 +2746,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox47" type="checkbox" name="group" id="checkThemeRomans12_12" />
+				<input class = "Checkbox47" type="checkbox" name="groupHol" id="checkThemeRomans12_12" onclick="javascript:updateHol()"/>
 				<label for="checkThemeRomans12_12">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_12" aria-expanded="false" aria-controls="collapseThemeRomans12_12">
 				  Romans 12:12
@@ -2320,7 +2759,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox48" type="checkbox" name="group" id="checkThemeRomans12_18" />
+				<input class = "Checkbox48" type="checkbox" name="groupHol" id="checkThemeRomans12_18" onclick="javascript:updateHol()"/>
 				<label for="checkThemeRomans12_18">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRomans12_18" aria-expanded="false" aria-controls="collapseThemeRomans12_18">
 				  Romans 12:18
@@ -2333,7 +2772,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox49" type="checkbox" name="group" id="checkTheme2Cor9_7" />
+				<input class = "Checkbox49" type="checkbox" name="groupHol" id="checkTheme2Cor9_7" onclick="javascript:updateHol()"/>
 				<label for="checkTheme2Cor9_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme2Cor9_7" aria-expanded="false" aria-controls="collapseTheme2Cor9_7">
 				  2 Corinthians 9:7
@@ -2346,7 +2785,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox50" type="checkbox" name="group" id="checkThemeHeb10_25" />
+				<input class = "Checkbox50" type="checkbox" name="groupHol" id="checkThemeHeb10_25" onclick="javascript:updateHol()"/>
 				<label for="checkThemeHeb10_25">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHeb10_25" aria-expanded="false" aria-controls="collapseThemeHeb10_25">
 				  Hebrews 10:25
@@ -2359,7 +2798,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox51" type="checkbox" name="group" id="checkThemeProv1_7" />
+				<input class = "Checkbox51" type="checkbox" name="groupHol" id="checkThemeProv1_7" onclick="javascript:updateHol()"/>
 				<label for="checkThemeProv1_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv1_7" aria-expanded="false" aria-controls="collapseThemeProv1_7">
 				  Proverbs 1:7
@@ -2372,7 +2811,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox52" type="checkbox" name="group" id="checkThemeProv15_1" />
+				<input class = "Checkbox52" type="checkbox" name="groupHol" id="checkThemeProv15_1" onclick="javascript:updateHol()"/>
 				<label for="checkThemeProv15_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeProv15_1" aria-expanded="false" aria-controls="collapseThemeProv15_1">
 				  Proverbs 15:1
@@ -2389,10 +2828,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFullness" aria-expanded="false" aria-controls="collapseFullness">
 			  Fullness: Holy Spirit's Role in Our Lives
 			</button>
+			<span id = "textFull"> &nbsp; 0/4 </span>
 			<div class="collapse" id="collapseFullness">
 			  	<p></p>
 
-			    <input class = "Checkbox53" type="checkbox" name="group" id="checkThemeEph5_18" />
+			    <input class = "Checkbox53" type="checkbox" name="groupFull" id="checkThemeEph5_18" onclick="javascript:updateFull()"/>
 				<label for="checkThemeEph5_18">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_18" aria-expanded="false" aria-controls="collapseThemeEph5_18">
 				  Ephesians 5:18
@@ -2405,7 +2845,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox54" type="checkbox" name="group" id="checkThemeEph5_19" />
+				<input class = "Checkbox54" type="checkbox" name="groupFull" id="checkThemeEph5_19" onclick="javascript:updateFull()"/>
 				<label for="checkThemeEph5_19">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_19" aria-expanded="false" aria-controls="collapseThemeEph5_19">
 				  Ephesians 5:19
@@ -2418,7 +2858,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox55" type="checkbox" name="group" id="checkThemeEph5_20" />
+				<input class = "Checkbox55" type="checkbox" name="groupFull" id="checkThemeEph5_20" onclick="javascript:updateFull()"/>
 				<label for="checkThemeEph5_20">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_20" aria-expanded="false" aria-controls="collapseThemeEph5_20">
 				  Ephesians 5:20
@@ -2431,7 +2871,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox56" type="checkbox" name="group" id="checkThemeEph5_21" />
+				<input class = "Checkbox56" type="checkbox" name="groupFull" id="checkThemeEph5_21" onclick="javascript:updateFull()"/>
 				<label for="checkThemeEph5_21">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph5_21" aria-expanded="false" aria-controls="collapseThemeEph5_21">
 				  Ephesians 5:21
@@ -2444,7 +2884,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox57" type="checkbox" name="group" id="checkThemeGal5_22" />
+				<input class = "Checkbox57" type="checkbox" name="groupFull" id="checkThemeGal5_22" onclick="javascript:updateFull()"/>
 				<label for="checkThemeGal5_22">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_22" aria-expanded="false" aria-controls="collapseThemeGal5_22">
 				  Galatians 5:22
@@ -2457,7 +2897,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox58" type="checkbox" name="group" id="checkThemeGal5_23" />
+				<input class = "Checkbox58" type="checkbox" name="groupFull" id="checkThemeGal5_23" onclick="javascript:updateFull()"/>
 				<label for="checkThemeGal5_23">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal5_23" aria-expanded="false" aria-controls="collapseThemeGal5_23">
 				  Galatians 5:23
@@ -2474,10 +2914,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoy" aria-expanded="false" aria-controls="collapseJoy">
 			  Joy: God's Kind of Happiness
 			</button>
+			<span id="textJoy"></span>
 			<div class="collapse" id="collapseJoy">
 			  	<p></p>
 
-			    <input class = "Checkbox59" type="checkbox" name="group" id="checkThemePsalm118_24" />
+			    <input class = "Checkbox59" type="checkbox" name="groupJoy" id="checkThemePsalm118_24" onclick="javascript:updateJoy()"/>
 				<label for="checkThemePsalm118_24">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm118_24" aria-expanded="false" aria-controls="collapseThemePsalm118_24">
 				  Psalm 118:24
@@ -2490,7 +2931,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox60" type="checkbox" name="group" id="checkThemePhil4_4" />
+				<input class = "Checkbox60" type="checkbox" name="groupJoy" id="checkThemePhil4_4" onclick="javascript:updateJoy()"/>
 				<label for="checkThemePhil4_4">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_4" aria-expanded="false" aria-controls="collapseThemePhil4_4">
 				  Philippians 4:4
@@ -2503,7 +2944,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox61" type="checkbox" name="group" id="checkThemePhil4_5" />
+				<input class = "Checkbox61" type="checkbox" name="groupJoy" id="checkThemePhil4_5" onclick="javascript:updateJoy()"/>
 				<label for="checkThemePhil4_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_5" aria-expanded="false" aria-controls="collapseThemePhil4_5">
 				  Philippians 4:5
@@ -2516,7 +2957,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox62" type="checkbox" name="group" id="checkThemePhil4_6" />
+				<input class = "Checkbox62" type="checkbox" name="groupJoy" id="checkThemePhil4_6" onclick="javascript:updateJoy()"/>
 				<label for="checkThemePhil4_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_6" aria-expanded="false" aria-controls="collapseThemePhil4_6">
 				  Philippians 4:6
@@ -2529,7 +2970,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox63" type="checkbox" name="group" id="checkThemePhil4_7" />
+				<input class = "Checkbox63" type="checkbox" name="groupJoy" id="checkThemePhil4_7" onclick="javascript:updateJoy()"/>
 				<label for="checkThemePhil4_7">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePhil4_7" aria-expanded="false" aria-controls="collapseThemePhil4_7">
 				  Philippians 4:7
@@ -2542,7 +2983,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox64" type="checkbox" name="group" id="checkThemeJames1_2" />
+				<input class = "Checkbox64" type="checkbox" name="groupJoy" id="checkThemeJames1_2" onclick="javascript:updateJoy()"/>
 				<label for="checkThemeJames1_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_2" aria-expanded="false" aria-controls="collapseThemeJames1_2">
 				  James 1:2
@@ -2555,7 +2996,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox65" type="checkbox" name="group" id="checkThemeJames1_3" />
+				<input class = "Checkbox65" type="checkbox" name="groupJoy" id="checkThemeJames1_3" onclick="javascript:updateJoy()"/>
 				<label for="checkThemeJames1_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_3" aria-expanded="false" aria-controls="collapseThemeJames1_3">
 				  James 1:3
@@ -2568,7 +3009,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox66" type="checkbox" name="group" id="checkThemeJames1_4" />
+				<input class = "Checkbox66" type="checkbox" name="groupJoy" id="checkThemeJames1_4" onclick="javascript:updateJoy()"/>
 				<label for="checkThemeJames1_4">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_4" aria-expanded="false" aria-controls="collapseThemeJames1_4">
 				  James 1:4
@@ -2581,7 +3022,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox67" type="checkbox" name="group" id="checkThemeJames1_5" />
+				<input class = "Checkbox67" type="checkbox" name="groupJoy" id="checkThemeJames1_5" onclick="javascript:updateJoy()"/>
 				<label for="checkThemeJames1_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeJames1_5" aria-expanded="false" aria-controls="collapseThemeJames1_5">
 				  James 1:5
@@ -2594,7 +3035,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox68" type="checkbox" name="group" id="checkTheme1Thess5_16" />
+				<input class = "Checkbox68" type="checkbox" name="groupJoy" id="checkTheme1Thess5_16" onclick="javascript:updateJoy()"/>
 				<label for="checkTheme1Thess5_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_16" aria-expanded="false" aria-controls="collapseTheme1Thess5_16">
 				  1 Thessalonians 5:16
@@ -2607,7 +3048,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox69" type="checkbox" name="group" id="checkTheme1Thess5_17" />
+				<input class = "Checkbox69" type="checkbox" name="groupJoy" id="checkTheme1Thess5_17" onclick="javascript:updateJoy()"/>
 				<label for="checkTheme1Thess5_17">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTheme1Thess5_17" aria-expanded="false" aria-controls="collapseTheme1Thess5_17">
 				  1 Thessalonians 5:17
@@ -2637,10 +3078,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFaith" aria-expanded="false" aria-controls="collapseFaith">
 			  Faith: Trusting God &amp; Resting in His Word
 			</button>
+			<span id="textFaith"></span>
 			<div class="collapse" id="collapseFaith">
 			  	<p></p>
 
-			    <input class = "Checkbox71" type="checkbox" name="group" id="checkThemeEph2_8" />
+			    <input class = "Checkbox71" type="checkbox" name="groupFaith" id="checkThemeEph2_8" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeEph2_8">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_8" aria-expanded="false" aria-controls="collapseThemeEph2_8">
 				  Ephesians 2:8
@@ -2653,7 +3095,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox72" type="checkbox" name="group" id="checkThemeEph2_9" />
+				<input class = "Checkbox72" type="checkbox" name="groupFaith" id="checkThemeEph2_9" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeEph2_9">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_9" aria-expanded="false" aria-controls="collapseThemeEph2_9">
 				  Ephesians 2:9
@@ -2666,7 +3108,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox73" type="checkbox" name="group" id="checkThemeEph2_10" />
+				<input class = "Checkbox73" type="checkbox" name="groupFaith" id="checkThemeEph2_10" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeEph2_10">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeEph2_10" aria-expanded="false" aria-controls="collapseThemeEph2_10">
 				  Ephesians 2:10
@@ -2679,7 +3121,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox74" type="checkbox" name="group" id="checkThemeGal2_20" />
+				<input class = "Checkbox74" type="checkbox" name="groupFaith" id="checkThemeGal2_20" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeGal2_20">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeGal2_20" aria-expanded="false" aria-controls="collapseThemeGal2_20">
 				  Galatians 2:20
@@ -2692,7 +3134,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox75" type="checkbox" name="group" id="checkThemeCol3_15" />
+				<input class = "Checkbox75" type="checkbox" name="groupFaith" id="checkThemeCol3_15" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeCol3_15">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_15" aria-expanded="false" aria-controls="collapseThemeCol3_15">
 				  Colossians 3:15
@@ -2705,7 +3147,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox76" type="checkbox" name="group" id="checkThemeCol3_16" />
+				<input class = "Checkbox76" type="checkbox" name="groupFaith" id="checkThemeCol3_16" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeCol3_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_16" aria-expanded="false" aria-controls="collapseThemeCol3_16">
 				  Colossians 3:16
@@ -2718,7 +3160,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox77" type="checkbox" name="group" id="checkThemeCol3_17" />
+				<input class = "Checkbox77" type="checkbox" name="groupFaith" id="checkThemeCol3_17" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeCol3_17">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeCol3_17" aria-expanded="false" aria-controls="collapseThemeCol3_17">
 				  Colossians 3:17
@@ -2731,7 +3173,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox78" type="checkbox" name="group" id="checkThemeRom1_16" />
+				<input class = "Checkbox78" type="checkbox" name="groupFaith" id="checkThemeRom1_16" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeRom1_16">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_16" aria-expanded="false" aria-controls="collapseThemeRom1_16">
 				  Romans 1:16
@@ -2744,7 +3186,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox79" type="checkbox" name="group" id="checkThemeRom1_17" />
+				<input class = "Checkbox79" type="checkbox" name="groupFaith" id="checkThemeRom1_17" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeRom1_17">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRom1_17" aria-expanded="false" aria-controls="collapseThemeJRom1_17">
 				  Romans 1:17
@@ -2757,7 +3199,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox80" type="checkbox" name="group" id="checkThemePsalm56_3" />
+				<input class = "Checkbox80" type="checkbox" name="groupFaith" id="checkThemePsalm56_3" onclick="javascript:updateFaith()"/>
 				<label for="checkThemePsalm56_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm56_3" aria-expanded="false" aria-controls="collapseThemePsalm56_3">
 				  Psalm 56:3
@@ -2770,7 +3212,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox81" type="checkbox" name="group" id="checkThemePsalm4_8" />
+				<input class = "Checkbox81" type="checkbox" name="groupFaith" id="checkThemePsalm4_8" onclick="javascript:updateFaith()"/>
 				<label for="checkThemePsalm4_8">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm4_8" aria-expanded="false" aria-controls="collapseThemePsalm4_8">
 				  Psalm 4:8
@@ -2783,7 +3225,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox82" type="checkbox" name="group" id="checkThemeHebrews11_6" />
+				<input class = "Checkbox82" type="checkbox" name="groupFaith" id="checkThemeHebrews11_6" onclick="javascript:updateFaith()"/>
 				<label for="checkThemeHebrews11_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeHebrews11_6" aria-expanded="false" aria-controls="collapseThemeHebrews11_6">
 				  Hebrews 11:6
@@ -2800,10 +3242,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSent" aria-expanded="false" aria-controls="collapseSent">
 			  Sent: The Great Commission &amp; Our Global Task
 			</button>
+			<span id="textSent"></span>
 			<div class="collapse" id="collapseSent">
 			  	<p></p>
 
-			    <input class = "Checkbox83" type="checkbox" name="group" id="checkThemeMatt28_18" />
+			    <input class = "Checkbox83" type="checkbox" name="groupSent" id="checkThemeMatt28_18" onclick="javascript:updateSent()"/>
 				<label for="checkThemeMatt28_18">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_18" aria-expanded="false" aria-controls="collapseThemeMatt28_18">
 				  Matthew 28:18
@@ -2816,7 +3259,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox84" type="checkbox" name="group" id="checkThemeMatt28_19" />
+				<input class = "Checkbox84" type="checkbox" name="groupSent" id="checkThemeMatt28_19" onclick="javascript:updateSent()"/>
 				<label for="checkThemeMatt28_19">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_19" aria-expanded="false" aria-controls="collapseThemeMatt28_19">
 				  Matthew 28:19
@@ -2829,7 +3272,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox85" type="checkbox" name="group" id="checkThemeMatt28_20" />
+				<input class = "Checkbox85" type="checkbox" name="groupSent" id="checkThemeMatt28_20" onclick="javascript:updateSent()"/>
 				<label for="checkThemeMatt28_20">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeMatt28_20" aria-expanded="false" aria-controls="collapseThemeMatt28_20">
 				  Matthew 28:20
@@ -2842,7 +3285,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox86" type="checkbox" name="group" id="checkThemeActs1_8" />
+				<input class = "Checkbox86" type="checkbox" name="groupSent" id="checkThemeActs1_8" onclick="javascript:updateSent()"/>
 				<label for="checkThemeActs1_8">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_8" aria-expanded="false" aria-controls="collapseThemeActs1_8">
 				  Acts 1:8
@@ -2859,10 +3302,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm" aria-expanded="false" aria-controls="collapsePsalm">
 			  The 23rd Psalm: The Lord is My Shepherd
 			</button>
+			<span id = "textPsalm"></span>
 			<div class="collapse" id="collapsePsalm">
 			  	<p></p>
 
-			    <input class = "Checkbox87" type="checkbox" name="group" id="checkThemePsalm23_1" />
+			    <input class = "Checkbox87" type="checkbox" name="groupPsalm" id="checkThemePsalm23_1" onclick="javascript:updatePsalm()"/>
 				<label for="checkThemePsalm23_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_1" aria-expanded="false" aria-controls="collapseThemePsalm23_1">
 				  Psalm 23:1
@@ -2875,7 +3319,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox88" type="checkbox" name="group" id="checkPsalm23_2" />
+				<input class = "Checkbox88" type="checkbox" name="groupPsalm" id="checkPsalm23_2" onclick="javascript:updatePsalm()"/>
 				<label for="checkPsalm23_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_2" aria-expanded="false" aria-controls="collapseThemePsalm23_2">
 				  Psalm 23:2
@@ -2888,7 +3332,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox89" type="checkbox" name="group" id="checkThemePsalm23_3" />
+				<input class = "Checkbox89" type="checkbox" name="groupPsalm" id="checkThemePsalm23_3" onclick="javascript:updatePsalm()"/>
 				<label for="checkThemePsalm23_3">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_3" aria-expanded="false" aria-controls="collapseThemePsalm23_3">
 				  Psalm 23:3
@@ -2901,7 +3345,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox90" type="checkbox" name="group" id="checkThemePsalm23_4" />
+				<input class = "Checkbox90" type="checkbox" name="groupPsalm" id="checkThemePsalm23_4" onclick="javascript:updatePsalm()"/>
 				<label for="checkThemePsalm23_4">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_4" aria-expanded="false" aria-controls="collapseThemePsalm23_4">
 				  Psalm 23:4
@@ -2914,7 +3358,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox91" type="checkbox" name="group" id="checkThemePsalm23_5" />
+				<input class = "Checkbox91" type="checkbox" name="groupPsalm" id="checkThemePsalm23_5" onclick="javascript:updatePsalm()"/>
 				<label for="checkThemePsalm23_5">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_5" aria-expanded="false" aria-controls="collapseThemePsalm23_5">
 				  Psalm 23:5
@@ -2927,7 +3371,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox92" type="checkbox" name="group" id="checkThemePsalm23_6" />
+				<input class = "Checkbox92" type="checkbox" name="groupPsalm" id="checkThemePsalm23_6" onclick="javascript:updatePsalm()"/>
 				<label for="checkThemePsalm23_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemePsalm23_6" aria-expanded="false" aria-controls="collapseThemePsalm23_6">
 				  Psalm 23:6
@@ -2944,10 +3388,11 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlpha" aria-expanded="false" aria-controls="collapseAlpha">
 			  Alpha &amp; Omega: The 1st and 2nd Comings of Christ
 			</button>
+			<span id = "textAlpha"></span>
 			<div class="collapse" id="collapseAlpha">
 			  	<p></p>
 
-			    <input class = "Checkbox93" type="checkbox" name="group" id="checkThemeIsaiah9_6" />
+			    <input class = "Checkbox93" type="checkbox" name="groupAlpha" id="checkThemeIsaiah9_6" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeIsaiah9_6">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeIsaiah9_6" aria-expanded="false" aria-controls="collapseThemeIsaiah9_6">
 				  Isaiah 9:6
@@ -2960,7 +3405,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox94" type="checkbox" name="group" id="checkThemeLuke2_10" />
+				<input class = "Checkbox94" type="checkbox" name="groupAlpha" id="checkThemeLuke2_10" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeLuke2_10">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_10" aria-expanded="false" aria-controls="collapseThemeLuke2_10">
 				  Luke 2:10
@@ -2973,7 +3418,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox95" type="checkbox" name="group" id="checkThemeLuke2_11" />
+				<input class = "Checkbox95" type="checkbox" name="groupAlpha" id="checkThemeLuke2_11" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeLuke2_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_11" aria-expanded="false" aria-controls="collapseThemeLuke2_11">
 				  Luke 2:11
@@ -2986,7 +3431,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox96" type="checkbox" name="group" id="checkThemeLuke2_12" />
+				<input class = "Checkbox96" type="checkbox" name="groupAlpha" id="checkThemeLuke2_12" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeLuke2_12">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeLuke2_12" aria-expanded="false" aria-controls="collapseThemeLuke2_12">
 				  Luke 2:12
@@ -2999,7 +3444,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox97" type="checkbox" name="group" id="checkThemeActs1_11" />
+				<input class = "Checkbox97" type="checkbox" name="groupAlpha" id="checkThemeActs1_11" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeActs1_11">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeActs1_11" aria-expanded="false" aria-controls="collapseThemeActs1_11">
 				  Acts 1:11
@@ -3012,7 +3457,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox98" type="checkbox" name="group" id="checkThemeRev21_1" />
+				<input class = "Checkbox98" type="checkbox" name="groupAlpha" id="checkThemeRev21_1" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeRev21_1">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_1" aria-expanded="false" aria-controls="collapseThemeRev21_1">
 				  Revelation 21:1
@@ -3025,7 +3470,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox99" type="checkbox" name="group" id="checkThemeRev21_2" />
+				<input class = "Checkbox99" type="checkbox" name="groupAlpha" id="checkThemeRev21_2" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeRev21_2">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev21_2" aria-expanded="false" aria-controls="collapseThemeRev21_2">
 				  Revelation 21:2
@@ -3038,7 +3483,7 @@
 
 				<p></p>
 
-				<input class = "Checkbox100" type="checkbox" name="group" id="checkThemeRev22_20" />
+				<input class = "Checkbox100" type="checkbox" name="groupAlpha" id="checkThemeRev22_20" onclick="javascript:updateAlpha()"/>
 				<label for="checkThemeRev22_20">Memorized!</label>
 				    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThemeRev22_20" aria-expanded="false" aria-controls="collapseThemeRev22_20">
 				  Revelation 22:20
@@ -3071,12 +3516,25 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src = "checkbox.js"></script>
 
+<!--
 	<script type="text/javascript">
 		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
 		var numCheckBoxes = document.querySelectorAll('input[type="checkbox"]').length
 		var ratioChecked = numChecked/numCheckBoxes * 100
 		var progressSoFar = numChecked/2 + '/' + numCheckBoxes/2
 		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + ratioChecked + "%)";
+		if (numChecked == numCheckBoxes){
+			document.getElementById('progressSoFar').innerHTML = "DONE!";
+		}
+		document.getElementById('progress').setAttribute('style', 'width:' + ratioChecked + '%')
+
+	</script> -->
+
+	<script type="text/javascript">
+		var numChecked = document.querySelectorAll('input[type="checkbox"]:checked').length
+		var numCheckBoxes = 100
+		var progressSoFar = numChecked/2 + '/100'
+		document.getElementById('progressSoFar').innerHTML = progressSoFar + " (" + numChecked + "%)";
 		if (numChecked == numCheckBoxes){
 			document.getElementById('progressSoFar').innerHTML = "DONE!";
 		}
