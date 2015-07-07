@@ -3512,8 +3512,61 @@
 	    </div>
 	 
 	    <div role="tabpanel" class="tab-pane fade" id="test">
+	    	<script type="text/javascript">
+	    		var submit = function (){
+	    			var input = document.getElementById("userInput").value;
+	    			var string1mid = input.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	    			var string1 = string1mid.replace(/\s{2,}/g," ");
+	    			var string2beg = "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek."
+	    			var string2mid = string2beg.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	    			var string2 = string2mid.replace(/\s{2,}/g," ");
+	    			var areEqual = string1.toUpperCase() === string2.toUpperCase();
+	    			if (areEqual){
+	    				alert("CORRECT! :D")
+	    			}
+	    			else{
+	    				alert("Sorry, you are wrong :(")
+	    			}
+	    		}
+
+	    		var submit2 = function (){
+	    			var string1 = document.getElementById("userInput2").value;
+	    			var string2 = "Psalm 100:5"
+	    			var areEqual = string1.toUpperCase() === string2.toUpperCase();
+	    			if (areEqual){
+	    				alert("CORRECT! :D")
+	    			}
+	    			else{
+	    				alert("Sorry, you are wrong :(")
+	    			}
+	    		}
+	    	</script>
+
 	    	<p></p>
-	    	Test yourself here!
+	    	<h2>Daily Test!</h2>
+	    	<br>
+	    	Please type out <strong>Romans 1:16</strong>
+
+
+	    	<form action="javascript:submit()">
+			  Type the verse here: 
+
+			  <input type="text" name="fname" id = "userInput" style="width:350px"> &nbsp;
+			  <input type="submit" value="Submit">
+			</form>
+
+			<br>
+			<br>
+			What is the reference to this verse?
+			<br>
+			<b>For the Lord is good; his steadfast love endures forever, and his faithfulness to all generations.</b>
+			<form action="javascript:submit2()">
+			  Type the reference here: 
+
+			  <input type="text" name="fname" id = "userInput2" style="width:100px"> &nbsp;
+			  <input type="submit" value="Submit">
+			</form>
+
 	    </div>
 	  </div>
 	 </div>
