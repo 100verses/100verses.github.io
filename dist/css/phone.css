@@ -1,0 +1,15 @@
+
+.counter{
+	display:inline-block;
+    position:absolute;
+    right: 0%;
+    line-height: 35px;
+}
+
+
+.counter2{
+	display:inline-block;
+    position:absolute;
+    right: 0%;
+    line-height: 35px;
+}
