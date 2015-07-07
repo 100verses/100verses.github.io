@@ -14,6 +14,8 @@
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- tests test test tee-->
+    <link href="/dist/css/center.css" rel="stylesheet">
+
     <div class="container">
     	<h1>100 Verses</h1>
     </div>
@@ -92,7 +94,7 @@
   	    	<h4 id = 'progressSoFar'></h4>
 
 	    	<div class="progress">
-	        	<div class="progress-bar progress-bar-success" id = "progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><div class="sr-only"></div></div>
+	        	<div class="progress-bar progress-bar-success" id = "progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only"></span></div>
 	      	</div>	
 	      	
 	    </div>
@@ -382,7 +384,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGenesis" aria-expanded="false" aria-controls="collapseGenesis">
 			  Genesis
 			</button>
-			<div id="textGen"></div>
+			<div class = "counter" id="textGen"></div>
 			<div class="collapse" id="collapseGenesis">
 
 			    <input class = "Checkbox1" type="checkbox" name="groupGen" id="checkGen1_1" onclick="javascript:updateGen()"/>
@@ -406,7 +408,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseDeuteronomy" aria-expanded="false" aria-controls="collapseDeuteronomy">
 			  Deuteronomy
 			</button>
-			<div id="textDeut"></div>
+			<div class = "counter" id="textDeut"></div>
 			<div class="collapse" id="collapseDeuteronomy">
 				<p></p>
 				<input class = "Checkbox13" type="checkbox" name="groupDeut" id="checkDeut6_6" onclick="javascript:updateDeut()"/>
@@ -441,7 +443,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoshua" aria-expanded="false" aria-controls="collapseJoshua">
 			  Joshua
 			</button>
-			<div id="textJosh"></div>
+			<div class = "counter" id="textJosh"></div>
 			<div class="collapse" id="collapseJoshua">
 				<p></p>
 				<input class = "Checkbox11" type="checkbox" name="groupJosh" id="checkJosh1_8" onclick="javascript:updateJosh()"/>
@@ -461,7 +463,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Chronicles" aria-expanded="false" aria-controls="collapse2Chronicles">
 			  2 Chronicles
 			</button>
-			<div id="text2Chron"></div>
+			<div class = "counter" id="text2Chron"></div>
 			<div class="collapse" id="collapse2Chronicles">
 				<p></p>
 
@@ -484,7 +486,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalms" aria-expanded="false" aria-controls="collapsePsalms">
 			  Psalms
 			</button>
-			<div id="textBookPsalms"></div>
+			<div class = "counter" id="textBookPsalms"></div>
 			<div class="collapse" id="collapsePsalms">
 				<p></p>
 
@@ -661,7 +663,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProverbs" aria-expanded="false" aria-controls="collapseProverbs">
 			  Proverbs
 			</button>
-			<div id="textProv"></div>
+			<div class = "counter" id="textProv"></div>
 			<div class="collapse" id="collapseProverbs">
 				<p></p>
 
@@ -725,7 +727,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseIsaiah" aria-expanded="false" aria-controls="collapseIsaiah">
 			  Isaiah
 			</button>
-			<div id="textIsa"></div>
+			<div class = "counter" id="textIsa"></div>
 			<div class="collapse" id="collapseIsaiah">
 				<p></p>
 
@@ -787,7 +789,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJeremiah" aria-expanded="false" aria-controls="collapseJeremiah">
 			  Jeremiah
 			</button>
-			<div id="textJere"></div>
+			<div class = "counter" id="textJere"></div>
 			<div class="collapse" id="collapseJeremiah">
 				<p></p>
 
@@ -813,7 +815,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseMatthew" aria-expanded="false" aria-controls="collapseMatthew">
 			  Matthew
 			</button>
-			<div id="textMatt"></div>
+			<div class = "counter" id="textMatt"></div>
 			<div class="collapse" id="collapseMatthew">
 				<p></p>
 
@@ -875,7 +877,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseLuke" aria-expanded="false" aria-controls="collapseLuke">
 			  Luke
 			</button>
-			<div id="textLuke"></div>
+			<div class = "counter" id="textLuke"></div>
 			<div class="collapse" id="collapseLuke">
 				<p></p>
 
@@ -924,7 +926,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJohn" aria-expanded="false" aria-controls="collapseJohn">
 			  John
 			</button>
-			<div id="textJohn"></div>
+			<div class = "counter" id="textJohn"></div>
 			<div class="collapse" id="collapseJohn">
 				<input class = "Checkbox2" type="checkbox" name="groupJohn" id="checkJohn1_1" onclick="javascript:updateJohn()"/>
 				<label for="checkJohn1_1">Memorized!</label>
@@ -1035,7 +1037,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseActs" aria-expanded="false" aria-controls="collapseActs">
 			  Acts
 			</button>
-			<div id="textActs"> here </div>
+			<div class = "counter" id="textActs"> here </div>
 			<div class="collapse" id="collapseActs">
 				<p></p>
 
@@ -1071,7 +1073,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRomans" aria-expanded="false" aria-controls="collapseRomans">
 			  Romans
 			</button>
-			<div id="textBookRom"></div>
+			<div class = "counter" id="textBookRom"></div>
 			<div class="collapse" id="collapseRomans">
 				<p></p>
 
@@ -1250,7 +1252,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Corinthians" aria-expanded="false" aria-controls="collapse1Corinthians">
 			  1 Corinthians
 			</button>
-			<div id="text1Cor"></div>
+			<div class = "counter" id="text1Cor"></div>
 			<div class="collapse" id="collapse1Corinthians">
 				<p></p>
 
@@ -1274,7 +1276,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Corinthians" aria-expanded="false" aria-controls="collapse2Corinthians">
 			  2 Corinthians
 			</button>
-			<div id="text2Cor"></div>
+			<div class = "counter" id="text2Cor"></div>
 			<div class="collapse" id="collapse2Corinthians">
 				<p></p>
 
@@ -1298,7 +1300,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseGalatians" aria-expanded="false" aria-controls="collapseGalatians">
 			  Galatians
 			</button>
-			<div id="textGal"></div>
+			<div class = "counter" id="textGal"></div>
 			<div class="collapse" id="collapseGalatians">
 				<p></p>
 
@@ -1347,7 +1349,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEphesians" aria-expanded="false" aria-controls="collapseEphesians">
 			  Ephesians
 			</button>
-			<div id="textEph"></div>
+			<div class = "counter" id="textEph"></div>
 			<div class="collapse" id="collapseEphesians">
 				<p></p>
 
@@ -1449,7 +1451,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePhilippians" aria-expanded="false" aria-controls="collapsePhilippians">
 			  Philippians
 			</button>
-			<div id="textPhil"></div>
+			<div class = "counter" id="textPhil"></div>
 			<div class="collapse" id="collapsePhilippians">
 				<p></p>
 				<input class = "Checkbox60" type="checkbox" name="groupPhil" id="checkPhil4_4" onclick="javascript:updatePhil()"/>
@@ -1510,7 +1512,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseColossians" aria-expanded="false" aria-controls="collapseColossians">
 			  Colossians
 			</button>
-			<div id="textCol"></div>
+			<div class = "counter" id="textCol"></div>
 			<div class="collapse" id="collapseColossians">
 				<p></p>
 				<input class = "Checkbox75" type="checkbox" name="groupCol" id="checkCol3_15" onclick="javascript:updateCol()"/>
@@ -1558,7 +1560,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Thessalonians" aria-expanded="false" aria-controls="collapse1Thessalonians">
 			  1 Thessalonians
 			</button>
-			<div id="text1Thess"></div>
+			<div class = "counter" id="text1Thess"></div>
 			<div class="collapse" id="collapse1Thessalonians">
 				<p></p>
 
@@ -1605,7 +1607,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2Timothy" aria-expanded="false" aria-controls="collapse2Timothy">
 			  2 Timothy
 			</button>
-			<div id="text2Tim"></div>
+			<div class = "counter" id="text2Tim"></div>
 			<div class="collapse" id="collapse2Timothy">
 				<p></p>
 
@@ -1626,7 +1628,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHebrews" aria-expanded="false" aria-controls="collapseHebrews">
 			  Hebrews
 			</button>
-			<div id="textHeb"></div>
+			<div class = "counter" id="textHeb"></div>
 			<div class="collapse" id="collapseHebrews">
 				<p></p>
 
@@ -1687,7 +1689,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJames" aria-expanded="false" aria-controls="collapseJames">
 			  James
 			</button>
-			<div id="textJames"></div>
+			<div class = "counter" id="textJames"></div>
 			<div class="collapse" id="collapseJames">
 				<p></p>
 
@@ -1749,7 +1751,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1Peter" aria-expanded="false" aria-controls="collapse1Peter">
 			  1 Peter
 			</button>
-			<div id="text1Pet"></div>
+			<div class = "counter" id="text1Pet"></div>
 			<div class="collapse" id="collapse1Peter">
 				<p></p>
 
@@ -1786,7 +1788,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1John" aria-expanded="false" aria-controls="collapse1John">
 			  1 John
 			</button>
-			<div id="text1John"></div>
+			<div class = "counter" id="text1John"></div>
 			<div class="collapse" id="collapse1John">
 				<p></p>
 
@@ -1875,7 +1877,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRevelation" aria-expanded="false" aria-controls="collapseRevelation">
 			  Revelation
 			</button>
-			<div id="textRev"></div>
+			<div class = "counter" id="textRev"></div>
 			<div class="collapse" id="collapseRevelation">
 				<p></p>
 
@@ -2098,7 +2100,7 @@
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBeginnings" aria-expanded="false" aria-controls="collapseBeginnings">
 			  Beginnings: Bible's Fantastic Four
 			</button>
-			<div id = "textBeg"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textBeg"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseBeginnings">
 			  	<p></p>
 
@@ -2158,7 +2160,7 @@
 	    	<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseRoman" aria-expanded="true" aria-controls="collapseRoman">
 			  The Roman Road: The Plan of Salvation
 			</button>
-			<div id = "textRom"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textRom"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseRoman">
 			  	<p></p>
 
@@ -2231,7 +2233,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseListening" aria-expanded="false" aria-controls="collapseListening">
 			  Listening: Word of God &amp; Prayer
 			</button>
-			<div id = "textList"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textList"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseListening">
 			  	<p></p>
 
@@ -2356,7 +2358,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAssurance" aria-expanded="false" aria-controls="collapseAssurance">
 			  Assurance: Inner Peace &amp; Security
 			</button>
-			<div id = "textAssur"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textAssur"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseAssurance">
 			  	<p></p>
 
@@ -2494,7 +2496,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePraise" aria-expanded="false" aria-controls="collapsePraise">
 			  Praise: Worship &amp; Thanksgiving
 			</button>
-			<div id = "textPraise"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textPraise"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapsePraise">
 			  	<p></p>
 
@@ -2554,7 +2556,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePromises" aria-expanded="false" aria-controls="collapsePromises">
 			  Promises: Verses to Stand On
 			</button>
-			<div id = "textProm"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textProm"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapsePromises">
 			  	<p></p>
 
@@ -2692,7 +2694,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseHoliness" aria-expanded="false" aria-controls="collapseHoliness">
 			  Holiness: Obeying God's Commands
 			</button>
-			<div id = "textHol"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textHol"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseHoliness">
 			  	<p></p>
 
@@ -2830,7 +2832,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFullness" aria-expanded="false" aria-controls="collapseFullness">
 			  Fullness: Holy Spirit's Role in Our Lives
 			</button>
-			<div id = "textFull"> &nbsp; 0/4 </div>
+			<div class = "counter2" id = "textFull"> &nbsp; 0/4 </div>
 			<div class="collapse" id="collapseFullness">
 			  	<p></p>
 
@@ -2916,7 +2918,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseJoy" aria-expanded="false" aria-controls="collapseJoy">
 			  Joy: God's Kind of Happiness
 			</button>
-			<div id="textJoy"></div>
+			<div class = "counter2" id="textJoy"></div>
 			<div class="collapse" id="collapseJoy">
 			  	<p></p>
 
@@ -3080,7 +3082,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFaith" aria-expanded="false" aria-controls="collapseFaith">
 			  Faith: Trusting God &amp; Resting in His Word
 			</button>
-			<div id="textFaith"></div>
+			<div class = "counter2" id="textFaith"></div>
 			<div class="collapse" id="collapseFaith">
 			  	<p></p>
 
@@ -3244,7 +3246,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseSent" aria-expanded="false" aria-controls="collapseSent">
 			  Sent: The Great Commission &amp; Our Global Task
 			</button>
-			<div id="textSent"></div>
+			<div class = "counter2" id="textSent"></div>
 			<div class="collapse" id="collapseSent">
 			  	<p></p>
 
@@ -3304,7 +3306,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapsePsalm" aria-expanded="false" aria-controls="collapsePsalm">
 			  The 23rd Psalm: The Lord is My Shepherd
 			</button>
-			<div id = "textPsalm"></div>
+			<div class = "counter2" id = "textPsalm"></div>
 			<div class="collapse" id="collapsePsalm">
 			  	<p></p>
 
@@ -3390,7 +3392,7 @@
 			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlpha" aria-expanded="false" aria-controls="collapseAlpha">
 			  Alpha &amp; Omega: The 1st and 2nd Comings of Christ
 			</button>
-			<div id = "textAlpha"></div>
+			<div class = "counter2" id = "textAlpha"></div>
 			<div class="collapse" id="collapseAlpha">
 			  	<p></p>
 
