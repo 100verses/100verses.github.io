@@ -2,7 +2,7 @@
 .counter{
 	display:inline-block;
     position:absolute;
-    right: 30%;
+    right: 40%;
     line-height: 35px;
 }
 
@@ -10,10 +10,10 @@
 .counter2{
 	display:inline-block;
     position:absolute;
-    right: 0%;
+    right: 15%;
     line-height: 35px;
 }
 
 .btn{
-	font-size:8px;
+	font-size:10px;
 }
