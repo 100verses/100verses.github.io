@@ -260,7 +260,7 @@ var showhide = function (){
 	}
 }
 
-var skip = function (){
+var next = function (){
 	var newRand = Math.ceil(100*Math.random())
 	while (newRand>27){
 		newRand = Math.ceil(100*Math.random())
