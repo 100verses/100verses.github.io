@@ -213,7 +213,7 @@ var submit = function (){
 	var input = document.getElementById("userInput").value;
 	var string1mid = input.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
 	var string1 = string1mid.replace(/\s{2,}/g," ");
-	var string2beg = "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek."
+	var string2beg = "And these words that I command you today shall be on your heart."
 	var string2mid = string2beg.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
 	var string2 = string2mid.replace(/\s{2,}/g," ");
 	var areEqual = string1.toUpperCase() === string2.toUpperCase();
@@ -227,7 +227,7 @@ var submit = function (){
 
 var submit2 = function (){
 	var string1 = document.getElementById("userInput2").value;
-	var string2 = "Psalm 100:5"
+	var string2 = "1 John 5:14"
 	var areEqual = string1.toUpperCase() === string2.toUpperCase();
 	if (areEqual){
 		alert("CORRECT! :D")
