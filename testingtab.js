@@ -1,7 +1,8 @@
 
-var num = 1;
+var num = 0;
 
 var associativeArray = {};
+associativeArray[0] = "";
 associativeArray[1] = "Genesis 1:1";
 associativeArray[2] = "Deuteronomy 6:6";
 associativeArray[3] = "Deuteronomy 6:7";
@@ -104,6 +105,7 @@ associativeArray[99] = "Revelation 21:2";
 associativeArray[100] = "Revelation 22:20";
 
 var associativeArray2 = {};
+associativeArray2[0] = "";
 associativeArray2[1] = "In the beginning, God created the heavens and the earth.";
 associativeArray2[2] = "And these words that I command you today shall be on your heart.";
 associativeArray2[3] = "You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.";
