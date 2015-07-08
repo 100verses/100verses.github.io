@@ -207,13 +207,32 @@ associativeArray2[98] = "He who has an ear, let him hear what the Spirit says to
 associativeArray2[99] = "And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.";
 associativeArray2[100] = "He who testifies to these things says, \"Surely I am coming soon.\" Amen. Come, Lord Jesus!";
 
+var date = {}
+date[1] = 0
+date[2] = 31
+date[3] = 59
+date[4] = 90
+date[5] = 120
+date[6] = 151
+date[7] = 181
+date[8] = 212
+date[9] = 243
+date[10] = 274
+date[11] = 304
+date[12] = 334
 
+var today = new Date();
+var month = today.getMonth() + 1;
+var day = today.getDate();
+var dateNum = date[month] + day;
+var dailyNum = (dateNum % 100) + 1;
+var dailyRef = ((dailyNum + 50) % 100) + 1;
 
 var submit = function (){
 	var input = document.getElementById("userInput").value;
 	var string1mid = input.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
 	var string1 = string1mid.replace(/\s{2,}/g," ");
-	var string2beg = "And these words that I command you today shall be on your heart."
+	var string2beg = associativeArray2[dailyNum]
 	var string2mid = string2beg.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
 	var string2 = string2mid.replace(/\s{2,}/g," ");
 	var areEqual = string1.toUpperCase() === string2.toUpperCase();
@@ -227,7 +246,7 @@ var submit = function (){
 
 var submit2 = function (){
 	var string1 = document.getElementById("userInput2").value;
-	var string2 = "1 John 5:14"
+	var string2 = associativeArray[dailyRef]
 	var areEqual = string1.toUpperCase() === string2.toUpperCase();
 	if (areEqual){
 		alert("CORRECT! :D")
@@ -269,6 +288,11 @@ var next = function (){
 	document.getElementById('randverse').innerHTML = "";
 }
 
+var updateDailies = function (){
+	document.getElementById('dailyverse').innerHTML = associativeArray[dailyNum];
+	document.getElementById('dailyref').innerHTML = associativeArray2[dailyRef];
+
+}
 var donothing = function(){
 
 }

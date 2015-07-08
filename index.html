@@ -63,7 +63,7 @@
 	    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" onclick = "javascript:update()">Home</a></li>
 	    <li role="presentation"><a href="#verses" aria-controls="verses" role="tab" data-toggle="tab" onclick = "javascript:updateBookAll()">Verses by Book</a></li>
 	    <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab" onclick = "javascript:updateAll()">Verses by Theme</a></li>
-	    <li role="presentation"><a href="#test" aria-controls="test" role="tab" data-toggle="tab" >Test Yourself!</a></li>
+	    <li role="presentation"><a href="#test" aria-controls="test" role="tab" data-toggle="tab" onclick = "javascript:updateDailies()">Test Yourself!</a></li>
 		
 	  </ul>
 
@@ -3514,12 +3514,12 @@
 	    <div role="tabpanel" class="tab-pane fade" id="test">
 
 	    	<script type="text/javascript" src="testingtab.js"></script>
-
+	    	
 
 	    	<p></p>
 	    	<h2>Daily Test!</h2>
 	    	<br>
-	    	Please type out &thinsp;&thinsp;&thinsp;<strong style="font-size:17px">Deuteronomy 6:6</strong>
+	    	Please type out &thinsp;&thinsp;&thinsp;<strong id="dailyverse" style="font-size:17px">Deuteronomy 6:6</strong>
 	    	<p></p>
 
 	    	<form action="javascript:submit()">
@@ -3533,7 +3533,7 @@
 			<br>
 			What is the reference to this verse?
 			<p></p>
-			<b style="font-size:17px">And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.</b>
+			<b id="dailyref" style="font-size:17px">And this is the confidence that we have toward him, that if we ask anything according to his will he hears us.</b>
 			<p></p>
 			<form action="javascript:submit2()">
 			  Type the reference here: 
