@@ -644,7 +644,7 @@
 				</button>
 				<div class="collapse" id="collapsePsalm118_24">
 				  <div class="well">
-				    This is the day that the Lod has made; let us rejoice and be glad in it.
+				    This is the day that the Lord has made; let us rejoice and be glad in it.
 				  </div>
 				</div>
 
@@ -780,7 +780,7 @@
 				</button>
 				<div class="collapse" id="collapseIsaiah53_6">
 				  <div class="well">
-				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
+				    All we like sheep have gone astray; we have turned —every one— to his own way; and the Lord has laid on him the iniquity of us all.
 				  </div>
 				</div>
 
@@ -2487,7 +2487,7 @@
 				</button>
 				<div class="collapse" id="collapseThemeIsaiah53_6">
 				  <div class="well">
-				    All we like sheep have gone astray; we have turned "every one" to his own way; and the Lord has laid on him the iniquity of us all.
+				    All we like sheep have gone astray; we have turned —every one— to his own way; and the Lord has laid on him the iniquity of us all.
 				  </div>
 				</div>
 			</div>
@@ -2930,7 +2930,7 @@
 				</button>
 				<div class="collapse" id="collapseThemePsalm118_24">
 				  <div class="well">
-				    This is the day that the Lod has made; let us rejoice and be glad in it.
+				    This is the day that the Lord has made; let us rejoice and be glad in it.
 				  </div>
 				</div>
 
@@ -3512,35 +3512,9 @@
 	    </div>
 	 
 	    <div role="tabpanel" class="tab-pane fade" id="test">
-	    	<script type="text/javascript">
-	    		var submit = function (){
-	    			var input = document.getElementById("userInput").value;
-	    			var string1mid = input.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-	    			var string1 = string1mid.replace(/\s{2,}/g," ");
-	    			var string2beg = "For I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek."
-	    			var string2mid = string2beg.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-	    			var string2 = string2mid.replace(/\s{2,}/g," ");
-	    			var areEqual = string1.toUpperCase() === string2.toUpperCase();
-	    			if (areEqual){
-	    				alert("CORRECT! :D")
-	    			}
-	    			else{
-	    				alert("Sorry, you are wrong :(")
-	    			}
-	    		}
 
-	    		var submit2 = function (){
-	    			var string1 = document.getElementById("userInput2").value;
-	    			var string2 = "Psalm 100:5"
-	    			var areEqual = string1.toUpperCase() === string2.toUpperCase();
-	    			if (areEqual){
-	    				alert("CORRECT! :D")
-	    			}
-	    			else{
-	    				alert("Sorry, you are wrong :(")
-	    			}
-	    		}
-	    	</script>
+	    	<script type="text/javascript" src="testingtab.js"></script>
+
 
 	    	<p></p>
 	    	<h2>Daily Test!</h2>
@@ -3552,7 +3526,7 @@
 			  Type the verse here: 
 
 			  <input type="text" name="fname" id = "userInput" style="width:350px"> &nbsp;
-			  <input type="submit" value="Submit">
+			  <button type="submit" value="Submit">Submit</button>
 			</form>
 
 			<br>
@@ -3567,6 +3541,26 @@
 			  <input type="text" name="fname" id = "userInput2" style="width:100px"> &nbsp;
 			  <input type="submit" value="Submit">
 			</form>
+
+			<br>
+			<br>
+			<br>
+			<h2>Random Verse Tester! (OT only for now)</h2>
+			<p></p>
+			<b style="font-size:17px" id="randref">Genesis 1:1</b>
+			<p></p>
+			<form action="javascript:donothing()">
+			  Type the verse here: 
+
+			  <input type="text" id = "userInput3" style="width:350px"> &nbsp;
+			  <input type="submit" value="Submit" onclick="javascript:submit3()">
+			  <input type="submit" value="Show/Hide" onclick="javascript:showhide()">
+			  <input type="submit" value="Skip" onclick="javascript:skip()">
+			</form>
+			<br>
+			<b id = "randverse" style="font-size:17px"></b>
+
+			  
 
 	    </div>
 	  </div>
