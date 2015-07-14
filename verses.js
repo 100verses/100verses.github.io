@@ -319,702 +319,702 @@ $(document).ready(function () {
 
 	$('.Checkbox1').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie1", "changed");
+			$.cookie("cookie1", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie1", null);
+			$.cookie("cookie1", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox2').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie2", "changed");
+			$.cookie("cookie2", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie2", null);
+			$.cookie("cookie2", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox3').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie3", "changed");
+			$.cookie("cookie3", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie3", null);
+			$.cookie("cookie3", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox4').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie4", "changed");
+			$.cookie("cookie4", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie4", null);
+			$.cookie("cookie4", null, { expires: 1825 });
 		}         
 	}).change();  
 	$('.Checkbox5').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie5", "changed");
+			$.cookie("cookie5", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie5", null);
+			$.cookie("cookie5", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox6').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie6", "changed");
+			$.cookie("cookie6", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie6", null);
+			$.cookie("cookie6", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox7').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie7", "changed");
+			$.cookie("cookie7", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie7", null);
+			$.cookie("cookie7", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox8').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie8", "changed");
+			$.cookie("cookie8", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie8", null);
+			$.cookie("cookie8", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox9').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie9", "changed");
+			$.cookie("cookie9", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie9", null);
+			$.cookie("cookie9", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox10').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie10", "changed");
+			$.cookie("cookie10", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie10", null);
+			$.cookie("cookie10", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox11').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie11", "changed");
+			$.cookie("cookie11", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie11", null);
+			$.cookie("cookie11", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox12').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie12", "changed");
+			$.cookie("cookie12", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie12", null);
+			$.cookie("cookie12", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox13').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie13", "changed");
+			$.cookie("cookie13", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie13", null);
+			$.cookie("cookie13", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox14').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie14", "changed");
+			$.cookie("cookie14", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie14", null);
+			$.cookie("cookie14", null, { expires: 1825 });
 		}         
 	}).change();  
 	$('.Checkbox15').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie15", "changed");
+			$.cookie("cookie15", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie15", null);
+			$.cookie("cookie15", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox16').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie16", "changed");
+			$.cookie("cookie16", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie16", null);
+			$.cookie("cookie16", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox17').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie17", "changed");
+			$.cookie("cookie17", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie17", null);
+			$.cookie("cookie17", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox18').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie18", "changed");
+			$.cookie("cookie18", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie18", null);
+				$.cookie("cookie18", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox19').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie19", "changed");
+			$.cookie("cookie19", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie19", null);
+			$.cookie("cookie19", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox20').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie20", "changed");
+			$.cookie("cookie20", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie20", null);
+			$.cookie("cookie20", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox21').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie21", "changed");
+			$.cookie("cookie21", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie21", null);
+			$.cookie("cookie21", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox22').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie22", "changed");
+			$.cookie("cookie22", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie22", null);
+			$.cookie("cookie22", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox23').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie23", "changed");
+			$.cookie("cookie23", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie23", null);
+			$.cookie("cookie23", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox24').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie24", "changed");
+			$.cookie("cookie24", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie24", null);
+			$.cookie("cookie24", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox25').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie25", "changed");
+			$.cookie("cookie25", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie25", null);
+			$.cookie("cookie25", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox26').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie26", "changed");
+			$.cookie("cookie26", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie26", null);
+			$.cookie("cookie26", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox27').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie27", "changed");
+			$.cookie("cookie27", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie27", null);
+			$.cookie("cookie27", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox28').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie28", "changed");
+			$.cookie("cookie28", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie28", null);
+				$.cookie("cookie28", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox29').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie29", "changed");
+			$.cookie("cookie29", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie29", null);
+			$.cookie("cookie29", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox30').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie30", "changed");
+			$.cookie("cookie30", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie30", null);
+			$.cookie("cookie30", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox31').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie31", "changed");
+			$.cookie("cookie31", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie31", null);
+			$.cookie("cookie31", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox32').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie32", "changed");
+			$.cookie("cookie32", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie32", null);
+			$.cookie("cookie32", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox33').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie33", "changed");
+			$.cookie("cookie33", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie33", null);
+			$.cookie("cookie33", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox34').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie34", "changed");
+			$.cookie("cookie34", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie34", null);
+			$.cookie("cookie34", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox35').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie35", "changed");
+			$.cookie("cookie35", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie35", null);
+			$.cookie("cookie35", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox36').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie36", "changed");
+			$.cookie("cookie36", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie36", null);
+			$.cookie("cookie36", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox37').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie37", "changed");
+			$.cookie("cookie37", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie37", null);
+			$.cookie("cookie37", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox38').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie38", "changed");
+			$.cookie("cookie38", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie38", null);
+				$.cookie("cookie38", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox39').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie39", "changed");
+			$.cookie("cookie39", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie39", null);
+			$.cookie("cookie39", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox40').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie40", "changed");
+			$.cookie("cookie40", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie40", null);
+			$.cookie("cookie40", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox41').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie41", "changed");
+			$.cookie("cookie41", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie41", null);
+			$.cookie("cookie41", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox42').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie42", "changed");
+			$.cookie("cookie42", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie42", null);
+			$.cookie("cookie42", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox43').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie43", "changed");
+			$.cookie("cookie43", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie43", null);
+			$.cookie("cookie43", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox44').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie44", "changed");
+			$.cookie("cookie44", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie44", null);
+			$.cookie("cookie44", null, { expires: 1825 });
 		}         
 	}).change();  
 	$('.Checkbox45').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie45", "changed");
+			$.cookie("cookie45", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie45", null);
+			$.cookie("cookie45", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox46').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie46", "changed");
+			$.cookie("cookie46", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie46", null);
+			$.cookie("cookie46", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox47').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie47", "changed");
+			$.cookie("cookie47", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie47", null);
+			$.cookie("cookie47", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox48').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie48", "changed");
+			$.cookie("cookie48", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie48", null);
+				$.cookie("cookie48", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox49').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie49", "changed");
+			$.cookie("cookie49", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie49", null);
+			$.cookie("cookie49", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox50').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie50", "changed");
+			$.cookie("cookie50", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie50", null);
+			$.cookie("cookie50", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox51').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie51", "changed");
+			$.cookie("cookie51", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie51", null);
+			$.cookie("cookie51", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox52').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie52", "changed");
+			$.cookie("cookie52", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie52", null);
+			$.cookie("cookie52", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox53').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie53", "changed");
+			$.cookie("cookie53", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie53", null);
+			$.cookie("cookie53", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox54').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie54", "changed");
+			$.cookie("cookie54", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie54", null);
+			$.cookie("cookie54", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox55').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie55", "changed");
+			$.cookie("cookie55", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie55", null);
+			$.cookie("cookie55", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox56').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie56", "changed");
+			$.cookie("cookie56", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie56", null);
+			$.cookie("cookie56", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox57').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie57", "changed");
+			$.cookie("cookie57", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie57", null);
+			$.cookie("cookie57", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox58').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie58", "changed");
+			$.cookie("cookie58", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie58", null);
+				$.cookie("cookie58", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox59').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie59", "changed");
+			$.cookie("cookie59", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie59", null);
+			$.cookie("cookie59", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox60').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie60", "changed");
+			$.cookie("cookie60", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie60", null);
+			$.cookie("cookie60", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox61').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie61", "changed");
+			$.cookie("cookie61", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie61", null);
+			$.cookie("cookie61", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox62').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie62", "changed");
+			$.cookie("cookie62", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie62", null);
+			$.cookie("cookie62", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox63').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie63", "changed");
+			$.cookie("cookie63", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie63", null);
+			$.cookie("cookie63", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox64').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie64", "changed");
+			$.cookie("cookie64", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie64", null);
+			$.cookie("cookie64", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox65').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie65", "changed");
+			$.cookie("cookie65", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie65", null);
+			$.cookie("cookie65", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox66').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie66", "changed");
+			$.cookie("cookie66", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie66", null);
+			$.cookie("cookie66", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox67').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie67", "changed");
+			$.cookie("cookie67", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie67", null);
+			$.cookie("cookie67", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox68').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie68", "changed");
+			$.cookie("cookie68", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie68", null);
+				$.cookie("cookie68", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox69').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie69", "changed");
+			$.cookie("cookie69", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie69", null);
+			$.cookie("cookie69", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox70').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie70", "changed");
+			$.cookie("cookie70", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie70", null);
+			$.cookie("cookie70", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox71').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie71", "changed");
+			$.cookie("cookie71", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie71", null);
+			$.cookie("cookie71", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox72').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie72", "changed");
+			$.cookie("cookie72", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie72", null);
+			$.cookie("cookie72", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox73').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie73", "changed");
+			$.cookie("cookie73", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie73", null);
+			$.cookie("cookie73", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox74').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie74", "changed");
+			$.cookie("cookie74", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie74", null);
+			$.cookie("cookie74", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox75').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie75", "changed");
+			$.cookie("cookie75", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie75", null);
+			$.cookie("cookie75", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox76').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie76", "changed");
+			$.cookie("cookie76", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie76", null);
+			$.cookie("cookie76", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox77').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie77", "changed");
+			$.cookie("cookie77", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie77", null);
+			$.cookie("cookie77", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox78').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie78", "changed");
+			$.cookie("cookie78", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie78", null);
+				$.cookie("cookie78", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox79').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie79", "changed");
+			$.cookie("cookie79", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie79", null);
+			$.cookie("cookie79", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox80').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie80", "changed");
+			$.cookie("cookie80", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie80", null);
+			$.cookie("cookie80", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox81').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie81", "changed");
+			$.cookie("cookie81", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie81", null);
+			$.cookie("cookie81", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox82').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie82", "changed");
+			$.cookie("cookie82", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie82", null);
+			$.cookie("cookie82", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox83').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie83", "changed");
+			$.cookie("cookie83", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie83", null);
+			$.cookie("cookie83", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox84').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie84", "changed");
+			$.cookie("cookie84", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie84", null);
+			$.cookie("cookie84", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox85').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie85", "changed");
+			$.cookie("cookie85", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie85", null);
+			$.cookie("cookie85", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox86').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie86", "changed");
+			$.cookie("cookie86", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie86", null);
+			$.cookie("cookie86", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox87').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie87", "changed");
+			$.cookie("cookie87", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie87", null);
+			$.cookie("cookie87", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox88').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie88", "changed");
+			$.cookie("cookie88", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie88", null);
+				$.cookie("cookie88", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox89').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie89", "changed");
+			$.cookie("cookie89", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie89", null);
+			$.cookie("cookie89", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox90').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie90", "changed");
+			$.cookie("cookie90", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie90", null);
+			$.cookie("cookie90", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox91').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie91", "changed");
+			$.cookie("cookie91", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie91", null);
+			$.cookie("cookie91", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox92').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie92", "changed");
+			$.cookie("cookie92", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie92", null);
+			$.cookie("cookie92", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox93').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie93", "changed");
+			$.cookie("cookie93", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie93", null);
+			$.cookie("cookie93", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox94').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie94", "changed");
+			$.cookie("cookie94", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie94", null);
+			$.cookie("cookie94", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox95').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie95", "changed");
+			$.cookie("cookie95", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie95", null);
+			$.cookie("cookie95", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox96').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie96", "changed");
+			$.cookie("cookie96", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie96", null);
+			$.cookie("cookie96", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox97').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie97", "changed");
+			$.cookie("cookie97", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie97", null);
+			$.cookie("cookie97", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox98').change(function () {               
 		if( this.checked ) {
-			$.cookie("cookie98", "changed");
+			$.cookie("cookie98", "changed", { expires: 1825 });
 		} else {
-				$.cookie("cookie98", null);
+				$.cookie("cookie98", null, { expires: 1825 });
 		}         
 	}).change();
 	$('.Checkbox99').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie99", "changed");
+			$.cookie("cookie99", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie99", null);
+			$.cookie("cookie99", null, { expires: 1825 });
 		}         
 	}).change(); 
 	$('.Checkbox100').change(function () {
 		if( this.checked ) {
-			$.cookie("cookie100", "changed");
+			$.cookie("cookie100", "changed", { expires: 1825 });
 		} else {
-			$.cookie("cookie100", null);
+			$.cookie("cookie100", null, { expires: 1825 });
 		}         
 	}).change();
 });  //end function
