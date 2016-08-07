@@ -146,7 +146,7 @@
 	 			var updateGen = function (){
 		 			var numChecked = document.querySelectorAll('input[name="groupGen"]:checked').length
 		 			var numCheckBoxes = document.querySelectorAll('input[name="groupGen"]').length
-		 			var progressSoFar =  '&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
+		 			var progressSoFar =  '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + numChecked + '/' + numCheckBoxes
 		 			document.getElementById('textGen').innerHTML = progressSoFar
 		 			if (numChecked == numCheckBoxes){
 		 				document.getElementById('textGen').innerHTML = '<strong>' + progressSoFar + '</strong>';
